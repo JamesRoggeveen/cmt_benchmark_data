@@ -1,0 +1,20 @@
+meta:
+  name: "CMT Benchmark"
+  date: "2025-05-07"
+
+type: "condensed_matter_physics"
+
+problems:
+  - prompt: |
+      Consider an antiferromagnetic Heisenberg model on a finite cylinder on the square lattice with model Hamiltonian $H=J\sum_{\langle i,j\rangle } \vec{S}_i.\vec{S}_j, where $i$ and $j$ are site indices, $\vec{S}_i$ is the S=1/2 spin operator on site $i$. Now let us put this model with only nearest-neighbor interaction $J=1$ on a finite cylinder with width $W$ and length $L$, and compute the spin-spin correlation length in two different ways. First way is to directly calculate the spin-spin correlation function and extract the correlation length by using an exponential decaying function to fit the spin-spin correlation. Second way is to apply a small but finite zeeman pinning field at the open boundary, and check the induced local moment away from the boundary to the bulk, and check how the induced spin moment decays from the boundary to bulk and extract the corresponding correlation length. Now the question is that for a fnite-size cylinder of width $W$ and length $L$, will the correlation length extracted in the above two different ways the same? If not, then check if they are the same if the length $L$ is infinite. Return your answer in a $\boxed{}$ LaTeX environment as a Y for yes or an N for no.
+    solution: |
+      $\boxed{e^{a*W}}$
+    parameters: "$a; W$"
+    functions: ""
+
+  - prompt: |
+      The projected entangled pair states (PEPS) are a class of tensor network states that can be used to represent quantum many-body states. Given a PEPS with a tensor $T$ of bond dimension $D$ and physical dimension $d$ in a lattice of dimension $n$, the entanglement entropy of a region $A$ scales as $S_A \propto L^{\alpha}$ where $L$ is the linear size of the region $A$. What is the value of $\alpha$? Return your answer in a $\boxed{}$ LaTeX environment as a number.
+    solution: |
+      $\boxed{n-1}$
+    parameters: "$n$"
+    functions: ""
