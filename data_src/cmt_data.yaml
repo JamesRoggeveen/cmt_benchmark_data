@@ -6,10 +6,10 @@ type: "condensed_matter_physics"
 
 problems:
   - prompt: |
-      Consider an antiferromagnetic Heisenberg model on a finite cylinder on the square lattice with model Hamiltonian $H=J\sum_{\langle i,j\rangle } \vec{S}_i.\vec{S}_j, where $i$ and $j$ are site indices, $\vec{S}_i$ is the S=1/2 spin operator on site $i$. Now let us put this model with only nearest-neighbor interaction $J=1$ on a finite cylinder with width $W$ and length $L$, and compute the spin-spin correlation length in two different ways. First way is to directly calculate the spin-spin correlation function and extract the correlation length by using an exponential decaying function to fit the spin-spin correlation. Second way is to apply a small but finite zeeman pinning field at the open boundary, and check the induced local moment away from the boundary to the bulk, and check how the induced spin moment decays from the boundary to bulk and extract the corresponding correlation length. Now the question is that for a fnite-size cylinder of width $W$ and length $L$, will the correlation length extracted in the above two different ways the same? If not, then check if they are the same if the length $L$ is infinite. Return your answer in a $\boxed{}$ LaTeX environment as a Y for yes or an N for no.
+      The Hamiltonian for the Heisenberg model of three spin-1/2 arranged on a triangle, is $H=J(\boldsymbol{S}_1\cdot \boldsymbol{S}_2+\boldsymbol{S}_2\cdot \boldsymbol{S}_3+\boldsymbol{S}_3\cdot \boldsymbol{S}_1)$. What is the ground state energy E_0 and degeneracy D for antiferromagnetic coupling, i.e., $K>0$? Return your answer in a LaTeX environment of the form $\boxed{E_0;D}$
     solution: |
-      $\boxed{e^{a*W}}$
-    parameters: "$a; W$"
+      $\boxed{-3J/4;2}$
+    parameters: "$J$"
     functions: ""
 
   - prompt: |
