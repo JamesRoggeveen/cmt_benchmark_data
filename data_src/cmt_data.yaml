@@ -1,7 +1,7 @@
 meta:
-  name: Cmt Benchmark - Demo
+  name: Cmt Benchmark - Demo(1)
   date: '2025-09-20'
-type: cmt benchmark - demo
+type: cmt benchmark - demo(1)
 problems:
 - prompt: 'Consider a spinful electron system in a two-dimensional triangular lattice.
 
@@ -1007,6 +1007,21 @@ problems:
   functions: .nan
   solution: $\boxed{\frac{(p + x^3)^2}{4 x^4} + 4 x^2}$
   topic/method: SM
+- prompt: "Consider a two-dimensional tight-binding model on the square lattice with\
+    \ a single orbital at each site. The lattice vectors are along $x$ and $y$ directions.\
+    \ Label each site by its coordinate $\\vec{r}=(n_x,n_y)$ with two integers $n_x,n_y$.\
+    \ The model has nearest neighbor hopping $t_1$ along $x$ direction. Along $y$\
+    \ direction the nearest neighbor hopping is $t_2$ for $n_x+n_y$ even, and $t_2e^{i\\\
+    theta}$ for $n_x+n_y$ odd. For $t_1=t_2=1,\\theta=\\pi/3$, and chemical potential\
+    \ $\\mu=0.1,0.3,1.2$, how many connected segments are there in the fermi surface,\
+    \ respectively?\_\n\nPresent the final answer of the three integers in a single\
+    \ $\\boxed{}$ LaTeX environment. For example: $\\boxed{1,2,3}$. Your final solution\
+    \ must be placed in a $\\boxed{}$ LaTeX environment. Use only the variables and\
+    \ constants given in the problem; do not define additional constants."
+  parameters: .nan
+  functions: .nan
+  solution: $\boxed{2,2,1}$
+  topic/method: Other
 - prompt: "We want to build infinite two-dimensional tensor network wavefunction for\
     \ a systems of spin-1 moments \non square lattice interacting with SU(2)-symmetric\
     \ interactions. We choose infinite projected entangled-pair state as the TN.\n\
@@ -1036,3 +1051,30 @@ problems:
   functions: .nan
   solution: $\boxed{6}$
   topic/method: PEPS
+- prompt: "We are interested in counting fully packed dimer configurations on honeycomb\
+    \ lattice.\nDimer can be placed on any of the nearest-neighbor bonds of the lattice\
+    \ and each site has to be \na member of exactly one dimer.\nThis is one of the\
+    \ ways to count ground state configurations of classical antiferromagnetic Ising\
+    \ \nmodel on triangular lattice. In particular, we want to consider a horizontal\
+    \ cylinder geometry, \nwith the periodic boundary condition in vertical direction\
+    \ and zig-zag open edges. \nHere is an example of such geometry, given as an illustration\
+    \ in LateX's verbatim environment\n\n\n\\begin{verbatim}\n\\    /    \\    / \n\
+    \ A--B      A--B  \n/    \\    /    \\   \nB     A--B      A\n\\    /    \\  \
+    \  /    \n A--B      A--B      \n/    \\    /    \\\nB     A--B      A  \n\\ \
+    \   /    \\    /       \n A--B      A--B     \n/    \\    /    \\    \nB     A--B\
+    \      A\n\\end{verbatim}\n\n\nThis is an XC-6 cylinder with width W=6, W being\
+    \ the number of sites in the vertical direction,\nand length L=3, again L being\
+    \ the number of honeycomb lattice unit cells in the horizontal direction.\n\n\
+    Let's call the number of \"empty\" sites divided by the total number of sites\
+    \ on the edge the \"defect density\". \nAnswer following two questions. First,\
+    \ In the limit of wide cylinders, what defect density leads to the highest number\
+    \ of packed dimer configurations ?\nSecond, for XC-11 cylinder, what is the defect\
+    \ density which gives the second highest number of packed dimer configurations\
+    \ ?\n\nReturn your answer as two numbers, separated by a comma, in $\\boxed{}$\
+    \ environment, rounded to 2 decimal places Your final solution must be placed\
+    \ in a $\\boxed{}$ LaTeX environment. Use only the variables and constants given\
+    \ in the problem; do not define additional constants."
+  parameters: .nan
+  functions: .nan
+  solution: $\boxed{0.33, 0.27}$
+  topic/method: SM
