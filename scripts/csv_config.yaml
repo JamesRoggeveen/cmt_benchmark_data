@@ -1,0 +1,13 @@
+columns:
+  - Prompt
+  - Parameters
+  - Functions
+  - Solution
+  - Topic/Method
+
+approval_column: "Approved?"
+
+csv_dir: "raw_csv"
+yaml_dir: "data_src"
+yaml_name: "cmt_data"
+global_prompt: "Your final solution must be placed in a $\\boxed{}$ LaTeX environment. Use only the variables and constants given in the problem; do not define additional constants."
