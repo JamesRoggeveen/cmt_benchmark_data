@@ -1,0 +1,21 @@
+[project]
+name = "cmt-benchmark-data"
+version = "0.1.0"
+description = "Dataset and evaluation code for CMT Benchmark ICLR submission"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "datasets==3.5.1",
+    "google-genai==1.13.0",
+    "huggingface-hub>=0.16.4",
+    "numpy==2.2.5",
+    "openai==1.73.0",
+    "pyyaml>=6.0",
+    "regex==2024.11.6",
+    "requests==2.32.2",
+    "sympy==1.13.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

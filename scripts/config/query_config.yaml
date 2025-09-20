@@ -1,0 +1,7 @@
+huggingface_dataset_name: "AnonBenchmark322/benchmark_data"
+num_queries: 1
+models:
+  GPT-4o: false
+  Gemini 2.0 Flash: true
+  Gemini 2.5 Flash Thinking: false
+  Gemini 2.5 Pro: false

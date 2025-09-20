@@ -21,10 +21,14 @@ def convert_csv_to_yaml_fmt(csv_name, config):
     # Select required columns
     problems = df_filtered[config['columns']].rename(columns=str.lower)
     key_list = config['columns']
+    key_list = [key.lower() for key in key_list]
     # Convert to YAML
     yaml_data = []
     for _, row in problems.iterrows():
-        problem = {key.lower(): row[key.lower()] for key in key_list}
+        for key in key_list:
+            if pd.isna(row[key]):
+                row[key] = ''
+        problem = {key: row[key] for key in key_list}
         problem['prompt'] = problem['prompt'] + ' ' + config['global_prompt']
         yaml_data.append(problem)
     return yaml_data
@@ -54,7 +58,7 @@ def write_yaml_file(yaml_data, csv_name, config):
         yaml.dump(ordered_doc, f, sort_keys=False, default_flow_style=False, indent=2)
 
 def read_csv_config():
-    with open('scripts/csv_config.yaml', 'r') as f:
+    with open('scripts/config/csv_config.yaml', 'r') as f:
         return yaml.load(f, Loader=yaml.FullLoader)
 
 if __name__ == "__main__":

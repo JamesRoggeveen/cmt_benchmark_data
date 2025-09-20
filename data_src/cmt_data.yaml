@@ -18,7 +18,7 @@ problems:
     final solution must be placed in a $\boxed{}$ LaTeX environment. Use only the
     variables and constants given in the problem; do not define additional constants.'
   parameters: $U_0;U_1$
-  functions: .nan
+  functions: ''
   solution: $\boxed{U_1/2}$
   topic/method: HF
 - prompt: We are interested in solving the self-consistency equation for Hartree-Fock
@@ -59,8 +59,8 @@ problems:
     all six in a single $\boxed{}$ LaTeX environment, separated by semicolons. Your
     final solution must be placed in a $\boxed{}$ LaTeX environment. Use only the
     variables and constants given in the problem; do not define additional constants.'
-  parameters: .nan
-  functions: .nan
+  parameters: ''
+  functions: ''
   solution: $\boxed{(2.09, 1.21); (0., 2.41); (-2.09, 1.21); (-2.09, -1.21); (0.,
     -2.41); (2.09, -1.21)}$
   topic/method: HF
@@ -93,7 +93,7 @@ problems:
     \ solution must be placed in a $\\boxed{}$ LaTeX environment. Use only the variables\
     \ and constants given in the problem; do not define additional constants."
   parameters: $N_q$
-  functions: .nan
+  functions: ''
   solution: $\boxed{16N_q^2}$
   topic/method: HF
 - prompt: "Given the following single-particle Hamiltonian in the second quantization\
@@ -148,7 +148,7 @@ problems:
     \ must be placed in a $\\boxed{}$ LaTeX environment. Use only the variables and\
     \ constants given in the problem; do not define additional constants."
   parameters: $a;b;c;d;e;f;g;h$
-  functions: .nan
+  functions: ''
   solution: $\boxed{c}$
   topic/method: HF
 - prompt: "Consider a hamiltonian of $N$ fermions $H = -t \\sum_{i,\\sigma} \\left(\
@@ -165,7 +165,7 @@ problems:
     \ Use only the variables and constants given in the problem; do not define additional\
     \ constants."
   parameters: $a;b;c;d;e$
-  functions: .nan
+  functions: ''
   solution: $\boxed{a; b; d}$
   topic/method: ED
 - prompt: 'Given a wavefunction $\psi(x)$ ansatz on 2d heisenberg J1-J2 model which
@@ -178,7 +178,7 @@ problems:
     a $\boxed{}$ LaTeX environment. Use only the variables and constants given in
     the problem; do not define additional constants.'
   parameters: $a;b;c;d;e$
-  functions: .nan
+  functions: ''
   solution: $\boxed{a; b; d}$
   topic/method: VMC
 - prompt: "Consider a two dimensional gappless quantum system with system size $L\
@@ -196,7 +196,7 @@ problems:
     boxed{}$ LaTeX environment. Use only the variables and constants given in the\
     \ problem; do not define additional constants."
   parameters: $a;b;c;d;e$
-  functions: .nan
+  functions: ''
   solution: $\boxed{d}$
   topic/method: DMRG
 - prompt: "Consider the transverse field ising model with antiferromagnetic interactions\
@@ -224,7 +224,7 @@ problems:
     \ LaTeX environment. Use only the variables and constants given in the problem;\
     \ do not define additional constants."
   parameters: $a;b;c;d;e;f;g;h;i$
-  functions: .nan
+  functions: ''
   solution: $\boxed{b;f;i}$
   topic/method: QMC
 - prompt: "Consider the following Hamiltonian $\\mathcal{H}= \\sum\\limits_{\\langle\
@@ -245,7 +245,7 @@ problems:
     \ Use only the variables and constants given in the problem; do not define additional\
     \ constants."
   parameters: $a;b;c;d$
-  functions: .nan
+  functions: ''
   solution: $\boxed{b;e}$
   topic/method: QMC
 - prompt: "Consider the transverse field Ising model $d=1$ lattice and on the 4-8\
@@ -268,7 +268,7 @@ problems:
     \ LaTeX environment. Use only the variables and constants given in the problem;\
     \ do not define additional constants."
   parameters: $a;b;c;d;e;f;g;h$
-  functions: .nan
+  functions: ''
   solution: $\boxed{g}$
   topic/method: QMC
 - prompt: Consider a peculiar example of Kitaev alternating chain, whose Hamiltonian
@@ -281,7 +281,7 @@ problems:
     Use only the variables and constants given in the problem; do not define additional
     constants.
   parameters: $N$
-  functions: .nan
+  functions: ''
   solution: $\boxed{2^{N/2-1}; c=1/2}$
   topic/method: DMRG
 - prompt: Suppose there is a Hubbard chain with model Hamiltonian $H=-\sum_{i=1,\sigma}^{i=N}
@@ -295,7 +295,7 @@ problems:
     must be placed in a $\boxed{}$ LaTeX environment. Use only the variables and constants
     given in the problem; do not define additional constants.
   parameters: $U,t_ij,N$
-  functions: .nan
+  functions: ''
   solution: $\boxed{Yes, when the pattern of t_ij breaks translational symmetry and
     opens a finite spin gap at half filling}$
   topic/method: DMRG
@@ -322,7 +322,7 @@ problems:
     \ final solution must be placed in a $\\boxed{}$ LaTeX environment. Use only the\
     \ variables and constants given in the problem; do not define additional constants."
   parameters: $a;b;c;d$
-  functions: .nan
+  functions: ''
   solution: $\boxed{c;e}$
   topic/method: DMRG
 - prompt: "Suppose you model a wavefunction of a quantum system with a recurrent neural\
@@ -350,7 +350,7 @@ problems:
     boxed{}$ LaTeX environment. Use only the variables and constants given in the\
     \ problem; do not define additional constants."
   parameters: $a;b;c;d;e$
-  functions: .nan
+  functions: ''
   solution: $\boxed{d;e}$
   topic/method: VMC
 - prompt: Consider spin-polarized electrons in a lowest Landau level of a finite system
@@ -365,7 +365,7 @@ problems:
     Use only the variables and constants given in the problem; do not define additional
     constants.
   parameters: $a; b; c; d; e$
-  functions: .nan
+  functions: ''
   solution: $\boxed{b; e}$
   topic/method: ED
 - prompt: "Consider the following Hamiltonian \n$\\hat{H}=t \\sum_{\\sigma=\\uparrow,\
@@ -395,7 +395,7 @@ problems:
     boxed{}$ LaTeX environment. Use only the variables and constants given in the\
     \ problem; do not define additional constants."
   parameters: $a;b;c;d;e$
-  functions: .nan
+  functions: ''
   solution: $\boxed{a; d}$
   topic/method: ED
 - prompt: Consider a two-dimensional lattice system with 3x3 unit cells, where each
@@ -408,8 +408,8 @@ problems:
     answer in a $\boxed{}$ LaTeX environment. Your final solution must be placed in
     a $\boxed{}$ LaTeX environment. Use only the variables and constants given in
     the problem; do not define additional constants.
-  parameters: .nan
-  functions: .nan
+  parameters: ''
+  functions: ''
   solution: $\boxed{7}$
   topic/method: ED
 - prompt: 'Consider the Fermi-Hubbard Hamiltonian with nearest-neighbor hopping $t$
@@ -426,7 +426,7 @@ problems:
     Use only the variables and constants given in the problem; do not define additional
     constants.'
   parameters: $t;U;\mu;m_{i,\uparrow};m_{i,\downarrow};(p^{\dagger}_{i,\sigma},NC);(p_{j,\sigma},NC);(p^{\dagger}_{j,\sigma},NC);(p_{i,\sigma},NC)$
-  functions: .nan
+  functions: ''
   solution: $\boxed{-t (p^{\dagger}_{i,\sigma}p_{j,\sigma}+p^{\dagger}_{j,\sigma}p_{i,\sigma})-U
     (m_{i,\uparrow}-\frac{1}{2})(m_{i,\downarrow}-\frac{1}{2})-\mu (m_{i,\uparrow}-m_{i,\downarrow})
     -\mu}$
@@ -445,7 +445,7 @@ problems:
     boxed{}$ LaTeX environment. Use only the variables and constants given in the\
     \ problem; do not define additional constants."
   parameters: $a;b;c;d$
-  functions: .nan
+  functions: ''
   solution: $\boxed{a;b}$
   topic/method: QMC
 - prompt: Consider a noninteracting time-reversal symmetric system of spin-1/2 fermions
@@ -457,7 +457,7 @@ problems:
     must be placed in a $\boxed{}$ LaTeX environment. Use only the variables and constants
     given in the problem; do not define additional constants.
   parameters: $a;b;c;d;e;f;g;h$
-  functions: .nan
+  functions: ''
   solution: $\boxed{a}$
   topic/method: ED
 - prompt: 'The following systems have degenerate ground states in the thermodynamic
@@ -481,7 +481,7 @@ problems:
     be placed in a $\boxed{}$ LaTeX environment. Use only the variables and constants
     given in the problem; do not define additional constants.'
   parameters: $a;b;c;d;e$
-  functions: .nan
+  functions: ''
   solution: $\boxed{a; c}$
   topic/method: ED
 - prompt: "Starting from the iPEPS with a tensor A which approximates the ground state\
@@ -497,7 +497,7 @@ problems:
     \ $\\boxed{}$ LaTeX environment. Use only the variables and constants given in\
     \ the problem; do not define additional constants."
   parameters: $N_k;B;B*$
-  functions: .nan
+  functions: ''
   solution: $\boxed{N_k B}$
   topic/method: PEPS
 - prompt: "Suppose that we want to perform exact diagonalization of a Hamiltonian\
@@ -507,8 +507,8 @@ problems:
     \ environment.\n Your final solution must be placed in a $\\boxed{}$ LaTeX environment.\
     \ Use only the variables and constants given in the problem; do not define additional\
     \ constants."
-  parameters: .nan
-  functions: .nan
+  parameters: ''
+  functions: ''
   solution: $\boxed{4}$
   topic/method: ED
 - prompt: "Consider the following Hamiltonian: $H=-J\\sum_{j}c_{2j,\\sigma}^{\\dagger}c_{2j+1,\\\
@@ -521,8 +521,8 @@ problems:
     \n Your final solution must be placed in a $\\boxed{}$ LaTeX environment. Use\
     \ only the variables and constants given in the problem; do not define additional\
     \ constants."
-  parameters: .nan
-  functions: .nan
+  parameters: ''
+  functions: ''
   solution: $\boxed{(0.200,0.003,0.017,0.027,0.038)}$
   topic/method: Other
 - prompt: 'Consider the following two-band Hamiltonian: $H=\sum_{k,\sigma}\varepsilon_{c,k}c_{k\sigma}^{\dagger}c_{k\sigma}+\sum_{k,\sigma}\varepsilon_{d,k}d_{k\sigma}^{\dagger}d_{k\sigma}+\sum_{r}\left[U\left(n_{c,r}^{2}+n_{d,r}^{2}\right)+Vn_{c,r}n_{d,r}\right]+\left[\sum_{k,\sigma}ig_{1}c_{k\sigma}^{\dagger}d_{k\sigma}+\sum_{k}ig_{2}\left(c_{k\uparrow}^{\dagger}d_{k\downarrow}+c_{k\downarrow}^{\dagger}d_{k\uparrow}\right)+h.c.\right]$,
@@ -545,7 +545,7 @@ problems:
     be placed in a $\boxed{}$ LaTeX environment. Use only the variables and constants
     given in the problem; do not define additional constants.'
   parameters: $a;b;c;d;e$
-  functions: .nan
+  functions: ''
   solution: $\boxed{c; d; e}$
   topic/method: QMC
 - prompt: "Consider a tight binding model on a square lattice, whose sites are labeled\
@@ -565,7 +565,7 @@ problems:
     \ in a $\\boxed{}$ LaTeX environment. Use only the variables and constants given\
     \ in the problem; do not define additional constants."
   parameters: $a;b;c;d;e$
-  functions: .nan
+  functions: ''
   solution: $\boxed{b; c; e}$
   topic/method: ED
 - prompt: "Consider the following expansion for an extensive property of a lattice\
@@ -584,7 +584,7 @@ problems:
     \ LaTeX environment. Use only the variables and constants given in the problem;\
     \ do not define additional constants."
   parameters: $O_n;E_n;E_{n-1}$
-  functions: .nan
+  functions: ''
   solution: $\boxed{O_n=E_n-E_{n-1}}$
   topic/method: Other
 - prompt: 'We consider a model of electrons on a square lattice with nearest-neighbor
@@ -627,7 +627,7 @@ problems:
     LaTeX environment. Use only the variables and constants given in the problem;
     do not define additional constants.'
   parameters: $a;b;c;d;e;f;g$
-  functions: .nan
+  functions: ''
   solution: $\boxed{d; g}$
   topic/method: QMC
 - prompt: "Consider a single-band fermionic spinful Hubbard model on a two-leg ladder\
@@ -644,7 +644,7 @@ problems:
     \ in a $\\boxed{}$ LaTeX environment. Use only the variables and constants given\
     \ in the problem; do not define additional constants."
   parameters: $a;b; c; d$
-  functions: .nan
+  functions: ''
   solution: $\boxed{a}$
   topic/method: DMRG
 - prompt: 'Consider a classical Ising model with the following Hamiltonian: $H= -
@@ -676,7 +676,7 @@ problems:
     Use only the variables and constants given in the problem; do not define additional
     constants.'
   parameters: $a;b;c;d;e$
-  functions: .nan
+  functions: ''
   solution: $\boxed{b;c}$
   topic/method: Other
 - prompt: "Consider a triangular lattice model for hardcore bosons with charge $e$\
@@ -697,7 +697,7 @@ problems:
     \ environment. Use only the variables and constants given in the problem; do not\
     \ define additional constants."
   parameters: $a;b;c;d$
-  functions: .nan
+  functions: ''
   solution: $\boxed{a;b;c}$
   topic/method: Other
 - prompt: "Consider a quantum Ising model at zero temperature with the following nearest-neighbor\
@@ -714,7 +714,7 @@ problems:
     \ be placed in a $\\boxed{}$ LaTeX environment. Use only the variables and constants\
     \ given in the problem; do not define additional constants."
   parameters: $a;b;c;d$
-  functions: .nan
+  functions: ''
   solution: $\boxed{a;c}$
   topic/method: Other
 - prompt: 'For the fermion Hamiltonian
@@ -741,7 +741,7 @@ problems:
     Use only the variables and constants given in the problem; do not define additional
     constants.'
   parameters: $q;\mu;t;B$
-  functions: .nan
+  functions: ''
   solution: $\boxed{\mu-tq^2B/4}$
   topic/method: Other
 - prompt: "Consider a two-dimensional model with attractive on-site interactions with\
@@ -793,7 +793,7 @@ problems:
     be placed in a $\boxed{}$ LaTeX environment. Use only the variables and constants
     given in the problem; do not define additional constants.'
   parameters: $a;b;c;d$
-  functions: .nan
+  functions: ''
   solution: $\boxed{a;c}$
   topic/method: Other
 - prompt: "Consider a $S=1$ Hamiltonian  on a honeycomb lattice, $\\mathbf{H}=-\\\
@@ -819,7 +819,7 @@ problems:
     \ environment. Use only the variables and constants given in the problem; do not\
     \ define additional constants."
   parameters: $a;b;c;d;e;f$
-  functions: .nan
+  functions: ''
   solution: $\boxed{a;b}$
   topic/method: Other
 - prompt: 'Suppose that we are considering a classical spin model in two dimension.
@@ -838,7 +838,7 @@ problems:
     in a $\boxed{}$ LaTeX environment. Use only the variables and constants given
     in the problem; do not define additional constants.'
   parameters: $a;b;c;d;e;f;g;h$
-  functions: .nan
+  functions: ''
   solution: $\boxed{g}$
   topic/method: PEPS
 - prompt: "Consider a classical O(3) spin Hamiltonian in two spatial dimensions on\
@@ -849,8 +849,8 @@ problems:
     \ and $n_{AF}$ in a $\\boxed{}$ latex environment separated by a ;. Your final\
     \ solution must be placed in a $\\boxed{}$ LaTeX environment. Use only the variables\
     \ and constants given in the problem; do not define additional constants."
-  parameters: .nan
-  functions: .nan
+  parameters: ''
+  functions: ''
   solution: $\boxed{1; 3}$
   topic/method: Other
 - prompt: "For the fermion Hamiltonian\n\\[\nH = \\sum_{i=1}^n\\left[\\left(-tc_{i}^\\\
@@ -874,7 +874,7 @@ problems:
     \ LaTeX environment. Use only the variables and constants given in the problem;\
     \ do not define additional constants."
   parameters: $a;b;c;d;e;f;g;h;i;j$
-  functions: .nan
+  functions: ''
   solution: $\boxed{a;d;i}$
   topic/method: Other
 - prompt: "Consider a half filled fermionic system with Hamiltonian\n\\[\nH = -t_1\\\
@@ -886,7 +886,7 @@ problems:
     \ must be placed in a $\\boxed{}$ LaTeX environment. Use only the variables and\
     \ constants given in the problem; do not define additional constants."
   parameters: $t_1;t_2;n$
-  functions: .nan
+  functions: ''
   solution: $\boxed{2t_1(t_1/t_2)^n}$
   topic/method: Other
 - prompt: "Consider the fermionic Hamiltonian\n\\[\nH = -t_1\\sum_{i=1}^{N_u} (c^\\\
@@ -903,7 +903,7 @@ problems:
     \ Your final solution must be placed in a $\\boxed{}$ LaTeX environment. Use only\
     \ the variables and constants given in the problem; do not define additional constants."
   parameters: $a;b;c;d;e;f$
-  functions: .nan
+  functions: ''
   solution: $\boxed{a;d;e}$
   topic/method: Other
 - prompt: "Consider the AC spin conductivity of the Fermi-Hubbard model\n$\\sigma({\\\
@@ -915,7 +915,7 @@ problems:
     \ must be placed in a $\\boxed{}$ LaTeX environment. Use only the variables and\
     \ constants given in the problem; do not define additional constants."
   parameters: $\omega;\beta;\hbar;V$
-  functions: .nan
+  functions: ''
   solution: $\boxed{\frac{2\tanh(\frac{\beta \omega}{2})}{\omega}}$
   topic/method: Other
 - prompt: 'Consider the following two-dimensional chiral active Ornstein-Uhlenbeck
@@ -931,7 +931,7 @@ problems:
     be placed in a $\boxed{}$ LaTeX environment. Use only the variables and constants
     given in the problem; do not define additional constants.'
   parameters: $D_o;\gamma;v_0;m;\rho;\tau;\Omega$
-  functions: .nan
+  functions: ''
   solution: $\boxed{D_o = \frac{\tau^2 \rho v_0^2 \Omega (2+\rho)}{[(1+\rho)^2 + (\Omega
     \tau)^2][1+(\Omega \tau)^2]}}$
   topic/method: SM
@@ -956,7 +956,7 @@ problems:
     Use only the variables and constants given in the problem; do not define additional
     constants.'
   parameters: $a;b;c;d$
-  functions: .nan
+  functions: ''
   solution: '$\boxed{c}$ '
   topic/method: SM
 - prompt: "Consider two coupled systems, made respectively by $N$ soft spins $x_i$\
@@ -976,7 +976,7 @@ problems:
     \ Your final solution must be placed in a $\\boxed{}$ LaTeX environment. Use only\
     \ the variables and constants given in the problem; do not define additional constants."
   parameters: $K_c;\gamma;\sigma$
-  functions: .nan
+  functions: ''
   solution: $\boxed{K_c = \sigma [1 - \frac{1}{\sqrt{3}}]\sqrt{\gamma + \frac{2\sigma^2}{3}(1
     + \sqrt{1 + \frac{3\gamma}{\sigma^2}})}}$
   topic/method: SM
@@ -992,7 +992,7 @@ problems:
     \ environment. Use only the variables and constants given in the problem; do not\
     \ define additional constants."
   parameters: '$a;b;c;d;e;f$ '
-  functions: .nan
+  functions: ''
   solution: $\boxed{d}$
   topic/method: SM
 - prompt: Consider the overdamped Langevin dynamics $\dot x = -x^3 + x^2 \eta(t)$,
@@ -1004,7 +1004,7 @@ problems:
     final solution must be placed in a $\boxed{}$ LaTeX environment. Use only the
     variables and constants given in the problem; do not define additional constants.
   parameters: $p;x$
-  functions: .nan
+  functions: ''
   solution: $\boxed{\frac{(p + x^3)^2}{4 x^4} + 4 x^2}$
   topic/method: SM
 - prompt: "Consider a two-dimensional tight-binding model on the square lattice with\
@@ -1018,8 +1018,8 @@ problems:
     \ $\\boxed{}$ LaTeX environment. For example: $\\boxed{1,2,3}$. Your final solution\
     \ must be placed in a $\\boxed{}$ LaTeX environment. Use only the variables and\
     \ constants given in the problem; do not define additional constants."
-  parameters: .nan
-  functions: .nan
+  parameters: ''
+  functions: ''
   solution: $\boxed{2,2,1}$
   topic/method: Other
 - prompt: "We want to build infinite two-dimensional tensor network wavefunction for\
@@ -1047,8 +1047,8 @@ problems:
     \ your answer as a number in $\\boxed{}$ environment.\n Your final solution must\
     \ be placed in a $\\boxed{}$ LaTeX environment. Use only the variables and constants\
     \ given in the problem; do not define additional constants."
-  parameters: .nan
-  functions: .nan
+  parameters: ''
+  functions: ''
   solution: $\boxed{6}$
   topic/method: PEPS
 - prompt: "We are interested in counting fully packed dimer configurations on honeycomb\
@@ -1074,7 +1074,7 @@ problems:
     \ environment, rounded to 2 decimal places Your final solution must be placed\
     \ in a $\\boxed{}$ LaTeX environment. Use only the variables and constants given\
     \ in the problem; do not define additional constants."
-  parameters: .nan
-  functions: .nan
+  parameters: ''
+  functions: ''
   solution: $\boxed{0.33, 0.27}$
   topic/method: SM
