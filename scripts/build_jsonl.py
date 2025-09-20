@@ -43,10 +43,8 @@ def yaml_dir_to_jsonl(src_dir: str, dst_dir: str):
             # Determine records and shared type
             if isinstance(doc, dict) and 'problems' in doc:
                 records     = doc['problems']
-                shared_type = doc.get('type')
             elif isinstance(doc, list):
                 records     = doc
-                shared_type = None
             else:
                 print(f"Skipping {src_path}: no 'problems' or top-level list found.")
                 continue
@@ -54,8 +52,6 @@ def yaml_dir_to_jsonl(src_dir: str, dst_dir: str):
             # Write out JSONL
             with open(dst_path, 'w') as out:
                 for idx, rec in enumerate(records):
-                    if shared_type is not None:
-                        rec.setdefault('type', shared_type)
                     rec['index'] = idx
                     rec = flatten(rec)
                     out.write(json.dumps(rec, ensure_ascii=False) + '\n')

@@ -16,5 +16,5 @@ def load_config():
 if __name__ == "__main__":
     config = load_config()
     print(config)
-    dataset = load_dataset(config['huggingface_dataset_name'])
+    dataset = load_dataset(config['huggingface_dataset_name'], split="train")
     print(dataset)
