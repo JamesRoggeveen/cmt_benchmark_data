@@ -60,7 +60,9 @@ def dataset_distribution_chart(config):
         autopct='%1.1f%%',             
         startangle=100,               
         colors=colors,                 
-        wedgeprops={'edgecolor': 'white', 'linewidth': 2}
+        wedgeprops={'edgecolor': 'white', 'linewidth': 2},
+        labeldistance=1.1,
+        pctdistance=0.8
     )
 
     plt.title(f'Problem type distribution ({len(df)} problems)', pad=40)
