@@ -186,12 +186,36 @@ def parser_success_rate_per_prompt_chart(config, eval_results):
     plt.figure(figsize=(10, 6))
     plt.bar([prompt_idx for prompt_idx in success_rate_per_prompt.keys()], [success_rate_per_prompt[prompt_idx] for prompt_idx in success_rate_per_prompt.keys()], label='Success')
     plt.ylabel('Success Rate')
-    plt.title('Success Rate per Prompt by Model')
+    plt.title('Parser Success Rate per Prompt by Model')
     plt.xticks(rotation=45, ha='right')
     plt.tight_layout()
     plt.savefig(config['eval_directory'] / 'parser_success_rate_per_prompt.png')
     plt.close()
 
+def eval_success_rate_per_prompt_chart(config, eval_results):
+    success_per_prompt = {}
+    queries_per_prompt = {}
+    success_results = eval_results["success_results"]
+    model_list = success_results.keys()
+    for model_name in model_list:
+        for result in success_results[model_name]:
+            prompt_idx = result["prompt_idx"]
+            queries_per_prompt[prompt_idx] = queries_per_prompt.get(prompt_idx, 0) + 1
+            success_per_prompt[prompt_idx] = success_per_prompt.get(prompt_idx, 0) + int(result["is_equivalent"])
+    success_rate_per_prompt = {}
+    for prompt_idx in success_per_prompt.keys():
+        if queries_per_prompt[prompt_idx] == 0:
+            success_rate_per_prompt[prompt_idx] = 0
+        else:
+            success_rate_per_prompt[prompt_idx] = success_per_prompt[prompt_idx] / queries_per_prompt[prompt_idx] * 100
+    plt.figure(figsize=(10, 6))
+    plt.bar([prompt_idx for prompt_idx in success_rate_per_prompt.keys()], [success_rate_per_prompt[prompt_idx] for prompt_idx in success_rate_per_prompt.keys()], label='Success')
+    plt.ylabel('Success Rate')
+    plt.title('Success Rate per Prompt by Model')
+    plt.xticks(rotation=45, ha='right')
+    plt.tight_layout()
+    plt.savefig(config['eval_directory'] / 'eval_success_rate_per_prompt.png')
+    plt.close()
 
 if __name__ == "__main__":
     config = load_config()
@@ -201,3 +225,4 @@ if __name__ == "__main__":
     parser_success_rate_per_prompt_chart(config, eval_results)
     pass_at_1_rate_chart(config, eval_results)
     pass_rate_per_problem_type_chart(config, eval_results)
+    eval_success_rate_per_prompt_chart(config, eval_results)
