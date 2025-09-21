@@ -1,0 +1,23 @@
+models:
+  GPT-4o: latest
+  GPT-4.1: latest
+  GPT-5: latest
+  GPT-5-mini: latest
+  GPT-5-nano: latest
+  GPT-o3: latest
+  GPT-o4-mini: latest
+  Gemini 2.0 Flash: latest
+  Gemini 2.5 Flash: latest
+  Gemini 2.5 Pro: latest
+  Claude 3.7 Sonnet: latest
+  Claude 4.1 Sonnet: latest
+  Claude 4.0 Sonnet: latest
+  Claude 4.1 Opus: latest
+  Claude 4.0 Opus: latest
+  DeepSeek v3: latest
+  DeepSeek R1: latest
+  LLaMA Maverick: latest
+
+query_results_dir: "query_results"
+eval_results_dir: "eval_results"
+num_queries: 1

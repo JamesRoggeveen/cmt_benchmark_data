@@ -8,3 +8,5 @@ raw_csv/*
 .venv/*
 uv.lock
 **.egg-info/*
+.python-version
+.DS_Store

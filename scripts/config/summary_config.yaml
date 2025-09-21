@@ -1,0 +1,5 @@
+eval_results_dir: "eval_results"
+eval_directory: latest
+
+huggingface_dataset_name: "AnonBenchmark322/benchmark_data"
+

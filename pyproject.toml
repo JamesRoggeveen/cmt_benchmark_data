@@ -10,6 +10,7 @@ dependencies = [
     "dotenv>=0.9.9",
     "google-genai==1.13.0",
     "huggingface-hub>=0.16.4",
+    "matplotlib>=3.10.6",
     "numpy==2.2.5",
     "openai==1.73.0",
     "pyyaml>=6.0",
