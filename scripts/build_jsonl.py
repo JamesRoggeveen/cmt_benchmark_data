@@ -51,8 +51,7 @@ def yaml_dir_to_jsonl(src_dir: str, dst_dir: str):
 
             # Write out JSONL
             with open(dst_path, 'w') as out:
-                for idx, rec in enumerate(records):
-                    rec['index'] = idx
+                for _, rec in enumerate(records):
                     rec = flatten(rec)
                     out.write(json.dumps(rec, ensure_ascii=False) + '\n')
 

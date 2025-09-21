@@ -1,7 +1,6 @@
 meta:
-  name: Cmt Benchmark - Demo(2)
-  date: '2025-09-20'
-type: cmt benchmark - demo(2)
+  name: Cmt Bench Data
+  date: '2025-09-21'
 problems:
 - prompt: 'Consider a spinful electron system in a two-dimensional triangular lattice.
 
@@ -21,6 +20,7 @@ problems:
   functions: ''
   solution: $\boxed{U_1/2}$
   type: HF
+  index: 0
 - prompt: We are interested in solving the self-consistency equation for Hartree-Fock
     mean-field theory on a 2D triangular lattice associated with the following mean-field
     Hamiltonian $H = H_{\text{Kinetic}} + H_{\text{Hartree}} +H_{\text{Fock}}$, with
@@ -42,6 +42,7 @@ problems:
   solution: $\boxed{\langle c_\uparrow^\dagger(k) c_\uparrow(k) \rangle; \langle c_\downarrow^\dagger(k)
     c_\downarrow(k) \rangle}$
   type: HF
+  index: 1
 - prompt: 'Consider a two-dimensional triangular lattice with lattice constant $a
     = 1$.
 
@@ -64,6 +65,7 @@ problems:
   solution: $\boxed{(2.09, 1.21); (0., 2.41); (-2.09, 1.21); (-2.09, -1.21); (0.,
     -2.41); (2.09, -1.21)}$
   type: HF
+  index: 2
 - prompt: "We are interested in solving the self-consistency equation for Hartree-Fock\
     \ mean-field theory on a 2D triangular lattice associated with the following continuum\
     \ mean-field Hamiltonian using plane-wave basis covering $N_q$ Brillouin zones.\
@@ -96,6 +98,7 @@ problems:
   functions: ''
   solution: $\boxed{16N_q^2}$
   type: HF
+  index: 3
 - prompt: "Given the following single-particle Hamiltonian in the second quantization\
     \ formalism as\n\\begin{equation}    \n\\hat{\\mathcal{H}}_0=\\sum_{\\tau={\\\
     pm}} \\int d^2 \\bm{r} \\Psi_{\\tau}^\\dagger(\\bm{r}) H_{\\tau} \\Psi_{\\tau}(\\\
@@ -151,6 +154,7 @@ problems:
   functions: ''
   solution: $\boxed{c}$
   type: HF
+  index: 4
 - prompt: "Consider a hamiltonian of $N$ fermions $H = -t \\sum_{i,\\sigma} \\left(\
     \ c^{\\dagger}_{i\\sigma} c_{i+1\\,\\sigma} + \\text{H.c.} \\right) \n+ \\sum_i\
     \ U\\, n_{i\\uparrow} n_{i\\downarrow} \n+ \\sum_i h_i S^z_i$, which of the followings\
@@ -168,6 +172,7 @@ problems:
   functions: ''
   solution: $\boxed{a; b; d}$
   type: ED
+  index: 5
 - prompt: 'Given a wavefunction $\psi(x)$ ansatz on 2d heisenberg J1-J2 model which
     breaks rotation symmetry, please select among the following ways that construct
     a wavefunction ansatz that restores the C4 rotation symmetry with the rotation
@@ -181,6 +186,7 @@ problems:
   functions: ''
   solution: $\boxed{a; b; d}$
   type: VMC
+  index: 6
 - prompt: "Consider a two dimensional gappless quantum system with system size $L\
     \ x L$, if one wants to solve the ground state of such system using DMRG and PEPS,\
     \ how should the bond dimension scale with the system size respectively? The answer\
@@ -199,6 +205,7 @@ problems:
   functions: ''
   solution: $\boxed{d}$
   type: DMRG
+  index: 7
 - prompt: "Consider the transverse field ising model with antiferromagnetic interactions\
     \ on the triangular lattice. Consider also the same model on the 4-8 lattice with\
     \ both antiferromagnetic bonds as well as strong ferromagnetic bonds arrange such\
@@ -227,6 +234,7 @@ problems:
   functions: ''
   solution: $\boxed{b;f;i}$
   type: QMC
+  index: 8
 - prompt: "Consider the following Hamiltonian $\\mathcal{H}= \\sum\\limits_{\\langle\
     \  \\boldsymbol{r}  \\boldsymbol{r}' \\rangle} \\Big[ {J}_{z} S^{z}_{\\boldsymbol{r}}\
     \ S^{z}_{\\boldsymbol{r}'} + { \\frac{J_{\\pm\\pm}}{2}}( S^{+}_{\\boldsymbol{r}}\
@@ -248,6 +256,7 @@ problems:
   functions: ''
   solution: $\boxed{b;e}$
   type: QMC
+  index: 9
 - prompt: "Consider the transverse field Ising model $d=1$ lattice and on the 4-8\
     \ lattice with both antiferromagnetic bonds as well as strong ferromagnetic bonds\
     \ arranged such that every plaquette has a $\\pi$ flux.\n\nFor a large number\
@@ -271,6 +280,7 @@ problems:
   functions: ''
   solution: $\boxed{g}$
   type: QMC
+  index: 10
 - prompt: Consider a peculiar example of Kitaev alternating chain, whose Hamiltonian
     is given by $H=-\sum_{i}^{N/2}(\sigma^x_{2i-1}\sigma^x_{2i}+\sigma^y_{2i}\sigma^y_{2i+1})$,
     where $\sigma^x_i$ and $\sigma^y_i$ are Pauli matrices on site $i$, and $N$ is
@@ -284,6 +294,7 @@ problems:
   functions: ''
   solution: $\boxed{2^{N/2-1}; c=1/2}$
   type: DMRG
+  index: 11
 - prompt: Suppose there is a Hubbard chain with model Hamiltonian $H=-\sum_{i=1,\sigma}^{i=N}
     t_{i,i+1}(c_{i,\sigma}^+ c_{i+1,\sigma}+h.c.)+U\sum_i n_{i\uparrow}n_{i\downarrow}$,
     where $i$ is site index, $\sigma$ is spin of electron, $U>0$ is on-site Coulomb
@@ -299,6 +310,7 @@ problems:
   solution: $\boxed{Yes, when the pattern of t_ij breaks translational symmetry and
     opens a finite spin gap at half filling}$
   type: DMRG
+  index: 12
 - prompt: "Consider an antiferromagnetic Heisenberg model with nearest-neighbor coupling\
     \ $J$ on a finite width $W$ and length $L$ cylinder on the square lattice with\
     \ model Hamiltonian $H=J\\sum_{\\langle i,j\\rangle } \\vec{S}_i.\\vec{S}_j$,\
@@ -325,6 +337,7 @@ problems:
   functions: ''
   solution: $\boxed{c;e}$
   type: DMRG
+  index: 13
 - prompt: "Suppose you model a wavefunction of a quantum system with a recurrent neural\
     \ network (RNN) out of which unbiased samples can be obtained. Within the framework\
     \ of variational Monte Carlo, it is possible to estimate both the variational\
@@ -353,6 +366,7 @@ problems:
   functions: ''
   solution: $\boxed{d;e}$
   type: VMC
+  index: 14
 - prompt: Consider spin-polarized electrons in a lowest Landau level of a finite system
     with square aspect ratio and periodic boundary conditions that is penetrated by
     $4N$ quanta of magnetic flux at quarter filling, that interact via the Coulomb
@@ -368,6 +382,7 @@ problems:
   functions: ''
   solution: $\boxed{b; e}$
   type: ED
+  index: 15
 - prompt: "Consider the following Hamiltonian \n$\\hat{H}=t \\sum_{\\sigma=\\uparrow,\
     \ \\downarrow} (\n\\hat{c}^\\dagger_{1,\\sigma}\\hat{c}_{2,\\sigma}+\n\\hat{c}^\\\
     dagger_{2,\\sigma}\\hat{c}_{3,\\sigma}+\n\\hat{c}^\\dagger_{3,\\sigma}\\hat{c}_{4,\\\
@@ -398,6 +413,7 @@ problems:
   functions: ''
   solution: $\boxed{a; d}$
   type: ED
+  index: 16
 - prompt: Consider a two-dimensional lattice system with 3x3 unit cells, where each
     unit cell consists of one site that can be empty, occupied by a spin-1/2 electron
     with either spin, or doubly occupied with two electrons of opposite spin. The
@@ -412,6 +428,7 @@ problems:
   functions: ''
   solution: $\boxed{7}$
   type: ED
+  index: 17
 - prompt: 'Consider the Fermi-Hubbard Hamiltonian with nearest-neighbor hopping $t$
     in its particle-hole symmetric form on a bipartite lattice with a chemical potential
     term. Express the Hamiltonian after the following transformation: $c^{\dagger}_{i,\uparrow}=p^{\dagger}_{i,\uparrow}$
@@ -431,6 +448,7 @@ problems:
     (m_{i,\uparrow}-\frac{1}{2})(m_{i,\downarrow}-\frac{1}{2})-\mu (m_{i,\uparrow}-m_{i,\downarrow})
     -\mu}$
   type: Other
+  index: 18
 - prompt: "Consider the Hamiltonian for  spinless fermions on a 2D lattice at half-filling\n\
     $H=-t \\sum_{\\langle i j\\rangle}\\left[c_i^{\\dagger} c_j+H . c .\\right] +\
     \ V \\sum_{\\langle i j\\rangle}\\left(n_i-\\frac{1}{2}\\right)\\left(n_j-\\frac{1}{2}\\\
@@ -448,6 +466,7 @@ problems:
   functions: ''
   solution: $\boxed{a;b}$
   type: QMC
+  index: 19
 - prompt: Consider a noninteracting time-reversal symmetric system of spin-1/2 fermions
     with a unique gapped ground state that has also four-fold rotation symmetry. Which
     rotation eigenvalues could the ground state have? (a) $+1$, (b) $e^{i \pi/4}$,
@@ -460,6 +479,7 @@ problems:
   functions: ''
   solution: $\boxed{a}$
   type: ED
+  index: 20
 - prompt: 'The following systems have degenerate ground states in the thermodynamic
     limit. Which of them have exactly degenerate ground states even in finite size
     systems?
@@ -484,6 +504,7 @@ problems:
   functions: ''
   solution: $\boxed{a; c}$
   type: ED
+  index: 21
 - prompt: "Starting from the iPEPS with a tensor A which approximates the ground state\
     \ of a given model, we modify the state by replacing one of the ground-state $A$\
     \ tensors by a different tensor $B$ at \na location $x = (i,j)$ such that $\\\
@@ -500,6 +521,7 @@ problems:
   functions: ''
   solution: $\boxed{N_k B}$
   type: PEPS
+  index: 22
 - prompt: "Suppose that we want to perform exact diagonalization of a Hamiltonian\
     \ for a kagome lattice model with only nearest-neighbor interactions and local\
     \ terms. What is the maximum number of isomorphically distinct connected 5-site\
@@ -511,6 +533,7 @@ problems:
   functions: ''
   solution: $\boxed{4}$
   type: ED
+  index: 23
 - prompt: "Consider the following Hamiltonian: $H=-J\\sum_{j}c_{2j,\\sigma}^{\\dagger}c_{2j+1,\\\
     sigma}-J'\\sum_{j}c_{2j+1,\\sigma}^{\\dagger}c_{2j+2,\\sigma}+h.c.+g\\sum_{j}n_{j\\\
     uparrow}n_{j\\downarrow}$. The electron filling is $n=1/5$ per site. In the limit\
@@ -525,6 +548,7 @@ problems:
   functions: ''
   solution: $\boxed{(0.200,0.003,0.017,0.027,0.038)}$
   type: Other
+  index: 24
 - prompt: 'Consider the following two-band Hamiltonian: $H=\sum_{k,\sigma}\varepsilon_{c,k}c_{k\sigma}^{\dagger}c_{k\sigma}+\sum_{k,\sigma}\varepsilon_{d,k}d_{k\sigma}^{\dagger}d_{k\sigma}+\sum_{r}\left[U\left(n_{c,r}^{2}+n_{d,r}^{2}\right)+Vn_{c,r}n_{d,r}\right]+\left[\sum_{k,\sigma}ig_{1}c_{k\sigma}^{\dagger}d_{k\sigma}+\sum_{k}ig_{2}\left(c_{k\uparrow}^{\dagger}d_{k\downarrow}+c_{k\downarrow}^{\dagger}d_{k\uparrow}\right)+h.c.\right]$,
 
     where $n_{c,r}=\sum_{\sigma}c_{r\sigma}^{\dagger}c_{r\sigma}$, $n_{d,r}=\sum_{\sigma}d_{r\sigma}^{\dagger}d_{r\sigma}$.
@@ -548,6 +572,7 @@ problems:
   functions: ''
   solution: $\boxed{c; d; e}$
   type: QMC
+  index: 25
 - prompt: "Consider a tight binding model on a square lattice, whose sites are labeled\
     \ by integers $x,y$. The Hamiltonian is given by $H=-t\\sum_{x,y}c_{x,y}^{\\dagger}c_{x,y+1}-t\\\
     sum_{x,y}e^{\\frac{2i\\pi y}{n}}c_{x,y}^{\\dagger}c_{x+1,y}-t'\\sum_{x,y}ie^{\\\
@@ -568,6 +593,7 @@ problems:
   functions: ''
   solution: $\boxed{b; c; e}$
   type: ED
+  index: 26
 - prompt: "Consider the following expansion for an extensive property of a lattice\
     \ model (e.g., energy per site for a model with finite-range interactions) in\
     \ the thermodynamic limit:\n$O_n = \\sum_c M_c R_c$, \nwhere the sum is over all\
@@ -587,6 +613,7 @@ problems:
   functions: ''
   solution: $\boxed{O_n=E_n-E_{n-1}}$
   type: Other
+  index: 27
 - prompt: 'We consider a model of electrons on a square lattice with nearest-neighbor
 
     hopping and long-range interactions. The Hamiltonian is given by:
@@ -630,6 +657,7 @@ problems:
   functions: ''
   solution: $\boxed{d; g}$
   type: QMC
+  index: 28
 - prompt: "Consider a single-band fermionic spinful Hubbard model on a two-leg ladder\
     \ on the square lattice, with model Hamiltonian $H=-\\sum_{\\langle ij\\rangle,\\\
     sigma} t_{ij} (c_{i\\sigma}^+.c_{j\\sigma}+h.c.) + U\\sum_i n_{i,\\uparrow}n_{i,\\\
@@ -647,6 +675,7 @@ problems:
   functions: ''
   solution: $\boxed{a}$
   type: DMRG
+  index: 29
 - prompt: 'Consider a classical Ising model with the following Hamiltonian: $H= -
     \frac{1}{2}\sum_{i\ne j}J(|i-j|)\sigma_{i}\sigma_{j}$,
 
@@ -679,6 +708,7 @@ problems:
   functions: ''
   solution: $\boxed{b;c}$
   type: Other
+  index: 30
 - prompt: "Consider a triangular lattice model for hardcore bosons with charge $e$\
     \ and the following nearest-neighbor Hamiltonian: $H=-\\sum_{ij}t_{ij}(b^{\\dagger}_{i}b_{j}+\\\
     textrm{H.c.})+V\\sum_{ij}\nn_{i}n_{j}-\\mu \\sum_i n_i$, where $b^{\\dagger}_{i}$\
@@ -700,6 +730,7 @@ problems:
   functions: ''
   solution: $\boxed{a;b;c}$
   type: Other
+  index: 31
 - prompt: "Consider a quantum Ising model at zero temperature with the following nearest-neighbor\
     \ Hamiltonian: $H=-\\sum_{i,j}\\sigma^z_i\\sigma^z_j + h\\sum_i \\sigma^x_i +\
     \ g\\sum_i \\sigma^z_i$. Which of the following statements are correct? Indicate\
@@ -717,6 +748,7 @@ problems:
   functions: ''
   solution: $\boxed{a;c}$
   type: Other
+  index: 32
 - prompt: 'For the fermion Hamiltonian
 
     \[
@@ -744,6 +776,7 @@ problems:
   functions: ''
   solution: $\boxed{\mu-tq^2B/4}$
   type: Other
+  index: 33
 - prompt: "Consider a two-dimensional model with attractive on-site interactions with\
     \ the following Hamiltonian: $H=-\\sum_{ij\\sigma}t_{ij}(c^{\\dagger}_{i\\sigma}c_{j\\\
     sigma}+\\textrm{H.c.}) - |U|\\sum_i\n(n_{i\\uparrow}-\\frac{1}{2})(n_{i\\downarrow}-\\\
@@ -767,6 +800,7 @@ problems:
   functions: $(c_s^\dagger, NC); (c_s, NC), (s,\uparrow,\downarrow)$
   solution: $\boxed{c}$
   type: Other
+  index: 34
 - prompt: 'Consider a two-dimensional model on a square lattice at zero temperature
     with the following nearest-neighbor Hamiltonian: $H=-\sum_{ij}t_{ij}(b^{\dagger}_{i}b_{j}+\textrm{H.c.})+\frac{U}{2}\sum_i
 
@@ -796,6 +830,7 @@ problems:
   functions: ''
   solution: $\boxed{a;c}$
   type: Other
+  index: 35
 - prompt: "Consider a $S=1$ Hamiltonian  on a honeycomb lattice, $\\mathbf{H}=-\\\
     sum_{\\langle i, j\\rangle_x} \\mathbf{S}_i^x \\mathbf{S}_j^x- \\sum_{\\langle\
     \ i, j\\rangle_y} \\mathbf{S}_i^y \\mathbf{S}_j^y- \\sum_{\\langle i, j\\rangle_z}\
@@ -822,6 +857,7 @@ problems:
   functions: ''
   solution: $\boxed{a;b}$
   type: Other
+  index: 36
 - prompt: 'Suppose that we are considering a classical spin model in two dimension.
     We want to find the scaling dimension of the primary field of the corresponding
     CFT. The calculation may involve some of the following operations: (a) analyze
@@ -841,6 +877,7 @@ problems:
   functions: ''
   solution: $\boxed{g}$
   type: PEPS
+  index: 37
 - prompt: "Consider a classical O(3) spin Hamiltonian in two spatial dimensions on\
     \ a triangular lattice: $H = - \\sum_{i,j} J_{ij}  S_i \\cdot S_j$, where $J_{ij}=J$\
     \ for x-directed bonds and $J_{ij}=J'$ otherwise. \nAt $T=0$, find the number\
@@ -853,6 +890,7 @@ problems:
   functions: ''
   solution: $\boxed{1; 3}$
   type: Other
+  index: 38
 - prompt: "For the fermion Hamiltonian\n\\[\nH = \\sum_{i=1}^n\\left[\\left(-tc_{i}^\\\
     dagger e^{iqa_{i,i+1}}c_{i+1}+h.c.\\right)-\\mu BS^z_i\\right]\n\\]\nwhere  we\
     \ have suppressed the spin index, $S^z_i$ is the usual spin operator for fermions,\
@@ -877,6 +915,7 @@ problems:
   functions: ''
   solution: $\boxed{a;d;i}$
   type: Other
+  index: 39
 - prompt: "Consider a half filled fermionic system with Hamiltonian\n\\[\nH = -t_1\\\
     sum_{i=1}^n (c^\\dagger_{2i-1}c_{2i} + h.c.) -t_2\\sum_{i=1}^{n-1} ( c^\\dagger_{2i}c_{2i+1}\
     \ + h.c.).\n\\]\nWhat is the leading contribution to the energy gap between the\
@@ -889,6 +928,7 @@ problems:
   functions: ''
   solution: $\boxed{2t_1(t_1/t_2)^n}$
   type: Other
+  index: 40
 - prompt: "Consider the fermionic Hamiltonian\n\\[\nH = -t_1\\sum_{i=1}^{N_u} (c^\\\
     dagger_{2i-1}c_{2i} + h.c.) -t_2\\sum_{i=1}^{N_u-1} ( c^\\dagger_{2i}c_{2i+1}\
     \ + h.c.)\n\\]\nFor $t_2>t_1>0$, and at half filling, which of the following are\
@@ -906,6 +946,7 @@ problems:
   functions: ''
   solution: $\boxed{a;d;e}$
   type: Other
+  index: 41
 - prompt: "Consider the AC spin conductivity of the Fermi-Hubbard model\n$\\sigma({\\\
     bf q},\\omega)$ in terms of the spin current operator  $j_x$.\nFind $\\alpha$\
     \ in terms of $\\omega$ and the inverse temperature $\\beta$ such that $\\textrm{Re\
@@ -918,6 +959,7 @@ problems:
   functions: ''
   solution: $\boxed{\frac{2\tanh(\frac{\beta \omega}{2})}{\omega}}$
   type: Other
+  index: 42
 - prompt: 'Consider the following two-dimensional chiral active Ornstein-Uhlenbeck
     process with inertia: $m \mathbf{\dot v} = -\gamma \mathbf{v} + \gamma v_0 \mathbf{f}
     + \sqrt{2T}\boldsymbol{\xi}$, where the self propulsion speed $\mathbf{f}$ evolves
@@ -935,6 +977,7 @@ problems:
   solution: $\boxed{D_o = \frac{\tau^2 \rho v_0^2 \Omega (2+\rho)}{[(1+\rho)^2 + (\Omega
     \tau)^2][1+(\Omega \tau)^2]}}$
   type: SM
+  index: 43
 - prompt: 'Consider the dynamics in two dimensions of the following modified active
     Brownian particle: $\mathbf{\dot x} = v_0 \mathbf{u}$, where $v_0$ is a postive
     constant, and $\mathbf{u}$ is a vector of unit norm, whose orientation $\theta$
@@ -959,6 +1002,7 @@ problems:
   functions: ''
   solution: '$\boxed{c}$ '
   type: SM
+  index: 44
 - prompt: "Consider two coupled systems, made respectively by $N$ soft spins $x_i$\
     \ and $N$ soft spins $y_i$. The dynamics of the systems is $\\dot x_i = -\\lambda(\\\
     mathbf{x})x_i + N^{-1} \\sum_{j,k} J_{i}^{jk} x_j x_k + K(y_i -x_i)$ and $\\dot\
@@ -980,6 +1024,7 @@ problems:
   solution: $\boxed{K_c = \sigma [1 - \frac{1}{\sqrt{3}}]\sqrt{\gamma + \frac{2\sigma^2}{3}(1
     + \sqrt{1 + \frac{3\gamma}{\sigma^2}})}}$
   type: SM
+  index: 45
 - prompt: "Consider a liquid composed by diatomic classical molecules in $d$ dimensions.\
     \ Consider the problem of deriving an effective equation for the motion of one\
     \ molecule In the limit $d\\to\\infty$. What is the appropriate cavity variable\
@@ -995,6 +1040,7 @@ problems:
   functions: ''
   solution: $\boxed{d}$
   type: SM
+  index: 46
 - prompt: Consider the overdamped Langevin dynamics $\dot x = -x^3 + x^2 \eta(t)$,
     where $\eta$ is a white Gaussian noise of mean $0$ and variance $2$. Using the
     Stratonovich discretization, write an expression for the Onsager-Machlup action,
@@ -1007,6 +1053,7 @@ problems:
   functions: ''
   solution: $\boxed{\frac{(p + x^3)^2}{4 x^4} + 4 x^2}$
   type: SM
+  index: 47
 - prompt: "Consider a two-dimensional tight-binding model on the square lattice with\
     \ a single orbital at each site. The lattice vectors are along $x$ and $y$ directions.\
     \ Label each site by its coordinate $\\vec{r}=(n_x,n_y)$ with two integers $n_x,n_y$.\
@@ -1022,6 +1069,7 @@ problems:
   functions: ''
   solution: $\boxed{2,2,1}$
   type: Other
+  index: 48
 - prompt: "We want to build infinite two-dimensional tensor network wavefunction for\
     \ a systems of spin-1 moments \non square lattice interacting with SU(2)-symmetric\
     \ interactions. We choose infinite projected entangled-pair state as the TN.\n\
@@ -1051,6 +1099,7 @@ problems:
   functions: ''
   solution: $\boxed{6}$
   type: PEPS
+  index: 49
 - prompt: "We are interested in counting fully packed dimer configurations on honeycomb\
     \ lattice.\nDimer can be placed on any of the nearest-neighbor bonds of the lattice\
     \ and each site has to be \na member of exactly one dimer.\nThis is one of the\
@@ -1078,3 +1127,4 @@ problems:
   functions: ''
   solution: $\boxed{0.33, 0.27}$
   type: SM
+  index: 50

@@ -165,7 +165,7 @@ def pass_rate_per_problem_type_chart(config, eval_results):
 def parser_success_rate_per_prompt_chart(config, eval_results):
     success_per_prompt = {}
     queries_per_prompt = {}
-    success_results = eval_results["success_results"]
+    success_results = eval_results["original_success_results"]
     failed_results = eval_results["failed_results"]
     model_list = success_results.keys()
     for model_name in model_list:

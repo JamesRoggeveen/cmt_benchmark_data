@@ -24,12 +24,13 @@ def convert_csv_to_yaml_fmt(csv_name, config):
     key_list = [key.lower() for key in key_list]
     # Convert to YAML
     yaml_data = []
-    for _, row in problems.iterrows():
+    for idx, (_, row) in enumerate(problems.iterrows()):
         for key in key_list:
             if pd.isna(row[key]):
                 row[key] = ''
         problem = {key: row[key] for key in key_list}
         problem['prompt'] = problem['prompt'] + ' ' + config['global_prompt']
+        problem['index'] = idx
         yaml_data.append(problem)
     return yaml_data
 
