@@ -86,6 +86,7 @@ def parser_success_rate_chart(config, eval_results):
     plt.tight_layout()
     plt.savefig(config['eval_directory'] / 'parser_success_rate.png')
     plt.close()
+    return success_rate
 
 def pass_at_1_rate_chart(config, eval_results):
     model_list = eval_results["success_results"].keys()
@@ -109,6 +110,8 @@ def pass_at_1_rate_chart(config, eval_results):
     plt.tight_layout()
     plt.savefig(config['eval_directory'] / 'pass_at_1_rate.png')
     plt.close()
+
+    return pass_at_1_rate
 
 def pass_rate_per_problem_type_chart(config, eval_results):
     model_list = eval_results["success_results"].keys()
@@ -161,6 +164,7 @@ def pass_rate_per_problem_type_chart(config, eval_results):
     plt.tight_layout()
     plt.savefig(config['eval_directory'] / 'pass_rate_per_problem_type.png')
     plt.close()
+    return pass_rate_per_problem_type
 
 def parser_success_rate_per_prompt_chart(config, eval_results):
     success_per_prompt = {}
@@ -191,6 +195,7 @@ def parser_success_rate_per_prompt_chart(config, eval_results):
     plt.tight_layout()
     plt.savefig(config['eval_directory'] / 'parser_success_rate_per_prompt.png')
     plt.close()
+    return success_rate_per_prompt
 
 def eval_success_rate_per_prompt_chart(config, eval_results):
     success_per_prompt = {}
@@ -216,13 +221,46 @@ def eval_success_rate_per_prompt_chart(config, eval_results):
     plt.tight_layout()
     plt.savefig(config['eval_directory'] / 'eval_success_rate_per_prompt.png')
     plt.close()
+    return success_rate_per_prompt
+
+def limit_dict_precision(dictionary):
+    for key, value in dictionary.items():
+        if isinstance(value, dict):
+            dictionary[key] = limit_dict_precision(value)
+        elif isinstance(value, float):
+            dictionary[key] = float(f"{value:.1f}")
+    return dictionary
+
+def summary_stats(config, stats):
+    model_list = stats["pass_at_1_rate"].keys()
+    eval_stats_by_model = {}
+    for model_name in model_list:
+        eval_stats_by_model[model_name] = {}
+        eval_stats_by_model[model_name]["overall"] = stats['pass_at_1_rate'][model_name]
+        for problem_type in stats["pass_rate_per_problem_type"][model_name].keys():
+            eval_stats_by_model[model_name][problem_type] = stats['pass_rate_per_problem_type'][model_name][problem_type]
+        
+    eval_stats = {"success rate by model and type": eval_stats_by_model, "success rate by prompt": stats["eval_success_rate_per_prompt"]}
+    eval_stats = limit_dict_precision(eval_stats)
+    output_file = config['eval_directory'] / 'eval_stats_summary.yaml'
+    with open(output_file, 'w') as f:
+        yaml.dump(eval_stats, f, default_flow_style=False, indent=2)
+
+    parser_stats = {"parse rate by model": stats["parser_success_rate"], "parse rate by prompt": stats["parser_success_rate_per_prompt"]}
+    parser_stats = limit_dict_precision(parser_stats)
+    output_file = config['eval_directory'] / 'parser_stats_summary.yaml'
+    with open(output_file, 'w') as f:
+        yaml.dump(parser_stats, f, default_flow_style=False, indent=2)
+    
 
 if __name__ == "__main__":
     config = load_config()
     dataset_distribution_chart(config)
     eval_results = load_eval_results(config)
-    parser_success_rate_chart(config, eval_results)
-    parser_success_rate_per_prompt_chart(config, eval_results)
-    pass_at_1_rate_chart(config, eval_results)
-    pass_rate_per_problem_type_chart(config, eval_results)
-    eval_success_rate_per_prompt_chart(config, eval_results)
+    stats = {}
+    stats["parser_success_rate"] = parser_success_rate_chart(config, eval_results)
+    stats["parser_success_rate_per_prompt"] = parser_success_rate_per_prompt_chart(config, eval_results)
+    stats["pass_at_1_rate"] = pass_at_1_rate_chart(config, eval_results)
+    stats["pass_rate_per_problem_type"] = pass_rate_per_problem_type_chart(config, eval_results)
+    stats["eval_success_rate_per_prompt"] = eval_success_rate_per_prompt_chart(config, eval_results)
+    summary_stats(config, stats)
