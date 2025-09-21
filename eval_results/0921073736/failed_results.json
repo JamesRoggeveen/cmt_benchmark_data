@@ -1,0 +1,816 @@
+{
+    "GPT-4o": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-4o",
+            "prompt_idx": 2,
+            "type": "HF",
+            "response": "\\boxed{\\left(\\frac{2\\pi}{3}, \\frac{2\\pi}{\\sqrt{3}}\\right); \\left(0, \\frac{4\\pi}{\\sqrt{3}}\\right); \\left(-\\frac{2\\pi}{3}, \\frac{2\\pi}{\\sqrt{3}}\\right); \\left(-\\frac{2\\pi}{3}, -\\frac{2\\pi}{\\sqrt{3}}\\right); \\left(0, -\\frac{4\\pi}{\\sqrt{3}}\\right); \\left(\\frac{2\\pi}{3}, -\\frac{2\\pi}{\\sqrt{3}}\\right)}",
+            "solution": "$\\boxed{(2.09, 1.21); (0., 2.41); (-2.09, 1.21); (-2.09, -1.21); (0., -2.41); (2.09, -1.21)}$",
+            "parameter": "",
+            "function": "",
+            "error": "Failed to parse model response: Could not parse '\\\\left(\\\\frac{2\\\\pi}{3}, \\\\frac{2\\\\pi}{\\\\sqrt{3}}\\\\right)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '\\\\left(0, \\\\frac{4\\\\pi}{\\\\sqrt{3}}\\\\right)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '\\\\left(-\\\\frac{2\\\\pi}{3}, \\\\frac{2\\\\pi}{\\\\sqrt{3}}\\\\right)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '\\\\left(-\\\\frac{2\\\\pi}{3}, -\\\\frac{2\\\\pi}{\\\\sqrt{3}}\\\\right)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '\\\\left(0, -\\\\frac{4\\\\pi}{\\\\sqrt{3}}\\\\right)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '\\\\left(\\\\frac{2\\\\pi}{3}, -\\\\frac{2\\\\pi}{\\\\sqrt{3}}\\\\right)': unexpected character after line continuation character (<unknown>, line 1)"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-4o",
+            "prompt_idx": 3,
+            "type": "HF",
+            "response": "\\boxed{O(N_q^2)}",
+            "solution": "$\\boxed{16N_q^2}$",
+            "parameter": "$N_q$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-4o",
+            "prompt_idx": 11,
+            "type": "DMRG",
+            "response": "\\boxed{2^{N/2} \\text{; } c=1}",
+            "solution": "$\\boxed{2^{N/2-1}; c=1/2}$",
+            "parameter": "$N$",
+            "function": "",
+            "error": "Failed to parse model response: SymPy parsing error: ('unexpected EOF in multi-line statement', (1, 0))"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-4o",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "\\boxed{\\text{Yes, it is possible to realize a superconducting state in a Hubbard chain away from half-filling. The reasons are as follows: when the system is doped with holes, the effective interaction between electrons can lead to pairing mechanisms due to antiferromagnetic correlations or spin fluctuations. These correlations enhance the attractive interactions that can result in the formation of Cooper pairs in certain regimes of the model, particularly for appropriate values of the parameters } t_{i,i+1} \\text{ and } U. \\text{ As a result, these conditions can favor the onset of superconductivity in the doped Hubbard model.}}",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-4o",
+            "prompt_idx": 27,
+            "type": "Other",
+            "response": "\\boxed{O_n = \\sum_{k=1}^{n} (-1)^{n-k} (n-k+1) E_k}",
+            "solution": "$\\boxed{O_n=E_n-E_{n-1}}$",
+            "parameter": "$O_n;E_n;E_{n-1}$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        }
+    ],
+    "GPT-4.1": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-4.1",
+            "prompt_idx": 2,
+            "type": "HF",
+            "response": "\\[\n\\boxed{\n(0.67,\\,1.16);\n(-0.67,\\,1.16);\n(1.33,\\,0.00);\n(-1.33,\\,0.00);\n(0.67,\\,-1.16);\n(-0.67,\\,-1.16)\n}\n\\]",
+            "solution": "$\\boxed{(2.09, 1.21); (0., 2.41); (-2.09, 1.21); (-2.09, -1.21); (0., -2.41); (2.09, -1.21)}$",
+            "parameter": "",
+            "function": "",
+            "error": "Failed to parse model response: Could not parse '(0.67,\\\\,1.16)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '(-0.67,\\\\,1.16)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '(1.33,\\\\,0.00)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '(-1.33,\\\\,0.00)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '(0.67,\\\\,-1.16)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '(-0.67,\\\\,-1.16)': unexpected character after line continuation character (<unknown>, line 1)"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-4.1",
+            "prompt_idx": 11,
+            "type": "DMRG",
+            "response": "\\[\n\\boxed{2^{N/2};\\quad c=1}\n\\]",
+            "solution": "$\\boxed{2^{N/2-1}; c=1/2}$",
+            "parameter": "$N$",
+            "function": "",
+            "error": "Failed to parse model response: Empty solution part found at index 1"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-4.1",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "\\boxed{\n\\text{Yes, it is possible to realize a superconducting state upon hole doping in the 1D Hubbard chain.}\\\\[1ex]\n\\text{Reason: When the system is doped away from half-filling, the charge gap vanishes and the system enters a Luttinger liquid phase. For }U>0,\\ \\text{although true long-range superconducting order is not possible in 1D (due to enhanced quantum fluctuations), the pair-pair (superconducting) correlation functions decay at large distances more slowly than other correlation functions (such as those for charge density wave), for suitable parameters. This signifies the presence of dominant quasi-long-range superconducting correlations. These may be regarded as a precursor to superconductivity.}\\\\[1ex]\n\\text{Ways to realize: Doping the system with holes away from one electron per site (half-filling), and ensuring that }U\\text{ is not too large compared to }t_{i,i+1},\\text{ will enhance the tendency towards superconductivity. Additionally, attracting next-nearest-neighbor hoppings or tuning the ratio of }U/t_{i,i+1}\\text{ can further favor superconducting correlations.}\n}",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-4.1",
+            "prompt_idx": 22,
+            "type": "PEPS",
+            "response": "\\[\n\\boxed{f = \\frac{\\partial N_k}{\\partial B^*}}\n\\]",
+            "solution": "$\\boxed{N_k B}$",
+            "parameter": "$N_k;B;B*$",
+            "function": "",
+            "error": "Failed to parse model response: SymPy parsing error: Invalid star expression (<string>, line 1)"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-4.1",
+            "prompt_idx": 24,
+            "type": "Other",
+            "response": "\\[\n\\boxed{(0.2,\\ 0.075,\\ 0.003,\\ 0.003,\\ 0.075)}\n\\]",
+            "solution": "$\\boxed{(0.200,0.003,0.017,0.027,0.038)}$",
+            "parameter": "",
+            "function": "",
+            "error": "Failed to parse model response: Could not parse '(0.2,\\\\ 0.075,\\\\ 0.003,\\\\ 0.003,\\\\ 0.075)': unexpected character after line continuation character (<unknown>, line 1)"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-4.1",
+            "prompt_idx": 27,
+            "type": "Other",
+            "response": "\\boxed{O_n = \\sum_{k=1}^n (-1)^{n-k} (n-k+1) E_k}",
+            "solution": "$\\boxed{O_n=E_n-E_{n-1}}$",
+            "parameter": "$O_n;E_n;E_{n-1}$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-4.1",
+            "prompt_idx": 38,
+            "type": "Other",
+            "response": "\\boxed{2\\ ;\\ 1}",
+            "solution": "$\\boxed{1; 3}$",
+            "parameter": "",
+            "function": "",
+            "error": "Failed to parse model response: Could not parse '2\\\\': unexpected character after line continuation character (<unknown>, line 1); Could not parse '\\\\ 1': unexpected character after line continuation character (<unknown>, line 1)"
+        }
+    ],
+    "GPT-5": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-5",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "\\boxed{\\text{No: for H with U>0 and nearest-neighbor t_{i,i+1} in a single 1D chain, hole doping yields a gapless Luttinger liquid with only power-law correlations; 1D fluctuations preclude long-range superconducting order and, for U>0, pairing correlations are subdominant to density/spin correlations, so the doped chain does not superconduct. Superconductivity requires modifying the model (e.g., effective attraction such as U<0 or phonon-mediated), opening a spin gap via bond alternation in t_{i,i+1} and then coupling chains to establish phase coherence, or moving to ladders/higher dimensions; none of these is present in the given H.}}",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        }
+    ],
+    "GPT-5-mini": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-5-mini",
+            "prompt_idx": 2,
+            "type": "HF",
+            "response": "\\boxed{(2.09,\\,1.21);\\;(0.00,\\,2.42);\\;(-2.09,\\,1.21);\\;(-2.09,\\,-1.21);\\;(0.00,\\,-2.42);\\;(2.09,\\,-1.21)}",
+            "solution": "$\\boxed{(2.09, 1.21); (0., 2.41); (-2.09, 1.21); (-2.09, -1.21); (0., -2.41); (2.09, -1.21)}$",
+            "parameter": "",
+            "function": "",
+            "error": "Failed to parse model response: Could not parse '(2.09,\\\\,1.21)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '(0.00,\\\\,2.42)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '(-2.09,\\\\,1.21)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '(-2.09,\\\\,-1.21)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '(0.00,\\\\,-2.42)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '(2.09,\\\\,-1.21)': unexpected character after line continuation character (<unknown>, line 1)"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-5-mini",
+            "prompt_idx": 11,
+            "type": "DMRG",
+            "response": "\\boxed{2^{N/2};\\;2^{cN}}",
+            "solution": "$\\boxed{2^{N/2-1}; c=1/2}$",
+            "parameter": "$N$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-5-mini",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "\\boxed{\\text{For the strictly one-dimensional Hubbard chain with }U>0\\text{, doping away from half-filling removes the Mott gap and yields a gapless Luttinger-liquid with spin\u2013charge separation; because of strong 1D quantum fluctuations (and the Mermin\u2013Wagner type arguments) there is no true long-range superconducting order at }T>0\\text{ and at }T=0\\text{ only quasi-long-range (power-law) pairing correlations can occur. For repulsive }U>0\\text{ these superconducting correlations are typically subdominant to charge- or spin-density-wave correlations, so the pure 1D repulsive Hubbard model does not realize a true superconducting phase.  However, superconductivity can be realized by mechanisms that either produce an effective attraction between carriers or reduce fluctuations: (i) add electron\u2013phonon or other retarded interactions so the net interaction becomes attractive and favors pairing; (ii) couple chains into ladders or higher-dimensional arrays (interchain coupling) so fluctuations are suppressed and true long-range order can develop; (iii) modify the kinetic part by longer-range or frustrated hopping }t_{i,i+1}\\text{ or tune band filling to enhance pairing correlations.  In short: strictly no true superconductivity for an isolated 1D repulsive Hubbard chain, but quasi-long-range pairing appears on doping and true superconducting states can be achieved by the listed routes.}}",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-5-mini",
+            "prompt_idx": 22,
+            "type": "PEPS",
+            "response": "\\boxed{f=\\frac{\\partial N_k}{\\partial \\overline{B}}}",
+            "solution": "$\\boxed{N_k B}$",
+            "parameter": "$N_k;B;B*$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-5-mini",
+            "prompt_idx": 24,
+            "type": "Other",
+            "response": "\\(\\boxed{(0.200,\\,0.003,\\,0.017,\\,0.007,\\,0.038)}\\)",
+            "solution": "$\\boxed{(0.200,0.003,0.017,0.027,0.038)}$",
+            "parameter": "",
+            "function": "",
+            "error": "Failed to parse model response: Could not parse '(0.200,\\\\,0.003,\\\\,0.017,\\\\,0.007,\\\\,0.038)': unexpected character after line continuation character (<unknown>, line 1)"
+        }
+    ],
+    "GPT-5-nano": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-5-nano",
+            "prompt_idx": 3,
+            "type": "HF",
+            "response": "\\boxed{O(N_q^4)}",
+            "solution": "$\\boxed{16N_q^2}$",
+            "parameter": "$N_q$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-5-nano",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "\\boxed{No; in a strictly one-dimensional Hubbard chain with U>0 away from half-filling the ground state is a gapless Luttinger liquid and there is no true long-range superconducting order at any finite temperature (Mermin-Wagner theorem); superconducting correlations exist only as power-law fluctuations and are not the leading instability for repulsive interactions, which favor density-wave channels; to realize superconductivity one must go beyond a single chain by introducing interchain coupling to yield a higher-dimensional system or invoke proximity-induced pairing or an effective attractive interaction or spin-gap mechanism (Luther-Emery) in which a finite Tc superconducting state can emerge.}",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        }
+    ],
+    "GPT-o3": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-o3",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "\\boxed{\\text{No; with }U>0\\text{ the doped 1D Hubbard chain is a gapless Luttinger liquid with }K_{c}<1,\\text{ so CDW correlations }(r^{-K_{c}})\\text{ dominate over singlet or triplet pair correlations }(r^{-1/K_{c}});\\text{ quantum fluctuations in one dimension eliminate true long-range order, therefore a superconducting state cannot be realized unless extra attractive interactions or inter-chain coupling are added.}}",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        }
+    ],
+    "GPT-o4-mini": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-o4-mini",
+            "prompt_idx": 2,
+            "type": "HF",
+            "response": "\\boxed{(0.00,0.00);\\,(0.00,0.00);\\,(0.00,0.00);\\,(0.00,0.00);\\,(0.00,0.00);\\,(0.00,0.00)}",
+            "solution": "$\\boxed{(2.09, 1.21); (0., 2.41); (-2.09, 1.21); (-2.09, -1.21); (0., -2.41); (2.09, -1.21)}$",
+            "parameter": "",
+            "function": "",
+            "error": "Failed to parse model response: Could not parse '\\\\,(0.00,0.00)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '\\\\,(0.00,0.00)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '\\\\,(0.00,0.00)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '\\\\,(0.00,0.00)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '\\\\,(0.00,0.00)': unexpected character after line continuation character (<unknown>, line 1)"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-o4-mini",
+            "prompt_idx": 11,
+            "type": "DMRG",
+            "response": "\\boxed{2^{\\frac{N(1-c)}{2}}}",
+            "solution": "$\\boxed{2^{N/2-1}; c=1/2}$",
+            "parameter": "$N$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "GPT-o4-mini",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "\\boxed{No:\\text{ pure 1D repulsive Hubbard chain at }U>0\\text{ is a Luttinger liquid with spin\u2013charge separation and only power\u2010law decaying pairing correlations, so Mermin\u2013Wagner forbids true long\u2010range order};\\;Yes:\\text{ by assembling such chains into a quasi\u20131D array or two\u2010leg ladders one obtains a Luther\u2013Emery spin\u2010gap phase with dominant pairing fluctuations, and weak interchain hopping (Josephson coupling) then locks the phases to yield true superconducting order}}",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        }
+    ],
+    "Gemini 2.0 Flash": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.0 Flash",
+            "prompt_idx": 3,
+            "type": "HF",
+            "response": "$\\boxed{O(N_q)}$\n",
+            "solution": "$\\boxed{16N_q^2}$",
+            "parameter": "$N_q$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.0 Flash",
+            "prompt_idx": 11,
+            "type": "DMRG",
+            "response": "$\\boxed{2^{N/2} ; 2^{N/2-c/2}}$",
+            "solution": "$\\boxed{2^{N/2-1}; c=1/2}$",
+            "parameter": "$N$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.0 Flash",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "$\\boxed{\\text{Yes, it is possible to realize a superconducting state in the doped Hubbard chain. Away from half-filling, the doped holes can lead to mobile charge carriers. In the presence of a repulsive interaction U, the system can lower its energy by forming Cooper pairs with opposite spins and momenta, leading to superconductivity. Specifically, in 1D, the Hubbard model can be mapped to a t-J model at strong coupling (U>>t). Hole doping in the t-J model can induce superconductivity. The key is to overcome the strong correlations induced by U.}}{\\text{Yes, hole doping the Hubbard chain away from half-filling can lead to superconductivity. The repulsive interaction U can lead to effective attraction between electrons, mediated by spin fluctuations. This attraction can lead to Cooper pair formation and a superconducting state.}}$\n",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.0 Flash",
+            "prompt_idx": 27,
+            "type": "Other",
+            "response": "$\\boxed{O_n = \\sum_{c=1}^n 1 \\cdot \\left(E_c - \\sum_{s=1}^{c-1} R_s\\right); O_n = \\sum_{c=1}^n \\left(E_c - \\sum_{s=1}^{c-1} R_s\\right); R_1 = E_1; R_c = E_c - \\sum_{s=1}^{c-1} R_s \\Rightarrow E_c = R_c + \\sum_{s=1}^{c-1} R_s; O_n = \\sum_{c=1}^n R_c; O_n = \\sum_{c=1}^n \\left( E_c - \\sum_{s=1}^{c-1} R_s \\right) = \\sum_{c=1}^n E_c - \\sum_{c=1}^n \\sum_{s=1}^{c-1} R_s = \\sum_{c=1}^n E_c - \\sum_{s=1}^{n-1} \\sum_{c=s+1}^n R_s = \\sum_{c=1}^n E_c - \\sum_{s=1}^{n-1} (n-s) R_s; R_s = E_s - \\sum_{p=1}^{s-1} R_p; O_n = \\sum_{c=1}^n R_c; O_n = \\sum_{c=1}^n (E_c - \\sum_{s=1}^{c-1} R_s) = \\sum_{c=1}^n (E_c - \\sum_{s=1}^{c-1} (E_s - \\sum_{p=1}^{s-1} R_p)) ; O_n = \\sum_{c=1}^n R_c \\text{ and } R_c = E_c - \\sum_{s=1}^{c-1} R_s \\Rightarrow O_n = E_n + \\sum_{c=1}^{n-1} R_c \\text{ and } O_{n-1} = \\sum_{c=1}^{n-1} R_c \\Rightarrow O_n = E_n + O_{n-1}; O_1 = R_1 = E_1; O_2 = E_2 + O_1 = E_2 + E_1; O_3 = E_3 + O_2 = E_3 + E_2 + E_1; O_n = \\sum_{c=1}^n E_c}",
+            "solution": "$\\boxed{O_n=E_n-E_{n-1}}$",
+            "parameter": "$O_n;E_n;E_{n-1}$",
+            "function": "",
+            "error": "Failed to parse model response: SymPy parsing error: list index out of range"
+        }
+    ],
+    "Gemini 2.5 Flash": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Flash",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "Yes, it is possible to realize a state with dominant superconducting correlations. Although true long-range superconducting order, characterized by infinite conductivity and the Meissner effect, is precluded in a purely one-dimensional system at finite temperatures by strong quantum fluctuations (Mermin-Wagner theorem), the hole-doped Hubbard chain, for $U>0$, forms a Luttinger liquid state. In this Luttinger liquid, superconducting correlation functions, particularly for spin-triplet pairing, decay as a power law with an exponent that can be smaller than those of other competing orders (like charge density waves or spin density waves) at low energies and temperatures. This implies that superconducting fluctuations are the most robust. The reasons are that the strong on-site repulsion $U$ forges a highly correlated spin background, and when holes are introduced, their movement and interactions are strongly influenced by these spin correlations, which can effectively mediate an attractive interaction between holes for pairing, often of a spin-triplet nature. Ways to realize this involve studying the system at very low temperatures and identifying the parameter regimes ($U/t$ and doping concentration) where superconducting correlations are most dominant. Experimentally, this phenomenon is sought in quasi-one-dimensional materials or engineered cold atomic systems.",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Flash",
+            "prompt_idx": 18,
+            "type": "Other",
+            "response": "$f_{i,j,\\sigma} = -t (p^{\\dagger}_{i,\\sigma} p_{j,\\sigma} + p^{\\dagger}_{j,\\sigma} p_{i,\\sigma}) \\delta_{\\sigma,\\uparrow} + t (p_{i,\\sigma} p^{\\dagger}_{j,\\sigma} + p_{j,\\sigma} p^{\\dagger}_{i,\\sigma}) \\delta_{\\sigma,\\downarrow}$; $g_i = -\\mu m_{i,\\uparrow} + \\mu m_{i,\\downarrow} - \\mu$",
+            "solution": "$\\boxed{-t (p^{\\dagger}_{i,\\sigma}p_{j,\\sigma}+p^{\\dagger}_{j,\\sigma}p_{i,\\sigma})-U (m_{i,\\uparrow}-\\frac{1}{2})(m_{i,\\downarrow}-\\frac{1}{2})-\\mu (m_{i,\\uparrow}-m_{i,\\downarrow}) -\\mu}$",
+            "parameter": "$t;U;\\mu;m_{i,\\uparrow};m_{i,\\downarrow};(p^{\\dagger}_{i,\\sigma},NC);(p_{j,\\sigma},NC);(p^{\\dagger}_{j,\\sigma},NC);(p_{i,\\sigma},NC)$",
+            "function": "",
+            "error": "Failed to parse model response: No boxed solution found in response"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Flash",
+            "prompt_idx": 22,
+            "type": "PEPS",
+            "response": "$\\boxed{\\frac{\\partial N_k}{\\partial B^*}}$",
+            "solution": "$\\boxed{N_k B}$",
+            "parameter": "$N_k;B;B*$",
+            "function": "",
+            "error": "Failed to parse model response: SymPy parsing error: Invalid star expression (<string>, line 1)"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Flash",
+            "prompt_idx": 24,
+            "type": "Other",
+            "response": "The Hamiltonian describes a 1D chain with alternating hopping amplitudes $J$ and $J'$. In the limit $g \\rightarrow \\infty$, double occupancy is forbidden, meaning $n_{j\\uparrow}n_{j\\downarrow}=0$. This effectively reduces the problem to non-interacting spinless fermions with density $n_j = n_{j\\uparrow} + n_{j\\downarrow}$. Since $n_{j\\uparrow}n_{j\\downarrow}=0$, $n_j$ can only take values $0$ or $1$, so $n_j^2=n_j$.\n\nThe electron filling is $n=1/5$ per site. Due to translational invariance, the average density $\\langle n_j \\rangle = n = 1/5$ for all sites $j$.\n\nFor non-interacting spinless fermions, the equal-time density-density correlation function is given by:\n$\\langle n_j n_k \\rangle = \\langle n_j \\rangle \\langle n_k \\rangle - |\\langle c_j^{\\dagger} c_k \\rangle|^2$.\nSince $\\langle n_j \\rangle = n$, we have $\\langle n_j n_{j+r} \\rangle = n^2 - |\\langle c_j^{\\dagger} c_{j+r} \\rangle|^2$ for $r \\ne 0$.\nFor $r=0$, $\\langle n_j n_j \\rangle = \\langle n_j \\rangle = n$.\n\nThe chain has a periodicity of 2 sites with hopping $J$ between $(2k, 2k+1)$ and $J'$ between $(2k+1, 2k+2)$. We are given $J'=2J/3$.\nWe define unit cell operators $a_k = c_{2k}$ and $b_k = c_{2k+1}$. The Hamiltonian in momentum space is diagonalized by states corresponding to two bands with dispersion $E(q) = \\pm \\sqrt{J^2 + J'^2 + 2JJ'\\cos q}$. The lower band is filled.\nThe Fermi momentum $q_F$ in the unit cell Brillouin zone (BZ) is determined by the filling $n=1/5$. The number of electrons per unit cell is $2n = 2/5$. Thus, the lower band is filled up to $q_F = (2/5)\\pi$.\n\nLet's compute $\\langle c_j^{\\dagger} c_{j+r} \\rangle$ for $j=0$ (an even site):\nThe single-particle correlation function for sites $j=2l_j+s_j$ and $k=2l_k+s_k$ ($s_j, s_k \\in \\{0,1\\}$) is:\n$\\langle c_j^{\\dagger} c_k \\rangle = \\frac{1}{N_u} \\sum_{|q|<q_F} e^{iq(l_k-l_j)} u_{s_j,-}(q)^* u_{s_k,-}(q)$,\nwhere $u_{0,-}(q) = \\frac{1}{\\sqrt{2}}$ and $u_{1,-}(q) = -\\frac{V^*(q)}{|V(q)|}\\frac{1}{\\sqrt{2}}$, with $V(q) = J+J'e^{iq}$.\nIn the thermodynamic limit, $\\frac{1}{N_u} \\sum_q \\rightarrow \\frac{1}{2\\pi} \\int dq$.\n\n1.  For $r=0$: $\\langle n_j n_j \\rangle = n = 1/5 = 0.200$.\n\n2.  For $r=1$: $j=0, k=1$. $l_j=0, s_j=0$, $l_k=0, s_k=1$.\n    $\\langle c_0^{\\dagger} c_1 \\rangle = \\frac{1}{2\\pi} \\int_0^{q_F} \\left(-\\frac{J+J'\\cos q}{\\sqrt{J^2+J'^2+2JJ'\\cos q}}\\right) dq$.\n    With $J'=2J/3$ and $q_F=2\\pi/5$:\n    $\\langle c_0^{\\dagger} c_1 \\rangle = -\\frac{1}{2\\pi} \\int_0^{2\\pi/5} \\frac{1+(2/3)\\cos q}{\\sqrt{13/9+(4/3)\\cos q}} dq$.\n    Numerically, $\\int_0^{2\\pi/5} \\frac{1+(2/3)\\cos q}{\\sqrt{13/9+(4/3)\\cos q}} dq \\approx 0.908075677$.\n    $|\\langle c_0^{\\dagger} c_1 \\rangle|^2 \\approx (-0.908075677 / (2\\pi))^2 \\approx 0.020883170$.\n    $\\langle n_0 n_1 \\rangle = (1/5)^2 - 0.020883170 \\approx 0.04 - 0.020883170 = 0.019116830 \\approx 0.019$.\n\n3.  For $r=2$: $j=0, k=2$. $l_j=0, s_j=0$, $l_k=1, s_k=0$.\n    $\\langle c_0^{\\dagger} c_2 \\rangle = \\frac{1}{2\\pi} \\int_0^{q_F} \\cos q \\left(\\frac{1}{2}\\right) dq = \\frac{1}{2\\pi} \\sin q_F$.\n    $\\langle c_0^{\\dagger} c_2 \\rangle = \\frac{\\sin(2\\pi/5)}{2\\pi}$.\n    Numerically, $\\sin(2\\pi/5) \\approx 0.951056516$.\n    $|\\langle c_0^{\\dagger} c_2 \\rangle|^2 \\approx (0.951056516 / (2\\pi))^2 \\approx 0.022748530$.\n    $\\langle n_0 n_2 \\rangle = (1/5)^2 - 0.022748530 \\approx 0.04 - 0.022748530 = 0.017251470 \\approx 0.017$.\n\n4.  For $r=3$: $j=0, k=3$. $l_j=0, s_j=0$, $l_k=1, s_k=1$.\n    $\\langle c_0^{\\dagger} c_3 \\rangle = \\frac{1}{2\\pi} \\int_0^{q_F} \\left(-\\frac{J\\cos q+J'}{\\sqrt{J^2+J'^2+2JJ'\\cos q}}\\right) dq$.\n    With $J'=2J/3$ and $q_F=2\\pi/5$:\n    $\\langle c_0^{\\dagger} c_3 \\rangle = -\\frac{1}{2\\pi} \\int_0^{2\\pi/5} \\frac{\\cos q+2/3}{\\sqrt{13/9+(4/3)\\cos q}} dq$.\n    Numerically, $\\int_0^{2\\pi/5} \\frac{\\cos q+2/3}{\\sqrt{13/9+(4/3)\\cos q}} dq \\approx 0.534271811$.\n    $|\\langle c_0^{\\dagger} c_3 \\rangle|^2 \\approx (-0.534271811 / (2\\pi))^2 \\approx 0.007231490$.\n    $\\langle n_0 n_3 \\rangle = (1/5)^2 - 0.007231490 \\approx 0.04 - 0.007231490 = 0.032768510 \\approx 0.033$.\n\n5.  For $r=4$: $j=0, k=4$. $l_j=0, s_j=0$, $l_k=2, s_k=0$.\n    $\\langle c_0^{\\dagger} c_4 \\rangle = \\frac{1}{2\\pi} \\int_0^{q_F} \\cos(2q) \\left(\\frac{1}{2}\\right) dq = \\frac{1}{4\\pi} \\sin(2q_F)$.\n    $\\langle c_0^{\\dagger} c_4 \\rangle = \\frac{\\sin(4\\pi/5)}{4\\pi}$.\n    Numerically, $\\sin(4\\pi/5) \\approx 0.587785252$.\n    $|\\langle c_0^{\\dagger} c_4 \\rangle|^2 \\approx (0.587785252 / (4\\pi))^2 \\approx 0.002227115$.\n    $\\langle n_0 n_4 \\rangle = (1/5)^2 - 0.002227115 \\approx 0.04 - 0.002227115 = 0.037772885 \\approx 0.038$.\n\nThe results rounded to three decimal places are:\n$\\langle n_j n_j \\rangle = 0.200$\n$\\langle n_j n_{j+1} \\rangle = 0.019$\n$\\langle n_j n_{j+2} \\rangle = 0.017$\n$\\langle n_j n_{j+3} \\rangle = 0.033$\n$\\langle n_j n_{j+4} \\rangle = 0.038$\n\n$$\n(0.200, 0.019, 0.017, 0.033, 0.038)\n$$",
+            "solution": "$\\boxed{(0.200,0.003,0.017,0.027,0.038)}$",
+            "parameter": "",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during parsing: No boxed solution found in response"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Flash",
+            "prompt_idx": 29,
+            "type": "DMRG",
+            "response": "$\\boxed{\\text{Luther-Emery liquid}}$",
+            "solution": "$\\boxed{a}$",
+            "parameter": "$a;b; c; d$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Flash",
+            "prompt_idx": 30,
+            "type": "Other",
+            "response": "b;c;d;e",
+            "solution": "$\\boxed{b;c}$",
+            "parameter": "$a;b;c;d;e$",
+            "function": "",
+            "error": "Failed to parse model response: No boxed solution found in response"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Flash",
+            "prompt_idx": 35,
+            "type": "Other",
+            "response": "a;c;d",
+            "solution": "$\\boxed{a;c}$",
+            "parameter": "$a;b;c;d$",
+            "function": "",
+            "error": "Failed to parse model response: No boxed solution found in response"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Flash",
+            "prompt_idx": 46,
+            "type": "SM",
+            "response": "b",
+            "solution": "$\\boxed{d}$",
+            "parameter": "$a;b;c;d;e;f$",
+            "function": "",
+            "error": "Failed to parse model response: No boxed solution found in response"
+        }
+    ],
+    "Gemini 2.5 Pro": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Pro",
+            "prompt_idx": 7,
+            "type": "DMRG",
+            "response": "The problem asks for the scaling of the bond dimension $\\chi$ with system size $L$ for a two-dimensional (2D) gapless quantum system of size $L \\times L$, when using DMRG and PEPS.\n\n1.  **Entanglement Entropy in 2D Gapless Systems:**\n    For a 2D gapless system, such as a system at a critical point, the entanglement entropy $S$ of a subregion typically violates the area law with a logarithmic correction. For a bipartition of the $L \\times L$ system into two $L \\times (L/2)$ halves, the boundary has length $L$. The entanglement entropy scales as $S \\propto L \\log L$.\n\n2.  **DMRG Scaling:**\n    DMRG is based on a Matrix Product State (MPS), which is a 1D tensor network. To apply DMRG to a 2D system, the 2D lattice is mapped onto a 1D chain. A cut in the middle of this 1D chain corresponds to a cut across the 2D system with a boundary of length $L$.\n    The bond dimension $\\chi$ required for an MPS to represent a state with entanglement entropy $S$ scales as $\\chi \\sim \\exp(S)$.\n    Therefore, for a 2D gapless system with $S \\propto L \\log L$, the DMRG bond dimension must scale as:\n    $\\chi_\\text{DMRG}(L) \\sim \\exp(\\alpha L \\log L)$.\n    Let's examine the options for DMRG scaling:\n    *   (a) $\\exp(\\alpha L)$: This corresponds to an area law $S \\propto L$, which holds for gapped 2D systems, not gapless ones.\n    *   (b) $L^c$: This corresponds to $S \\propto \\log L$, which holds for 1D critical systems.\n    *   (c) $\\exp(cL \\log L)$: This matches the expected scaling for 2D gapless systems.\n    *   (d) $(L^L)^c = (e^{L \\log L})^c = e^{c L \\log L}$: This is identical to the scaling in (c).\n    *   (e) $\\exp(\\alpha \\log^2 L)$: This is another scaling for certain 1D systems.\n    Thus, options (c) and (d) have the correct DMRG scaling for a 2D gapless system.\n\n3.  **PEPS Scaling:**\n    PEPS is a tensor network ansatz designed for 2D systems. It inherently captures the area law. The maximum entanglement entropy a PEPS can describe across a boundary of length $L$ with bond dimension $\\chi$ is $S_\\text{PEPS} \\le c' L \\log \\chi$.\n    To accurately represent the ground state, the PEPS must be able to support the state's entanglement entropy, i.e., $S_\\text{PEPS} \\ge S_\\text{system}$.\n    For a 2D gapless system, $S_\\text{system} \\propto L \\log L$. So we need:\n    $c' L \\log(\\chi_\\text{PEPS}) \\gtrsim L \\log L$\n    $\\log(\\chi_\\text{PEPS}) \\gtrsim \\log L$\n    $\\chi_\\text{PEPS} \\gtrsim L^k$ for some power $k$.\n    This means the PEPS bond dimension must scale polynomially with the system size, $\\chi_\\text{PEPS}(L) \\sim L^c$.\n    Let's examine the PEPS scaling in the remaining viable options, (c) and (d):\n    *   (c) $\\chi_\\text{PEPS}(L) \\sim L^{c} \\log L$: This is a polynomial scaling (more specifically, polylogarithmic). It is consistent with the requirement.\n    *   (d) $\\chi_\\text{PEPS}(L) \\sim L^{c}$: This is the standard power-law scaling typically cited for PEPS in critical systems.\n    Both (c) and (d) propose the correct exponential scaling for DMRG and a polynomial scaling for PEPS, which is the correct physical behavior for a 2D gapless system. Option (d) represents the most standard and commonly cited form of the scaling, while (c) represents a minor variation that is also physically plausible (a polynomial scaling). Given that both options correctly capture the fundamental difference in scaling for the two methods in this context, both can be considered appropriate choices.\n\nFinal check:\n*   Option (c): $\\chi_\\text{DMRG}(L) \\sim \\exp(cL \\log L)$ (Correct for 2D gapless); $\\chi_\\text{PEPS}(L) \\sim L^{c} \\log L$ (Correct polynomial scaling for 2D gapless). This pair is consistent.\n*   Option (d): $\\chi_\\text{DMRG}(L) \\sim (L^{L})^c$ (Correct for 2D gapless); $\\chi_\\text{PEPS}(L) \\sim L^{c}$ (Correct polynomial scaling for 2D gapless). This pair is consistent.\n\n",
+            "solution": "$\\boxed{d}$",
+            "parameter": "$a;b;c;d;e$",
+            "function": "",
+            "error": "Failed to parse model response: No boxed solution found in response"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Pro",
+            "prompt_idx": 11,
+            "type": "DMRG",
+            "response": "The Hamiltonian of the system is given by $H=-\\sum_{i=1}^{N/2}(\\sigma^x_{2i-1}\\sigma^x_{2i}+\\sigma^y_{2i}\\sigma^y_{2i+1})$. For an open chain of $N$ sites, the summation for the second term is understood to go up to $N/2-1$, as the site $N+1$ is not part of the chain. Thus, the Hamiltonian is:\n$H = -\\sum_{i=1}^{N/2} \\sigma^x_{2i-1}\\sigma^x_{2i} - \\sum_{i=1}^{N/2-1} \\sigma^y_{2i}\\sigma^y_{2i+1}$.\nThe notation implies that $N$ is an even integer.\n\nTo analyze this model, we map the spin operators to Majorana fermions. Each site $j$ is associated with two Majorana operators, $a_j$ and $b_j$, satisfying $\\{a_j, a_k\\}=2\\delta_{jk}$, $\\{b_j, b_k\\}=2\\delta_{jk}$, and $\\{a_j, b_k\\}=0$. The spin operators are represented as:\n$\\sigma_j^x = \\left(\\prod_{k<j} (-ia_k b_k)\\right) a_j$\n$\\sigma_j^y = \\left(\\prod_{k<j} (-ia_k b_k)\\right) b_j$\nThe interaction terms in the Hamiltonian can be expressed in terms of these Majorana operators. A standard calculation yields:\n$\\sigma_j^x \\sigma_{j+1}^x = i b_j a_{j+1}$\n$\\sigma_j^y \\sigma_{j+1}^y = i a_j b_{j+1}$\n\nSubstituting these into the Hamiltonian, we get:\nFor the $\\sigma^x\\sigma^x$ terms, with $j=2i-1$: $\\sigma^x_{2i-1}\\sigma^x_{2i} \\rightarrow i b_{2i-1} a_{2i}$.\nFor the $\\sigma^y\\sigma^y$ terms, with $j=2i$: $\\sigma^y_{2i}\\sigma^y_{2i+1} \\rightarrow i a_{2i} b_{2i+1}$.\n\nThe Hamiltonian in terms of Majorana operators is:\n$H = -i \\sum_{i=1}^{N/2} b_{2i-1} a_{2i} - i \\sum_{i=1}^{N/2-1} a_{2i} b_{2i+1}$.\nLet's examine which Majorana operators appear in the Hamiltonian.\nThe first sum involves $b_1, a_2, b_3, a_4, \\dots, b_{N-1}, a_N$.\nThe second sum involves $a_2, b_3, a_4, b_5, \\dots, a_{N-2}, b_{N-1}$.\nCombining these, we see that the Hamiltonian is a sum of terms that couple Majorana operators in a chain:\n$H = -i (b_1 a_2 + a_2 b_3 + b_3 a_4 + \\dots + a_{N-2}b_{N-1} + b_{N-1}a_N)$.\nThis can be written as $H = -i \\sum_{j=1}^{N-1} \\chi_j \\chi_{j+1}$, where we have defined a new set of Majorana operators $\\chi_j$ that form a single chain:\n$\\chi_1=b_1, \\chi_2=a_2, \\chi_3=b_3, \\chi_4=a_4, \\dots, \\chi_{N-1}=b_{N-1}, \\chi_N=a_N$.\nThe set of coupled Majoranas is $\\{b_{2i-1}\\}_{i=1}^{N/2} \\cup \\{a_{2i}\\}_{i=1}^{N/2}$. There are $N/2+N/2=N$ such operators.\n\nThe remaining $N$ Majorana operators do not appear in the Hamiltonian at all. These are $\\{a_{2i-1}\\}_{i=1}^{N/2} \\cup \\{b_{2i}\\}_{i=1}^{N/2}$.\nThese $N$ operators are \"zero modes\" as they commute with the Hamiltonian. We can pair them up to form $N/2$ complex fermion operators:\n$f_k = \\frac{1}{2}(a_{2k-1} + i b_{2k})$ for $k=1, \\dots, N/2$.\nThese operators satisfy fermionic commutation relations $\\{f_k, f_l^\\dagger\\}=\\delta_{kl}$ and $[f_k, H]=0$.\nFor each such fermionic mode, the ground state can have occupation number $n_k=f_k^\\dagger f_k=0$ or $1$ without any energy cost. This leads to a ground state degeneracy (GSD) of $2^{N/2}$.\n\nNow, we consider the contribution from the coupled chain of $N$ Majoranas. The Hamiltonian $H = -i \\sum_{j=1}^{N-1} \\chi_j \\chi_{j+1}$ is the well-known Hamiltonian for the transverse-field Ising model at its critical point. In the continuum limit, this system is described by a conformal field theory (CFT) with central charge $c=1/2$.\nThe ground state degeneracy of this Majorana chain of length $N$ depends on the parity of $N$. For an open chain, the ground state is unique if $N$ is even, and two-fold degenerate if $N$ is odd (due to unpaired Majorana modes at the ends). Since the original spin Hamiltonian is defined with sums up to $N/2$, $N$ is an even number. Therefore, the coupled Majorana chain has a unique, non-degenerate ground state.\n\nThe total ground state degeneracy is the product of the degeneracies from the uncoupled and coupled parts.\nGSD = (degeneracy from uncoupled Majoranas) $\\times$ (degeneracy from coupled chain)\nGSD = $2^{N/2} \\times 1 = 2^{N/2}$.\n\nThe problem asks for the ground state degeneracy as a function of $N$ and the central charge $c$. We have found that GSD = $2^{N/2}$ and $c=1/2$. We can express the GSD in terms of $N$ and $c$ by substituting $c=1/2$ into the GSD formula:\n$1/2 = c \\implies N/2 = Nc$.\nTherefore, the ground state degeneracy can be written as $2^{Nc}$.\n\n$\\boxed{2^{Nc}}$",
+            "solution": "$\\boxed{2^{N/2-1}; c=1/2}$",
+            "parameter": "$N$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Pro",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "$\\boxed{ \\text{No. In the one-dimensional Hubbard model with repulsive interaction } (U>0)\\text{, a superconducting state is not realized. The reasons are rooted in the fundamental physics of one-dimensional systems. When doped away from half-filling, the system behaves as a Tomonaga-Luttinger liquid, not a Fermi liquid. In a Tomonaga-Luttinger liquid, strong quantum fluctuations prevent the formation of any true long-range order at zero temperature. Instead, various correlation functions decay as a power law with distance. The dominant instability of the system is determined by the slowest decaying correlation function. For the repulsive Hubbard model, the on-site repulsion } U>0 \\text{ suppresses the formation of local electron pairs, which is a precursor to superconductivity. A detailed analysis shows that the correlation function for a spin-density wave (SDW) state decays with distance } |i-j| \\text{ as } |i-j|^{-(1+K_\\rho)}\\text{, while the correlation function for a singlet superconducting state decays as } |i-j|^{-(1+1/K_\\rho)}\\text{, where } K_\\rho \\text{ is the Luttinger parameter for the charge sector. For a repulsive interaction } (U>0)\\text{, } K_\\rho < 1\\text{. Consequently, } 1/K_\\rho > 1\\text{, which implies that the exponent for superconducting correlations, } 1+1/K_\\rho\\text{, is larger than the exponent for SDW correlations, } 1+K_\\rho\\text{. This means that superconducting correlations decay much faster than SDW correlations. Therefore, the ground state of the doped repulsive Hubbard chain is dominated by spin-density wave fluctuations, and the tendency towards superconductivity is suppressed. Superconductivity would only be the dominant instability if the interaction were attractive } (U<0)\\text{, which would lead to } K_\\rho>1\\text{. } } }$",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Pro",
+            "prompt_idx": 17,
+            "type": "ED",
+            "response": "The problem asks for the number of distinct blocks in the Hamiltonian matrix after block-diagonalization using a set of specified symmetries. These symmetries are translation, fourfold rotation, and time-reversal. The system consists of spin-1/2 electrons on a 3x3 lattice with periodic boundary conditions.\n\n1.  **Symmetry Group for Block Diagonalization:** The Hamiltonian is block-diagonalized according to the irreducible representations (irreps) of its unitary symmetry group. In this case, this is the space group $G$, which includes translations and fourfold rotations. Time-reversal symmetry ($\\mathcal{T}$) is anti-unitary and relates different blocks.\n\n2.  **Space Group and k-vectors:** The translation group is $T = \\mathbb{Z}_3 \\times \\mathbb{Z}_3$. Its irreps are labeled by 9 distinct crystal momentum vectors $\\mathbf{k}$ in the first Brillouin zone. The point group is $P = C_4$ (fourfold rotations). The space group is the semi-direct product $G = T \\rtimes C_4$.\n\n3.  **Spin and Double Groups:** Since the system contains spin-1/2 electrons, we must use the projective representations of the space group, which correspond to the linear representations of its double group $G'$. This means the point group $C_4$ is replaced by its double group $C_4'$. The states of the system are classified by the number of electrons $N_e$. States with an even number of electrons transform under single-valued representations (integer spin), while states with an odd number of electrons transform under double-valued (spinor) representations (half-integer spin).\n\n4.  **Irreps of the Space Group (Little Group Method):** We find the irreps of $G'$ by classifying the $\\mathbf{k}$-vectors into orbits under the action of $C_4$.\n    *   The 9 $\\mathbf{k}$-vectors fall into 3 orbits:\n        a.  $\\mathbf{k}=(0,0)$ (the $\\Gamma$ point). This orbit has size 1.\n        b.  The orbit of $\\mathbf{k}=(2\\pi/3, 0)$ (the X points). This orbit has size 4.\n        c.  The orbit of $\\mathbf{k}=(2\\pi/3, 2\\pi/3)$ (the M points). This orbit has size 4.\n\n5.  **Counting Irreps from each Orbit:**\n    *   **$\\Gamma$ point:** The little group is the full point group $C_4'$. The double group $C_4'$ is isomorphic to $\\mathbb{Z}_8$ and has 8 irreps.\n        *   4 are single-valued (for even $N_e$): Two are real (A, B) and one is a complex conjugate pair (E1, E2).\n        *   4 are double-valued (for odd $N_e$): These form two complex conjugate pairs (let's call them {S1, S1*} and {S2, S2*}).\n    *   **X and M points:** For a representative $\\mathbf{k}$-vector in these orbits, the little group is the trivial group $\\{I\\}$. The corresponding double little group is $\\{I, \\bar{E}\\} \\cong \\mathbb{Z}_2$, where $\\bar{E}$ is the rotation by $2\\pi$. This group has two 1D irreps:\n        *   One single-valued irrep (trivial).\n        *   One double-valued irrep (non-trivial).\n        Each of these little group irreps induces a 4-dimensional irrep of the full space group. Thus, both the X-point orbit and the M-point orbit contribute one single-valued irrep and one double-valued irrep of the space group.\n\n6.  **Effect of Time-Reversal Symmetry (TRS):** TRS relates the block corresponding to an irrep $\\Gamma$ to the block of its complex conjugate irrep $\\Gamma^*$. Two blocks are \"symmetry-distinct\" if they are not related by TRS. This means we need to count the number of orbits of the set of irreps under the action of complex conjugation (which is how TRS acts on them).\n    *   An irrep can be real ($\\Gamma = \\Gamma^*$), or it can be complex and form a pair $\\{\\Gamma, \\Gamma^*\\}$. Each real irrep and each complex pair counts as one distinct entity.\n\n7.  **Counting Symmetry-Distinct Blocks:**\n    *   **$\\Gamma$ point:**\n        *   Single-valued irreps: A and B are real (2 blocks). {E1, E2} form a complex pair (1 block). Total: $2+1=3$ distinct blocks for even $N_e$.\n        *   Double-valued irreps: {S1, S1*} and {S2, S2*} are two complex pairs (2 blocks). Total: 2 distinct blocks for odd $N_e$.\n        *   Total from $\\Gamma$ point: $3+2=5$.\n    *   **X and M point orbits:** For these orbits, the representative $\\mathbf{k}$ is mapped to $-\\mathbf{k}$ (which is in the same orbit) by a point group operation. The little group irreps are all real. This implies that the induced space group irreps are self-conjugate (of real or pseudoreal type).\n        *   X-point orbit: One self-conjugate single-valued irrep (1 block) and one self-conjugate double-valued irrep (1 block). Total: 2 distinct blocks.\n        *   M-point orbit: Similarly, one self-conjugate single-valued irrep (1 block) and one self-conjugate double-valued irrep (1 block). Total: 2 distinct blocks.\n\n8.  **Total Count:** Summing up the number of distinct blocks from all k-points and for both even and odd particle numbers gives the total number of symmetry-distinct blocks.\n    Total = (blocks from $\\Gamma$) + (blocks from X) + (blocks from M) = $5 + 2 + 2 = 9$.\n\n",
+            "solution": "$\\boxed{7}$",
+            "parameter": "",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during parsing: No boxed solution found in response"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Pro",
+            "prompt_idx": 22,
+            "type": "PEPS",
+            "response": "The variational principle is used to find the optimal tensor $B$ that minimizes the expectation value of the energy $\\omega_k = \\frac{\\langle \\Phi(B)_k|H|\\Phi(B)_k\\rangle}{\\langle \\Phi(B)_k|\\Phi(B)_k\\rangle}$. Let $H_k(B, B^*) = \\langle \\Phi(B)_k|H|\\Phi(B)_k\\rangle$ and $N_k(B, B^*) = \\langle \\Phi(B)_k|\\Phi(B)_k\\rangle$. To find the minimum, we set the derivative of $\\omega_k$ with respect to the variational parameters (the elements of $B^*$) to zero. Using the quotient rule, we get:\n$$\n\\frac{\\partial \\omega_k}{\\partial B^*} = \\frac{1}{N_k} \\frac{\\partial H_k}{\\partial B^*} - \\frac{H_k}{N_k^2} \\frac{\\partial N_k}{\\partial B^*} = 0\n$$\nThis leads to the equation:\n$$\n\\frac{\\partial H_k}{\\partial B^*} = \\frac{H_k}{N_k} \\frac{\\partial N_k}{\\partial B^*} = \\omega_k \\frac{\\partial N_k}{\\partial B^*}\n$$\nThis is the generalized eigenvalue equation derived from the variational principle. The problem states this equation in the symbolic form $H_k B = \\omega_k f$.\nBy comparing the two forms, we can identify the terms. The term $H_k B$ corresponds to the gradient of the energy expectation value, $\\frac{\\partial H_k}{\\partial B^*}$. The term $f$ on the right-hand side must therefore correspond to the gradient of the norm, $\\frac{\\partial N_k}{\\partial B^*}$.\nThe state $|\\Phi(B)_k\\rangle$ is linear in $B$, so $N_k = \\langle\\Phi(B)_k|\\Phi(B)_k\\rangle$ is a quadratic form in $B$ and $B^*$. The derivative $\\frac{\\partial N_k}{\\partial B^*}$ results in an object that is linear in $B$, which is consistent with the structure of a generalized eigenvalue problem where $f$ is the result of applying the norm matrix to the eigenvector $B$.\n\n$\\boxed{\\frac{\\partial N_k}{\\partial B^*}}$",
+            "solution": "$\\boxed{N_k B}$",
+            "parameter": "$N_k;B;B*$",
+            "function": "",
+            "error": "Failed to parse model response: SymPy parsing error: Invalid star expression (<string>, line 1)"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Pro",
+            "prompt_idx": 25,
+            "type": "QMC",
+            "response": "To determine if a model is sign-problem-free in determinant quantum Monte Carlo (DQMC), we can check for specific symmetries of the Hamiltonian. A general criterion for the absence of a sign problem is the existence of an anti-unitary symmetry $\\mathcal{T}$ that commutes with the Hamiltonian, where the Hubbard-Stratonovich (HS) decomposition preserves this symmetry for every configuration of the auxiliary fields.\n\nLet's use the time-reversal symmetry operator $\\mathcal{T}$. In second quantization, for fermion operators $c_{k\\sigma}$ and $d_{k\\sigma}$, it acts as:\n$\\mathcal{T} c_{k\\uparrow} \\mathcal{T}^{-1} = c_{-k\\downarrow}$\n$\\mathcal{T} c_{k\\downarrow} \\mathcal{T}^{-1} = -c_{-k\\uparrow}$\nand similarly for $d$ fermions. The operator involves complex conjugation, so $\\mathcal{T} i \\mathcal{T}^{-1} = -i$. We assume the dispersions are symmetric, i.e., $\\varepsilon_{c/d,k}=\\varepsilon_{c/d,-k}$.\n\nFirst, we check the time-reversal symmetry of the full Hamiltonian $H$.\n1.  The kinetic term $H_0$ and the interaction terms $H_U, H_V$ (which are built from density operators $n_{f,r} = \\sum_\\sigma f_{r\\sigma}^\\dagger f_{r\\sigma}$) are time-reversal invariant.\n2.  The hybridization term $H_g$ needs to be checked carefully.\n    -   For the $g_1$ term: $\\mathcal{T} (ig_1 c_{k\\sigma}^\\dagger d_{k\\sigma}) \\mathcal{T}^{-1} = -ig_1^* \\mathcal{T}(c_{k\\sigma}^\\dagger)\\mathcal{T}^{-1} \\mathcal{T}(d_{k\\sigma})\\mathcal{T}^{-1}$. Assuming $g_1$ is real, this leads to $\\mathcal{T} H_{g1} \\mathcal{T}^{-1} = -H_{g1}$. This term breaks time-reversal symmetry. Therefore, for the Hamiltonian to be time-reversal symmetric, we must have $g_1=0$. This rules out option (d).\n    -   For the $g_2$ term: A similar analysis shows that $\\mathcal{T} H_{g2} \\mathcal{T}^{-1} = H_{g2}$. This term is time-reversal invariant.\n\nSo, for the entire Hamiltonian $H$ to be time-reversal symmetric, we must have $g_1=0$. This is a necessary condition for the model to be sign-problem-free based on this symmetry. This condition is met by options (a), (b), (c), and (e).\n\nNext, the HS decomposition of the interaction terms must preserve the time-reversal symmetry. The two-body interaction part of the Hamiltonian is $H_{int}' = \\sum_r \\left[ 2U(n_{c,r\\uparrow}n_{c,r\\downarrow}+n_{d,r\\uparrow}n_{d,r\\downarrow}) + V n_{c,r}n_{d,r} \\right]$. Using the identity $n_{f,r}^2=n_{f,r}+2n_{f,r\\uparrow}n_{f,r\\downarrow}$, we can relate $H_{int}'$ to the interaction term given in the problem, $H_{int} = \\sum_r \\left[ U(n_{c,r}^2+n_{d,r}^2) + V n_{c,r}n_{d,r} \\right]$, up to single-body terms that can be absorbed into the chemical potential.\n\nFor the DQMC simulation to be sign-problem-free based on time-reversal symmetry, the HS decomposition should introduce auxiliary fields that couple to time-reversal even operators. The local density operators $n_{c,r}$ and $n_{d,r}$ are time-reversal even. The interaction term is a quadratic form in these operators: $H_{int} = \\sum_r Q(n_{c,r}, n_{d,r})$. To perform a stable HS decomposition, this quadratic form needs to be written as a sum of squares with negative coefficients, i.e., $Q(x,y) = -\\sum_i \\gamma_i O_i(x,y)^2$ with $\\gamma_i>0$. This is possible if the quadratic form is negative semi-definite.\n\nThe quadratic form is $Q(n_c, n_d) = U(n_c^2 + n_d^2) + V n_c n_d$. We can represent this by the matrix $M = \\begin{pmatrix} U & V/2 \\\\ V/2 & U \\end{pmatrix}$.\nThis quadratic form is negative definite if and only if the eigenvalues of $M$ are all negative. The eigenvalues are $\\lambda_{1,2} = U \\pm V/2$.\nSo, the conditions for the interaction part to be decomposable in a \"sign-problem-free\" manner are:\n1. $U + V/2 < 0$\n2. $U - V/2 < 0$\nThese two conditions can be summarized as $U < -|V/2|$.\n\nNow we check the remaining options against these conditions:\na. $g_1=0$, $U=1, V=1/3$. $U+V/2 = 1+1/6 = 7/6 > 0$. This has a sign problem.\nb. $g_1=g_2=0$, $U=1, V=2/3$. $U+V/2 = 1+1/3 = 4/3 > 0$. This has a sign problem. (Note: Repulsive Hubbard-like models can sometimes be sign-problem-free on bipartite lattices at half-filling, but this information is not given, so we must assume the general case).\nc. $g_1=g_2=0$, $U=-1, V=-3/2$.\n   $U+V/2 = -1 + (-3/4) = -7/4 < 0$.\n   $U-V/2 = -1 - (-3/4) = -1/4 < 0$.\n   Both conditions are met. This model is sign-problem-free.\nd. $g_1>0$. Ruled out as it breaks time-reversal symmetry.\ne. $g_1=0$, $g_2<0$, $U=-1, V=-1/2$.\n   $U+V/2 = -1 + (-1/4) = -5/4 < 0$.\n   $U-V/2 = -1 - (-1/4) = -3/4 < 0$.\n   Both conditions are met. This model is sign-problem-free.\n\nThus, the parameter values for which the model is sign-problem-free are given by choices (c) and (e).\n\n",
+            "solution": "$\\boxed{c; d; e}$",
+            "parameter": "$a;b;c;d;e$",
+            "function": "",
+            "error": "Failed to parse model response: No boxed solution found in response"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Pro",
+            "prompt_idx": 26,
+            "type": "ED",
+            "response": "The Hamiltonian is given by\n$H=-t\\sum_{x,y}c_{x,y}^{\\dagger}c_{x,y+1}-t\\sum_{x,y}e^{\\frac{2i\\pi y}{n}}c_{x,y}^{\\dagger}c_{x+1,y}-t'\\sum_{x,y}ie^{\\frac{2i\\pi y}{n}}\\left(c_{x,y}^{\\dagger}c_{x+1,y+1}+c_{x,y}^{\\dagger}c_{x+1,y-1}\\right)+h.c.$\nThe system is a square lattice. Let's analyze its symmetries.\nThe Hamiltonian is invariant under translation by one site in the x-direction, $T_x: (x,y) \\to (x+1,y)$.\nThe phase factor $e^{\\frac{2i\\pi y}{n}}$ depends on the y-coordinate, so the Hamiltonian is not invariant under a single-site translation in the y-direction, $T_y: (x,y) \\to (x,y+1)$.\nHowever, the phase factor is periodic in $y$ with period $n$. This implies that the Hamiltonian is invariant under translation by $n$ sites in the y-direction, $T_y^n$.\nThis means the system has a magnetic unit cell of size $1 \\times n$.\n\nBecause of the translational invariance in the x-direction, the momentum $k_x$ is a good quantum number. We can perform a partial Fourier transform:\n$c_{x,y} = \\frac{1}{\\sqrt{L_x}} \\sum_{k_x} e^{ik_x x} c_{k_x, y}$.\nThe Hamiltonian decouples for each $k_x$: $H = \\sum_{k_x} H_{k_x}$. For a given $k_x$, $H_{k_x}$ describes a one-dimensional chain in the y-direction:\n$H_{k_x} = \\sum_y \\left( V_y(k_x) c_{k_x,y}^\\dagger c_{k_x,y} + T_y(k_x) c_{k_x,y}^\\dagger c_{k_x,y+1} + T_y(k_x)^* c_{k_x,y+1}^\\dagger c_{k_x,y} \\right)$,\nwhere the onsite potentials $V_y(k_x)$ and hopping amplitudes $T_y(k_x)$ are periodic in $y$ with period $n$. Specifically, after substituting the Fourier transform into $H$, we find:\n$V_y(k_x) = -2t \\cos(k_x + \\frac{2\\pi y}{n})$\nand the hopping term between site $y$ and $y+1$ involves terms from all three parts of the Hamiltonian.\n\nLet's analyze the symmetry of the problem more carefully. We can define a magnetic translation operator in the y-direction, $T'_y = T_y \\exp(i \\frac{2\\pi}{n} \\hat{X})$, where $\\hat{X} = \\sum_{x,y} x c_{x,y}^\\dagger c_{x,y}$ is the position operator in the x-direction. One can show that this operator commutes with the Hamiltonian, $[H, T'_y] = 0$. The usual translation operator in the x-direction, $T_x$, also commutes with $H$.\nHowever, $T_x$ and $T'_y$ do not commute with each other. Their commutation relation is $T_x T'_y = T'_y T_x e^{i\\frac{2\\pi}{n}}$.\nThis non-commutativity has profound consequences. Let $|\\psi\\rangle$ be an eigenstate of $H$ with energy $E$. Then $T'_y|\\psi\\rangle$ is also an eigenstate with the same energy $E$.\nLet's consider an eigenstate $|\\psi_{k_x}\\rangle$ which is also an eigenstate of $T_x$ with eigenvalue $e^{ik_x}$.\nNow consider the state $T'_y|\\psi_{k_x}\\rangle$. It has the same energy $E$. Let's see its momentum.\n$T_x (T'_y|\\psi_{k_x}\\rangle) = T'_y T_x e^{i\\frac{2\\pi}{n}} |\\psi_{k_x}\\rangle = e^{i\\frac{2\\pi}{n}} T'_y (e^{ik_x}|\\psi_{k_x}\\rangle) = e^{i(k_x+\\frac{2\\pi}{n})} (T'_y|\\psi_{k_x}\\rangle)$.\nThis means that if there is an eigenstate with momentum $k_x$ and energy $E$, there must also be an eigenstate with momentum $k_x + 2\\pi/n$ and the same energy $E$.\nThis implies that the energy spectrum $E(k_x)$ must be periodic with period $2\\pi/n$.\nLet's consider the lowest energy band, $E_1(k_x, k_y)$. Let its minimum value be $E_{min}$, which is achieved at some momentum $(k_x^*, k_y^*)$.\nDue to the periodicity of the spectrum, the energy at $(k_x^* + 2\\pi j/n, k_y^*)$ for any integer $j$ must also be $E_{min}$.\nIn the first Brillouin zone $k_x \\in [-\\pi, \\pi)$, the points $k_x^*, k_x^*+2\\pi/n, k_x^*+4\\pi/n, \\dots, k_x^*+2\\pi(n-1)/n$ are all distinct points (since $n>1$).\nThus, the minimum of the lowest energy band is achieved at least at $n$ distinct $k_x$ values. These states are physically distinct and correspond to degenerate ground states of the single-particle Hamiltonian.\nTherefore, the minimum of the lowest energy band is at least $n$-fold degenerate. This makes statement (b) true and (a) false.\n\nNow let's analyze the other statements, which concern expectation values in the ground state at a filling of $1/n$. This corresponds to completely filling the lowest energy band. The many-body ground state $|GS\\rangle$ is a Slater determinant of all single-particle states in the lowest band.\nThis ground state $|GS\\rangle$ is invariant under the symmetries of the Hamiltonian, so $\\langle GS|O|GS\\rangle = \\langle GS|S^{-1}OS|GS\\rangle$ for any symmetry operator $S$.\nThe Hamiltonian is invariant under $T_x$ and $T_y^n$.\nc) Consider $\\langle n_{x,y}\\rangle = \\langle c^\\dagger_{x,y} c_{x,y} \\rangle$.\nInvariance under $T_x$ implies $\\langle n_{x,y} \\rangle = \\langle T_x^{-1} n_{x,y} T_x \\rangle = \\langle n_{x+1,y} \\rangle$. So the density is independent of $x$.\nInvariance under $T_y^n$ implies $\\langle n_{x,y} \\rangle = \\langle (T_y^n)^{-1} n_{x,y} T_y^n \\rangle = \\langle n_{x,y+n} \\rangle$. So the density is periodic in $y$ with period $n$.\nHowever, the density is not generally independent of $y$ within the magnetic unit cell. The $n$ sites within the unit cell, $(x,y_0), (x,y_0+1), \\dots, (x,y_0+n-1)$, are inequivalent due to the y-dependent phase factor in the Hamiltonian. So one expects $\\langle n_{x,y} \\rangle$ to depend on $y \\pmod n$. Hence, it's not independent of $y$. So (c) is false.\n\nd, e) The same argument applies to other local expectation values.\nFor $\\langle c^\\dagger_{x,y} c_{x+1,y+1} \\rangle$, translation in $x$ by $a$ sites gives $\\langle c^\\dagger_{x+a,y} c_{x+a+1,y+1} \\rangle$. Since the ground state is invariant under $T_x$, this expectation value must be independent of $x$.\nTranslation in $y$ by $n$ sites gives $\\langle c^\\dagger_{x,y+n} c_{x+1,y+1+n} \\rangle$. Invariance under $T_y^n$ means this must be equal to $\\langle c^\\dagger_{x,y} c_{x+1,y+1} \\rangle$.\nSo the expectation value is independent of $x$ and periodic in $y$ with period $n$. It is not independent of $y$ in general, as the hopping parameters depend on $y$. So (d) is false.\nA similar argument shows that $\\langle c^\\dagger_{x,y} c_{x,y+1} \\rangle$ is independent of $x$ but periodic in $y$ with period $n$. So (e) is false.\n\nBased on this analysis, only statement (b) is true.\n\n",
+            "solution": "$\\boxed{b; c; e}$",
+            "parameter": "$a;b;c;d;e$",
+            "function": "",
+            "error": "Failed to parse model response: No boxed solution found in response"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Pro",
+            "prompt_idx": 27,
+            "type": "Other",
+            "response": "An extensive property of a lattice model, in the thermodynamic limit (i.e., the property per site), is given by the cluster expansion\n$$O_n = \\sum_c M_c R_c$$\nThe sum is over all distinct clusters $c$ with up to $n$ sites. For a one-dimensional lattice, clusters are simply contiguous chains of sites. A cluster is thus uniquely defined by its size, say $k$. The sum is therefore over $k=1, 2, \\dots, n$.\n\n$M_c$, or $M_k$ in 1D, is the number of ways per site the cluster can be embedded on the lattice. For a chain of $k$ sites on an infinite 1D lattice, there is one embedding starting at each site. Thus, the number of embeddings per site is $M_k = 1$ for all $k$.\n\nThe expression for $O_n$ simplifies to:\n$$O_n = \\sum_{k=1}^n R_k$$\nwhere $R_k$ is the reduced property for a cluster of size $k$.\n\nThe reduced property $R_c$ is defined by the inclusion-exclusion principle:\n$$R_c = E_c - \\sum_s R_s$$\nThe sum is over all sub-clusters $s$ of $c$. For a 1D lattice, a cluster $c_k$ of size $k$ has sub-clusters of all smaller sizes $j < k$. The problem states that the sum for $O_n$ is over *distinct* clusters. It is natural to assume the same applies to the sum over sub-clusters. The distinct sub-clusters of a chain of length $k$ are chains of length $j=1, 2, \\dots, k-1$.\n\nTherefore, for a cluster of size $k$, the reduced property $R_k$ is given by:\n$$R_k = E_k - \\sum_{j=1}^{k-1} R_j$$\nwhere $E_k$ is the property calculated for a cluster of size $k$.\n\nWe can express the sum in the definition of $R_k$ in terms of $O_n$. From our expression for $O_n$, we see that $\\sum_{j=1}^{k-1} R_j = O_{k-1}$.\nSo, the recurrence relation for $R_k$ becomes:\n$$R_k = E_k - O_{k-1} \\quad \\text{for } k \\ge 1$$\nwhere we define $O_0 = 0$.\n\nNow, we can find an expression for $O_n$. We know that:\n$$O_n = \\sum_{k=1}^n R_k = \\left(\\sum_{k=1}^{n-1} R_k\\right) + R_n = O_{n-1} + R_n$$\nSubstitute the expression for $R_n$ into this equation:\n$$O_n = O_{n-1} + (E_n - O_{n-1})$$\n$$O_n = E_n$$\nThis relation holds for all $n \\ge 1$. For $n=1$, $O_1 = R_1$. The sum for $R_1$ has no terms, so $R_1 = E_1$. Thus, $O_1=E_1$, which is consistent with our derived formula.\n\n",
+            "solution": "$\\boxed{O_n=E_n-E_{n-1}}$",
+            "parameter": "$O_n;E_n;E_{n-1}$",
+            "function": "",
+            "error": "Failed to parse model response: No boxed solution found in response"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Pro",
+            "prompt_idx": 39,
+            "type": "Other",
+            "response": "The Hamiltonian is given by\n\\[ H = \\sum_{i=1}^n\\left[\\left(-tc_{i}^\\dagger e^{iqa_{i,i+1}}c_{i+1}+h.c.\\right)-\\mu BS^z_i\\right] \\]\nwhere we have suppressed the spin index $\\sigma \\in \\{\\uparrow, \\downarrow\\}$. The parameters $a_{i,i+1}$ are classical, and the magnetic field is $B = \\sum_j a_{j,j+1}$. We impose periodic boundary conditions.\n\nThe Hamiltonian acts on spin-up and spin-down fermions independently. It can be written as $H = H_\\uparrow + H_\\downarrow$.\nThe hopping part of the Hamiltonian is a tight-binding model on a ring with Peierls phases $\\phi_i = qa_{i,i+1}$. The total flux through the ring is $\\Phi = \\sum_i \\phi_i = q \\sum_i a_{i,i+1} = qB$. By a gauge transformation, this Hamiltonian is equivalent to one with uniform hopping phases $e^{i\\Phi/n} = e^{iqB/n}$. The single-particle energy levels of the hopping part are then given by\n\\[ \\epsilon_k(B) = -2t \\cos(k + qB/n) \\]\nwhere $k = 2\\pi l/n$ for $l=0, 1, \\dots, n-1$.\n\nThe Zeeman term is $-\\mu B S^z_i = -\\frac{1}{2}\\mu B \\sigma$ for spin $\\sigma$ (with $\\sigma=+1$ for up, $-1$ for down) on the chemical potential. So, the full single-particle energy levels are\n\\[ E_{k,\\sigma}(B) = \\epsilon_k(B) - \\frac{\\sigma}{2}\\mu B = -2t \\cos(k + qB/n) - \\frac{\\sigma}{2}\\mu B \\]\nThe magnetization of the system can be defined thermodynamically as the derivative of the free energy with respect to the magnetic field. At zero temperature, the magnetization is $M = -\\frac{dE_0}{dB}$, where $E_0$ is the ground state energy. The ground state energy is the sum of the energies of all occupied single-particle states.\nThe calculation of $-\\frac{dE_0}{dB}$ to linear order in $B$ gives the magnetic susceptibility $\\chi$, such that the linear-in-$B$ contribution to the magnetization is $\\chi B$. This susceptibility has two contributions: one from the orbital motion of the fermions (related to the persistent current) and one from the spin polarization (Pauli paramagnetism).\n\n$M(B) \\approx \\chi B$, where $\\chi = \\chi_{orb} + \\chi_{spin}$.\nA detailed calculation yields:\n1.  The spin contribution (Pauli susceptibility): $\\chi_{\\text{spin}} = \\frac{\\mu^2}{2} g(\\mu_F)$, where $g(\\mu_F)$ is the density of states at the Fermi energy for $B=0$. This term is independent of $q$ but proportional to $\\mu^2$.\n2.  The orbital contribution (Landau-Peierls susceptibility): $\\chi_{\\text{orb}}$. This term arises from the dependence of $\\epsilon_k(B)$ on $B$. The energy levels depend on $qB$. The susceptibility $\\chi_{\\text{orb}}$ is found to be proportional to $q^2$.\n\nSo, the total susceptibility is of the form $\\chi = C_1(t, N/n) q^2 + C_2(t, N/n) \\mu^2$, where $C_1$ and $C_2$ are coefficients depending on the hopping $t$ and the particle filling fraction $N/n$, but not on $q$ or $\\mu$.\nThe linear-in-$B$ contribution to the magnetization is $M_B = (C_1 q^2 + C_2 \\mu^2)B$.\n\nLet's evaluate the given options based on this result for the total magnetization:\na) The magnetization is not proportional to $B$. This is true in general because there will be higher-order terms in $B$ (e.g., $B^3$). So $M(B)$ is not a strictly linear function of $B$.\nb) The linear-in-$B$ contribution to the magnetization is independent of $q$. This is false, as $\\chi_{orb} \\propto q^2$.\nc) The linear-in-$B$ contribution to the magnetization is proportional to $q$ for large $q$. This is false, the dependence is on $q^2$.\nd) The linear-in-$B$ contribution to the magnetization is proportional to $q^2$ for large $q$. This is true. For large $q$, the $C_1 q^2$ term will dominate the susceptibility, so $M_B \\propto q^2 B$.\ne) The linear-in-$B$ contribution to the magnetization is independent of $t$. This is false, as the coefficients $C_1$ and $C_2$ depend on $t$ (e.g., through the density of states).\nf) The linear-in-$B$ contribution to the magnetization is proportional to $\\mu$ for large $\\mu$. This is false, the dependence is on $\\mu^2$.\ng) The linear-in-$B$ contribution to the magnetization is proportional to $\\mu^2$ for large $\\mu$. This is true. For large $\\mu$, the $C_2 \\mu^2$ term will dominate the susceptibility, so $M_B \\propto \\mu^2 B$.\nh) There are no currents in the system. This is false. For $B \\neq 0$, there is a non-zero Aharonov-Bohm flux, which induces a persistent current.\ni,j) The direction of the current depends on the filling fraction of the band. For example, it is diamagnetic (opposing the flux) for a nearly empty band, but can be paramagnetic (flowing along the vector potential direction) for a nearly half-filled band. Without information on the filling, we cannot determine the direction.\n\nThe correct options are (a), (d), and (g).\n\n",
+            "solution": "$\\boxed{a;d;i}$",
+            "parameter": "$a;b;c;d;e;f;g;h;i;j$",
+            "function": "",
+            "error": "Failed to parse model response: No boxed solution found in response"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Pro",
+            "prompt_idx": 42,
+            "type": "Other",
+            "response": "The AC spin conductivity $\\sigma({\\bf q},\\omega)$ can be derived using the Kubo formula, which relates it to the retarded spin current-current correlation function. The real part of the conductivity, which corresponds to the dissipative response, is given by\n$$ \\textrm{Re } \\sigma({\\bf q},\\omega) = \\frac{1}{\\omega} \\textrm{Im} \\left( i \\int_0^\\infty dt e^{i\\omega t} \\left< [j_x({\\bf q}|t), j_x({\\bf -q}|0)] \\right> \\right) $$\nwhere $\\left< \\cdot \\right>$ denotes a thermal average, and we work in units where $\\hbar=1$. Let $J({\\bf q}) \\equiv j_x({\\bf q})$. The operator $j_x({\\bf q})$ is Hermitian, so $j_x({\\bf -q}) = j_x({\\bf q})^\\dagger$. Let's denote $J(t) = J({\\bf q}|t)$ and $J^\\dagger(0) = J({\\bf -q}|0)$. The commutator is $\\left< [J(t), J^\\dagger(0)] \\right> = \\left< J(t)J^\\dagger(0) - J^\\dagger(0)J(t) \\right>$.\n\nUsing the spectral representation (Lehmann representation), one can define the spectral function $S({\\bf q},\\omega')$ as\n$$ S({\\bf q},\\omega') = \\frac{1}{Z} \\sum_{n,m} e^{-\\beta E_n} |\\langle m | J({\\bf q}) | n \\rangle|^2 \\delta(\\omega' - (E_m - E_n)) $$\nwhere $|n\\rangle$ are the eigenstates of the Hamiltonian with eigenvalues $E_n$, and $Z$ is the partition function. The correlation functions can be expressed in terms of $S({\\bf q},\\omega')$:\n$$ \\left< J({\\bf q}|t)J({\\bf -q}|0) \\right> = \\int_{-\\infty}^\\infty d\\omega' S({\\bf q},\\omega') e^{-i\\omega' t} $$\n$$ \\left< J({\\bf -q}|0)J({\\bf q}|t) \\right> = \\int_{-\\infty}^\\infty d\\omega' S({\\bf q},\\omega') e^{-\\beta\\omega'} e^{i\\omega' t} $$\nFrom these, we can establish the detailed balance relation $S({\\bf q},-\\omega') = e^{-\\beta\\omega'} S({\\bf q},\\omega')$.\n\nThe real part of the conductivity can be expressed in terms of the spectral function:\n$$ \\textrm{Re } \\sigma({\\bf q},\\omega) = \\frac{\\pi}{\\omega} (1-e^{-\\beta\\omega}) S({\\bf q},\\omega) $$\nThis is a standard result from the fluctuation-dissipation theorem.\n\nNow we analyze the right-hand side of the given equation:\n$$ \\textrm{RHS} = \\alpha \\int_0^\\infty dte^{i\\omega t}\\textrm{Re } \\left< j_x({\\bf -q}|t)j_x({\\bf q}|0) \\right> $$\nLet's analyze the term inside the integral. Let $J'({\\bf q}) = j_x(-{\\bf q})$. Then $j_x({\\bf q}) = J'(-{\\bf q}) = J'({\\bf q})^\\dagger$.\nThe correlator is $\\left< J'(-{\\bf q}|t)J'(-{\\bf q}|0)^\\dagger \\right>$.\nLet $C(t) = \\left< j_x({\\bf -q}|t)j_x({\\bf q}|0) \\right>$. Using the spectral representation:\n$$ C(t) = \\int_{-\\infty}^\\infty d\\omega' S({\\bf -q},\\omega') e^{-i\\omega' t} $$\nDue to symmetry properties of the current operator, we can assume $S({\\bf -q},\\omega') = S({\\bf q},\\omega')$.\n$$ \\textrm{Re } C(t) = \\frac{C(t)+C(t)^*}{2} = \\frac{1}{2} \\left( \\left< j_x({\\bf -q}|t)j_x({\\bf q}|0) \\right> + \\left< j_x({\\bf q}|0)j_x({\\bf -q}|-t) \\right> \\right) $$\nUsing time-translation invariance of the correlation function, this is $\\frac{1}{2}(\\left< j_x({\\bf -q}|t)j_x({\\bf q}|0) \\right> + \\left< j_x({\\bf q}|t)j_x({\\bf -q}|0) \\right>)$.\nIn terms of the spectral function:\n$$ \\textrm{Re } C(t) = \\int_{-\\infty}^\\infty d\\omega' S({\\bf q},\\omega') \\cos(\\omega' t) $$\nThe integral in the problem is $\\int_0^\\infty dt e^{i\\omega t} \\int_{-\\infty}^\\infty d\\omega' S({\\bf q},\\omega') \\cos(\\omega' t)$.\nThis integral is complex. The problem equates a real quantity on the LHS to $\\alpha$ times this integral. This implies that we should consider the real part of the entire RHS expression, or that the notation is understood in that context.\n$$ \\textrm{Re} \\left[ \\int_0^\\infty dt e^{i\\omega t} \\int_{-\\infty}^\\infty d\\omega' S({\\bf q},\\omega') \\cos(\\omega' t) \\right] = \\int_0^\\infty dt \\cos(\\omega t) \\int_{-\\infty}^\\infty d\\omega' S({\\bf q},\\omega') \\cos(\\omega' t) $$\n$$ = \\int_{-\\infty}^\\infty d\\omega' S({\\bf q},\\omega') \\int_0^\\infty dt \\cos(\\omega t)\\cos(\\omega' t) = \\int_{-\\infty}^\\infty d\\omega' S({\\bf q},\\omega') \\frac{\\pi}{2} [\\delta(\\omega-\\omega')+\\delta(\\omega+\\omega')] $$\n$$ = \\frac{\\pi}{2} [S({\\bf q},\\omega) + S({\\bf q},-\\omega)] $$\nUsing the detailed balance relation $S({\\bf q},-\\omega) = e^{-\\beta\\omega}S({\\bf q},\\omega)$, this becomes:\n$$ \\frac{\\pi}{2} (1+e^{-\\beta\\omega})S({\\bf q},\\omega) $$\nNow we equate the LHS with $\\alpha$ times this result:\n$$ \\frac{\\pi}{\\omega} (1-e^{-\\beta\\omega}) S({\\bf q},\\omega) = \\alpha \\frac{\\pi}{2} (1+e^{-\\beta\\omega}) S({\\bf q},\\omega) $$\nSolving for $\\alpha$ gives:\n$$ \\alpha = \\frac{2}{\\omega} \\frac{1-e^{-\\beta\\omega}}{1+e^{-\\beta\\omega}} $$\n\n",
+            "solution": "$\\boxed{\\frac{2\\tanh(\\frac{\\beta \\omega}{2})}{\\omega}}$",
+            "parameter": "$\\omega;\\beta;\\hbar;V$",
+            "function": "",
+            "error": "Failed to parse model response: No boxed solution found in response"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Pro",
+            "prompt_idx": 47,
+            "type": "SM",
+            "response": "The overdamped Langevin dynamics is given by the stochastic differential equation (SDE):\n$\\dot x = -x^3 + x^2 \\eta(t)$\nwhere $\\eta(t)$ is a white Gaussian noise with mean $\\langle \\eta(t) \\rangle = 0$ and variance $\\langle \\eta(t) \\eta(t') \\rangle = 2 \\delta(t-t')$.\n\nThis SDE is of the general form:\n$\\dot x = f(x) + g(x) \\eta(t)$\nwith a noise correlation $\\langle \\eta(t) \\eta(t') \\rangle = 2D \\delta(t-t')$.\nBy comparing the given equation with the general form, we can identify the drift and diffusion terms, and the diffusion coefficient:\n- Drift term: $f(x) = -x^3$\n- Diffusion term (multiplicative factor): $g(x) = x^2$\n- Diffusion coefficient: $D=1$\n\nThe Onsager-Machlup action, $S[x(t)] = \\int L(x, \\dot x) dt$, defines the probability of a path $x(t)$ as $P[x(t)] \\propto e^{-S[x(t)]}$. The integrand $L(x, \\dot x)$ is the Onsager-Machlup Lagrangian.\n\nFor a one-dimensional system described by the SDE above, interpreted using the Stratonovich convention, the Onsager-Machlup Lagrangian is given by a well-established formula derived from path integral methods, often involving geometric arguments. The formula is:\n$L(x, \\dot x) = \\frac{(\\dot x - f(x))^2}{4D g(x)^2} + V_{\\text{corr}}(x)$\nwhere $V_{\\text{corr}}(x)$ is a correction term that arises from the path integral measure (the Jacobian of the transformation from the noise variables to the path variables). In the Stratonovich convention, this correction term is given by the covariant divergence of the drift field. For a 1D system, this simplifies to:\n$V_{\\text{corr}}(x) = \\frac{1}{2} (f'(x) - \\frac{f(x)g'(x)}{g(x)})$\n\nLet's compute the components for our specific problem.\nWe have:\n- $f(x) = -x^3$\n- $g(x) = x^2$\n- $D = 1$\n- $\\dot x = p$\n\nFirst, we calculate the derivatives of $f(x)$ and $g(x)$:\n- $f'(x) = \\frac{d}{dx}(-x^3) = -3x^2$\n- $g'(x) = \\frac{d}{dx}(x^2) = 2x$\n\nNow, we can compute the two parts of the Lagrangian $L(x, p)$.\n1.  The kinetic term:\n    $\\frac{(\\dot x - f(x))^2}{4D g(x)^2} = \\frac{(p - (-x^3))^2}{4(1)(x^2)^2} = \\frac{(p+x^3)^2}{4x^4}$\n\n2.  The correction term:\n    $V_{\\text{corr}}(x) = \\frac{1}{2} \\left(f'(x) - \\frac{f(x)g'(x)}{g(x)}\\right)$\n    First, calculate the term $\\frac{f(x)g'(x)}{g(x)}$:\n    $\\frac{f(x)g'(x)}{g(x)} = \\frac{(-x^3)(2x)}{x^2} = -2x^2$\n    Now substitute this and $f'(x)$ into the expression for $V_{\\text{corr}}(x)$:\n    $V_{\\text{corr}}(x) = \\frac{1}{2} (-3x^2 - (-2x^2)) = \\frac{1}{2} (-3x^2 + 2x^2) = -\\frac{1}{2}x^2$\n\nCombining the two parts, the full Onsager-Machlup Lagrangian is:\n$L(x, p) = \\frac{(p+x^3)^2}{4x^4} - \\frac{1}{2}x^2$\n\nThe problem asks for the integrand that contributes to the action, which is this Lagrangian.\n\n",
+            "solution": "$\\boxed{\\frac{(p + x^3)^2}{4 x^4} + 4 x^2}$",
+            "parameter": "$p;x$",
+            "function": "",
+            "error": "Failed to parse model response: No boxed solution found in response"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Gemini 2.5 Pro",
+            "prompt_idx": 49,
+            "type": "PEPS",
+            "response": "The problem asks for the number of independent real-valued parameters of a tensor `T_{puldr}` that satisfies certain symmetries. This number is equivalent to the dimension of the vector space of such tensors.\n\nThe tensor `T` has one physical index `p` and four virtual indices `u, l, d, r`.\n1.  **Physical space:** `P` corresponds to a spin-1 moment, so it is the `j=1` irreducible representation (irrep) of SU(2). We denote this as `1`.\n2.  **Virtual space:** Each virtual space `V` is a direct sum of a trivial irrep (`j=0`) and a spin-1 irrep (`j=1`). So, `V = 0 \\oplus 1`.\n3.  **SU(2) symmetry:** The tensor `T` must be invariant under the action of SU(2). This means `T` is a singlet, i.e., it transforms under the trivial (`j=0`) irrep of SU(2). The tensor can be viewed as an element of the dual space `(P \\otimes V \\otimes V \\otimes V \\otimes V)^*`. Since SU(2) irreps are self-dual, this is equivalent to finding the number of singlets in the tensor product space `P \\otimes V^{\\otimes 4}`. The number of singlets in a tensor product `J \\otimes X` is equal to the number of times the irrep `J` appears in the decomposition of `X`. Here, `P=1`, so we need to find the number of times the `j=1` irrep appears in the decomposition of `V^{\\otimes 4}`.\n\nLet `N_X(j)` denote the number of times irrep `j` appears in the decomposition of a space `X`. We need to calculate `N_{V^{\\otimes 4}}(1)`.\n`V^{\\otimes 4} = (0 \\oplus 1)^{\\otimes 4} = \\sum_{k=0}^{4} \\binom{4}{k} 1^{\\otimes k}`.\nWe use the Clebsch-Gordan series for SU(2) tensor products:\n-   `1^{\\otimes 0} = 0`.\n-   `1^{\\otimes 1} = 1`.\n-   `1^{\\otimes 2} = 0 \\oplus 1 \\oplus 2`.\n-   `1^{\\otimes 3} = 1 \\otimes (0 \\oplus 1 \\oplus 2) = 1 \\oplus (0 \\oplus 1 \\oplus 2) \\oplus (1 \\oplus 2 \\oplus 3) = 0 \\oplus 3 \\cdot 1 \\oplus 2 \\cdot 2 \\oplus 3`.\n-   `1^{\\otimes 4} = 1 \\otimes (0 \\oplus 3 \\cdot 1 \\oplus 2 \\cdot 2 \\oplus 3) = 1 \\oplus 3(0\\oplus 1\\oplus 2) \\oplus 2(1\\oplus 2\\oplus 3) \\oplus (2\\oplus 3\\oplus 4) = 3 \\cdot 0 \\oplus 6 \\cdot 1 \\oplus 6 \\cdot 2 \\oplus 3 \\cdot 3 \\oplus 4`.\n\nNow we can calculate `N_{V^{\\otimes 4}}(1)`:\n`N_{V^{\\otimes 4}}(1) = \\binom{4}{0}N_{1^{\\otimes 0}}(1) + \\binom{4}{1}N_{1^{\\otimes 1}}(1) + \\binom{4}{2}N_{1^{\\otimes 2}}(1) + \\binom{4}{3}N_{1^{\\otimes 3}}(1) + \\binom{4}{4}N_{1^{\\otimes 4}}(1)`\n`= 1 \\cdot 0 + 4 \\cdot 1 + 6 \\cdot 1 + 4 \\cdot 3 + 1 \\cdot 6`\n`= 0 + 4 + 6 + 12 + 6 = 28`.\nSo, there are 28 independent SU(2)-invariant tensors. Let `S` be the space of these tensors. `dim(S)=28`.\n\n4.  **C_4 lattice rotation symmetry:** The tensor `T` must be invariant under a 90-degree rotation, which acts by cyclically permuting the virtual indices, e.g., `(u,l,d,r) \\to (l,d,r,u)`. This corresponds to the permutation `g=(uldr)`. We want to find the dimension of the subspace of `S` that is invariant under the `C_4` group action. This is given by the projection formula (a consequence of Burnside's Lemma):\n`dim(S^{C_4}) = \\frac{1}{|C_4|} \\sum_{g \\in C_4} \\text{Tr}(g|_S) = \\frac{1}{4} \\left( \\text{Tr}(e) + \\text{Tr}(R) + \\text{Tr}(R^2) + \\text{Tr}(R^3) \\right)`.\nHere `R` is the generator of `C_4`.\n\n-   `Tr(e)`: The trace of the identity is the dimension of the space, `dim(S) = 28`.\n-   To calculate the traces of other elements, we use the character formula for the trace of a permutation operator `\u03c0` on the space of intertwiners `Hom_G(W, V)`: `Tr(\u03c0|_{Hom_G(W,V)}) = \\int_G \\chi_W(g)^* \\text{Tr}(\\pi \\rho_V(g)) d\\mu(g)`.\n    Here, `W=0` (the singlet), so `\\chi_W=1`. The space of tensors is `Hom_{SU(2)}(0, P \\otimes V^{\\otimes 4})`. The trace of an operator `A` on this space is `\\langle \\chi_0, \\chi_{P \\otimes V^{\\otimes 4}}(A) \\rangle = \\langle \\chi_0, \\chi_P \\cdot \\chi_{V^{\\otimes 4}}(A) \\rangle`.\n    -   `g=R`: Permutation is `(uldr)`, a single cycle of length 4. `\\text{Tr}(R \\rho_{V^{\\otimes 4}}(g)) = \\chi_V(g^4)`.\n        `Tr(R|_S) = \\langle \\chi_0, \\chi_1(g) \\chi_V(g^4) \\rangle`.\n        `\\chi_V(g^4) = \\chi_0(g^4)+\\chi_1(g^4) = \\chi_0(g) + (\\chi_0(g)-\\chi_3(g)+\\chi_4(g)) = 2\\chi_0 - \\chi_3 + \\chi_4`.\n        We need the number of singlets in `\\chi_1 \\otimes (2\\chi_0 - \\chi_3 + \\chi_4) = 2\\chi_1 - (\\chi_2+\\chi_3+\\chi_4) + (\\chi_3+\\chi_4+\\chi_5) = 2\\chi_1 - \\chi_2 + \\chi_5`. This contains no singlets (`\\chi_0`). So, `Tr(R|_S) = 0`.\n    -   `g=R^3`: This is `(urdl)`, also a cycle of length 4. By the same logic, `Tr(R^3|_S) = 0`.\n    -   `g=R^2`: Permutation is `(ud)(lr)`, two cycles of length 2. `\\text{Tr}(R^2 \\rho_{V^{\\otimes 4}}(g)) = \\chi_V(g^2)^2`.\n        `Tr(R^2|_S) = \\langle \\chi_0, \\chi_1(g) \\chi_V(g^2)^2 \\rangle`.\n        The character of a representation `D^j` under the group action `g \\to g^2` is `\\chi_j(g^2)`. For `j=1`, `\\chi_1(g^2) = \\chi_0 - \\chi_1 + \\chi_2`.\n        So, `\\chi_V(g^2) = \\chi_0(g^2)+\\chi_1(g^2) = \\chi_0 + (\\chi_0-\\chi_1+\\chi_2) = 2\\chi_0 - \\chi_1 + \\chi_2`.\n        Now we compute `\\chi_V(g^2)^2`:\n        `\\chi_V(g^2)^2 = (2\\chi_0 - \\chi_1 + \\chi_2)^2 = 4\\chi_0^2 + \\chi_1^2 + \\chi_2^2 - 4\\chi_0\\chi_1 + 4\\chi_0\\chi_2 - 2\\chi_1\\chi_2`\n        Using `\\chi_1^2=\\chi_0+\\chi_1+\\chi_2`, `\\chi_2^2=\\chi_0+\\chi_1+\\chi_2+\\chi_3+\\chi_4`, `\\chi_1\\chi_2=\\chi_1+\\chi_2+\\chi_3`:\n        `\\chi_V(g^2)^2 = 4\\chi_0 + (\\chi_0+\\chi_1+\\chi_2) + (\\chi_0+\\dots+\\chi_4) - 4\\chi_1 + 4\\chi_2 - 2(\\chi_1+\\chi_2+\\chi_3)`\n        `= 6\\chi_0 - 4\\chi_1 + 4\\chi_2 - \\chi_3 + \\chi_4`.\n        The trace `Tr(R^2|_S)` is the number of singlets in `\\chi_1 \\otimes \\chi_V(g^2)^2`, which is equal to the coefficient of `\\chi_1` in the decomposition of `\\chi_V(g^2)^2`.\n        The coefficient of `\\chi_1` is `-4`. So, `Tr(R^2|_S) = -4`.\n\nFinally, we compute the number of parameters:\n`dim(S^{C_4}) = \\frac{1}{4} (28 + 0 + (-4) + 0) = \\frac{24}{4} = 6`.\n\n",
+            "solution": "$\\boxed{6}$",
+            "parameter": "",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during parsing: No boxed solution found in response"
+        }
+    ],
+    "Claude 3.7 Sonnet": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Claude 3.7 Sonnet",
+            "prompt_idx": 3,
+            "type": "HF",
+            "response": "To determine the spatial complexity for each $k$ to represent the Hamiltonian, I need to consider the dimensionality of the problem.\n\nThe Hamiltonian involves a 2D triangular lattice with plane-wave basis covering $N_q$ Brillouin zones. For each $k$-point, we need to represent:\n- A 2\u00d72 Hamiltonian matrix for each valley $\\tau$\n- Two valleys ($\\tau = \\pm$)\n- $N_q$ Brillouin zones for the plane-wave basis\n\nThe spatial complexity scales with the number of Brillouin zones $N_q$ and the dimensionality of the Hamiltonian matrix.\n\n$\\boxed{O(N_q)}$",
+            "solution": "$\\boxed{16N_q^2}$",
+            "parameter": "$N_q$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Claude 3.7 Sonnet",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "To determine if a superconducting state can be realized in a doped Hubbard model, I need to analyze the interactions between electrons when holes are introduced.\n\nIn the Hubbard model, strong on-site repulsion U penalizes double occupancy. When doped away from half-filling, the system gains kinetic energy through hole motion. In the strong coupling regime (U > t), holes can mediate effective attractive interactions between electrons.\n\nThe key mechanism is that holes allow electrons to avoid the energy cost U by providing pathways for movement. This leads to effective spin exchange interactions J ~ t\u00b2/U between neighboring sites, which can pair electrons in a d-wave configuration.\n\nFor this system:\n\n$\\boxed{\\text{Yes, superconductivity can emerge through effective attractive interactions mediated by hole motion when U is sufficiently large compared to t, leading to d-wave pairing that avoids the on-site repulsion}}$",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Claude 3.7 Sonnet",
+            "prompt_idx": 20,
+            "type": "ED",
+            "response": "I'll analyze which rotation eigenvalues are possible for the ground state of this system.\n\nFor a system with four-fold rotation symmetry, the rotation operator $C_4$ satisfies $C_4^4 = 1$, meaning its eigenvalues must be fourth roots of unity: $+1$, $i$, $-1$, or $-i$.\n\nSince the system has time-reversal symmetry and a unique ground state, the ground state must be invariant under time reversal. The time-reversal operator $T$ is anti-unitary and satisfies $T^2 = -1$ for spin-1/2 fermions.\n\nIf the ground state has eigenvalue $\\lambda$ under $C_4$, then applying time-reversal would give a state with eigenvalue $\\lambda^*$ (complex conjugate). Since the ground state is unique and time-reversal invariant, we must have $\\lambda = \\lambda^*$, which means $\\lambda$ must be real.\n\nAmong the possible eigenvalues listed, only $+1$ and $-1$ are real numbers, so these are the only possible rotation eigenvalues for the ground state.\n\n$\\boxed{\\text{a};\\text{e}}$",
+            "solution": "$\\boxed{a}$",
+            "parameter": "$a;b;c;d;e;f;g;h$",
+            "function": "",
+            "error": "Failed to parse model response: SymPy parsing error: list index out of range"
+        }
+    ],
+    "Claude 4.1 Sonnet": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Claude 4.1 Sonnet",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "I need to analyze whether the Hubbard model can exhibit superconductivity when doped away from half-filling.\n\nLet me consider the key aspects:\n\n1) **At half-filling**: The Hubbard model at half-filling (one electron per site) typically exhibits antiferromagnetic order for U > 0, not superconductivity. This is because the system is insulating due to strong correlations.\n\n2) **Away from half-filling (doped)**: When holes are introduced, the system becomes metallic and the situation changes dramatically.\n\n3) **Mechanism for superconductivity**: In the doped Hubbard model, superconductivity can arise through the following mechanism:\n   - The antiferromagnetic spin fluctuations present in the system can mediate attractive interactions between electrons\n   - These spin-mediated pairing interactions can overcome the direct Coulomb repulsion U for certain doping levels\n   - The resulting Cooper pairs have d-wave symmetry rather than s-wave\n\n4) **Conditions for superconductivity**:\n   - The system must be doped away from half-filling (\u03b4 \u2260 0, where \u03b4 is the doping level)\n   - The hopping integral t should be comparable to or larger than U/2 to allow sufficient kinetic energy\n   - Temperature must be below the superconducting transition temperature Tc\n\n5) **Realization methods**:\n   - Light hole doping (removing electrons) from the half-filled antiferromagnetic state\n   - The optimal doping is typically around 10-20% hole concentration\n   - The superconducting state competes with other ordered states like stripes or phase separation\n\nThe doped Hubbard model is actually believed to capture the essential physics of high-temperature cuprate superconductors, where d-wave superconductivity emerges from antiferromagnetic fluctuations.\n\n$\\boxed{\\text{Yes, superconductivity is possible. When holes are doped away from half-filling, antiferromagnetic spin fluctuations can mediate attractive pairing interactions between electrons, leading to d-wave superconductivity. This occurs when the kinetic energy } t \\text{ becomes comparable to } U \\text{ and the doping level } \\delta \\text{ is optimized, typically around 10-20\\% hole concentration.}}$",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        }
+    ],
+    "Claude 4.0 Sonnet": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Claude 4.0 Sonnet",
+            "prompt_idx": 1,
+            "type": "HF",
+            "response": "I need to find the order parameters that preserve translational symmetry for a Hartree-Fock mean-field Hamiltonian on a 2D triangular lattice.\n\nFor translational symmetry to be preserved, the order parameters must be invariant under lattice translations. This means they should not depend on the position but can depend on momentum differences.\n\nLooking at the Fock term, the order parameter appears as:\n$$\\langle c_s^\\dagger(k_1) c_{s'}(k_1) \\rangle$$\n\nFor translational symmetry, this expectation value should only be non-zero when it doesn't break the symmetry of the lattice.\n\nThe possible order parameters that preserve translational symmetry are:\n\n1. **Charge density**: $\\langle c_s^\\dagger(k) c_s(k) \\rangle$ - This represents the density of particles with spin $s$ at momentum $k$.\n\n2. **Spin density**: Since we have spin up and down, we can form spin-dependent densities.\n\n3. **Pairing order parameters**: These would involve $\\langle c_s(k) c_{s'}(-k) \\rangle$ or similar combinations, but for a repulsive interaction, these are typically not favorable.\n\n4. **Magnetic order parameters**: These involve spin flips, like $\\langle c_\\uparrow^\\dagger(k) c_\\downarrow(k) \\rangle$.\n\nHowever, for translational symmetry to be preserved, the order parameters must be momentum-independent (uniform) or have specific momentum dependencies that respect the lattice symmetry.\n\nThe valid order parameters that preserve translational symmetry are:\n\n- Uniform charge density: $\\langle c_s^\\dagger(k) c_s(k) \\rangle$ (independent of $k$)\n- Uniform magnetization: $\\langle c_\\uparrow^\\dagger(k) c_\\uparrow(k) \\rangle - \\langle c_\\downarrow^\\dagger(k) c_\\downarrow(k) \\rangle$\n- Spin-flip order parameter: $\\langle c_\\uparrow^\\dagger(k) c_\\downarrow(k) \\rangle$\n\nSince the problem asks for order parameters in the context of the given Hamiltonian, and considering the Fock term structure, the relevant order parameters are:\n\n$\\boxed{\\langle c_s^\\dagger(k) c_s(k) \\rangle; \\langle c_s^\\dagger(k) c_{s'}(k) \\rangle}$",
+            "solution": "$\\boxed{\\langle c_\\uparrow^\\dagger(k) c_\\uparrow(k) \\rangle; \\langle c_\\downarrow^\\dagger(k) c_\\downarrow(k) \\rangle}$",
+            "parameter": "$k;N; (c_s^\\dagger, NC); (c_s, NC)$",
+            "function": "$ \\uparrow; \\downarrow$",
+            "error": "Failed to parse model response: SymPy parsing error: ('unterminated string literal (detected at line 1)', (1, 18))"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Claude 4.0 Sonnet",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "I need to analyze whether superconductivity can be realized in a doped Hubbard chain away from half-filling.\n\nLet me examine the key aspects of this problem:\n\n1) **Dimensionality**: This is a 1D system (chain), which is crucial for understanding superconducting behavior.\n\n2) **Doping**: The system is doped away from half-filling, meaning the electron density is not exactly one electron per site.\n\n3) **Interactions**: There's on-site Coulomb repulsion $U > 0$ and nearest-neighbor hopping $t_{i,i+1}$.\n\n4) **Superconductivity requirements**: For superconductivity, we need Cooper pair formation and long-range phase coherence.\n\nIn one dimension, there are fundamental obstacles to superconductivity:\n\n- **Fluctuations**: In 1D, thermal and quantum fluctuations are enhanced, making it difficult to establish long-range order.\n- **Kosterlitz-Thouless physics**: Even if pairing occurs, phase fluctuations can destroy superconducting order at any finite temperature.\n- **Luttinger liquid behavior**: 1D interacting fermion systems typically form Luttinger liquids rather than Fermi liquids, which don't support conventional superconductivity.\n\nHowever, there are mechanisms that could potentially lead to superconducting-like behavior:\n\n1) **Pairing without superconductivity**: The repulsive $U$ can actually favor d-wave-like pairing correlations in higher dimensions, but in 1D this doesn't lead to true superconductivity.\n\n2) **Luther-Emery liquid**: For certain parameter regimes, the 1D Hubbard model can exhibit a Luther-Emery liquid phase with spin gap and superconducting correlations, but these decay algebraically rather than showing true long-range order.\n\n3) **Proximity to integrable points**: At special parameter values, the model becomes integrable and can show enhanced pairing correlations.\n\nThe fundamental issue is that in 1D, even if Cooper pairs form, phase fluctuations prevent true superconducting order at finite temperature. The correlation functions decay algebraically rather than remaining finite at long distances.\n\n$\\boxed{\\text{No, true superconductivity cannot be realized in the 1D Hubbard chain. While pairing correlations can exist, one-dimensional systems cannot support long-range superconducting order due to enhanced quantum and thermal fluctuations that destroy phase coherence. The system may exhibit superconducting correlations that decay algebraically, but not genuine superconductivity with finite order parameter.}}$",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        }
+    ],
+    "Claude 4.1 Opus": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Claude 4.1 Opus",
+            "prompt_idx": 3,
+            "type": "HF",
+            "response": "I need to determine the spatial complexity for representing the Hamiltonian at each k-point in the self-consistent Hartree-Fock calculation.\n\nFor the mean-field Hartree-Fock theory on a 2D triangular lattice with plane-wave basis:\n\n1. The Hamiltonian is expressed in momentum space using plane waves covering $N_q$ Brillouin zones.\n\n2. For each valley $\\tau = \\pm$, we have a 2\u00d72 matrix structure (for the two layers $\\mathfrak{b}$ and $\\mathfrak{t}$).\n\n3. In the plane-wave basis, the momentum states are discretized. With $N_q$ Brillouin zones being covered, the total number of plane-wave basis states scales as $N_q$.\n\n4. For each k-point, the Hamiltonian matrix needs to account for:\n   - The coupling between different plane-wave states due to the periodic potentials $\\Delta_{\\mathfrak{b},\\tau}(\\bm{r})$, $\\Delta_{\\mathfrak{t},\\tau}(\\bm{r})$, and $\\Delta_{\\text{T},\\tau}(\\bm{r})$\n   - The mean-field potentials from the Hartree-Fock self-consistency\n\n5. Since we're using plane waves covering $N_q$ Brillouin zones, and we have 2 layers and 2 valleys, the total dimension of the Hilbert space at each k-point is proportional to $N_q$.\n\n6. The Hamiltonian matrix at each k-point will be of size $(2N_q) \\times (2N_q)$ accounting for the two-layer structure.\n\n7. Therefore, the spatial complexity to store the Hamiltonian matrix at each k-point is $O(N_q^2)$.\n\n$\\boxed{O(N_q^2)}$",
+            "solution": "$\\boxed{16N_q^2}$",
+            "parameter": "$N_q$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Claude 4.1 Opus",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "I need to analyze whether a superconducting state can be realized in a doped Hubbard chain away from half-filling.\n\nThe one-dimensional Hubbard model is exactly solvable via the Bethe ansatz, and its properties are well-understood. Let me consider the key aspects:\n\n1. **Dimensionality constraint**: In one dimension, the Mermin-Wagner theorem and its extensions severely restrict the possibility of true long-range order at finite temperature. More specifically, for the 1D Hubbard model:\n\n2. **Luttinger liquid behavior**: The doped 1D Hubbard chain away from half-filling is described by Luttinger liquid theory. In this framework, the system exhibits:\n   - Power-law decay of correlation functions (no true long-range order)\n   - Spin-charge separation\n   - No gap in the excitation spectrum\n\n3. **Pairing correlations**: While the system can exhibit algebraic (power-law) decay of superconducting pairing correlations, these correlations:\n   - Decay as a power law with distance\n   - Do not establish true long-range superconducting order\n   - Cannot support a Meissner effect or zero resistance\n\n4. **Competition with CDW**: In 1D, charge density wave (CDW) correlations typically dominate over superconducting correlations for repulsive interactions ($U > 0$).\n\n5. **Theoretical results**: Exact solutions and numerical studies (DMRG, Bethe ansatz) confirm that the 1D Hubbard model with $U > 0$ does not support a true superconducting ground state with off-diagonal long-range order.\n\nThe key issue is that in one dimension, quantum fluctuations are too strong to allow the establishment of a true superconducting state with broken U(1) symmetry and off-diagonal long-range order.\n\n$\\boxed{\\text{No. A true superconducting state cannot be realized in the 1D Hubbard chain with } U > 0 \\text{ due to: (1) The Mermin-Wagner theorem prohibiting continuous symmetry breaking in 1D at finite temperature; (2) The system exhibits Luttinger liquid behavior with only power-law decay of pairing correlations rather than true long-range order; (3) Strong quantum fluctuations in 1D destroy phase coherence necessary for superconductivity; (4) For repulsive } U > 0\\text{, charge density wave correlations dominate over superconducting correlations in 1D.}}$",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Claude 4.1 Opus",
+            "prompt_idx": 22,
+            "type": "PEPS",
+            "response": "I need to find the form of $f$ in the eigenvalue problem $H_k B = \\omega_k f$.\n\nStarting with the excited state:\n$$|\\Phi(B)_k\\rangle = \\sum_x e^{ik \\cdot x} |\\Phi(B)_x\\rangle$$\n\nwhere $|\\Phi(B)_x\\rangle$ is the state with tensor $B$ at position $x$ and tensor $A$ everywhere else.\n\nThe eigenvalue problem for the excited state is:\n$$H|\\Phi(B)_k\\rangle = \\omega_k |\\Phi(B)_k\\rangle$$\n\nThis can be written as:\n$$H \\sum_x e^{ik \\cdot x} |\\Phi(B)_x\\rangle = \\omega_k \\sum_x e^{ik \\cdot x} |\\Phi(B)_x\\rangle$$\n\nFor the variational optimization, we need to find the optimal tensor $B$. The eigenvalue problem $H_k B = \\omega_k f$ represents the condition for $B$ to minimize the energy in the excited state manifold.\n\nThe term $f$ appears as a generalized eigenvalue problem because the norm of the state depends on $B$. Since we're dealing with a non-orthogonal basis, the overlap matrix enters the problem.\n\nGiven that $N_k = \\langle\\Phi(B)_k|\\Phi(B)_k\\rangle$ is the norm of the excited state, and considering that the eigenvalue problem must account for the normalization, the term $f$ must be related to how the norm changes with respect to $B$.\n\nIn the context of tensor network states, when we vary $B$ to minimize the energy while maintaining normalization, we get a generalized eigenvalue problem where $f$ represents the derivative of the norm with respect to $B$.\n\nSince $N_k = \\langle\\Phi(B)_k|\\Phi(B)_k\\rangle$ and the variation of the energy functional leads to the eigenvalue equation, we have:\n\n$$f = \\frac{\\partial N_k}{\\partial B^*}$$\n\nThis can be written more explicitly as:\n\n$$\\boxed{f = \\frac{\\partial N_k}{\\partial B^*}}$$",
+            "solution": "$\\boxed{N_k B}$",
+            "parameter": "$N_k;B;B*$",
+            "function": "",
+            "error": "Failed to parse model response: SymPy parsing error: Invalid star expression (<string>, line 1)"
+        }
+    ],
+    "Claude 4.0 Opus": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Claude 4.0 Opus",
+            "prompt_idx": 3,
+            "type": "HF",
+            "response": "I need to analyze the spatial complexity for representing the Hamiltonian at each k-point in the self-consistent Hartree-Fock calculation.\n\nGiven information:\n- 2D triangular lattice\n- Plane-wave basis covering $N_q$ Brillouin zones\n- Non-interacting Hamiltonian $H_{\\tau}$ is a 2\u00d72 matrix (coupling two layers)\n- Two valleys ($\\tau = \\pm$)\n- Coulomb interaction requiring self-consistent treatment\n\nFor the Hartree-Fock mean-field theory, I need to consider:\n\n1. **Basis size**: With plane-wave basis covering $N_q$ Brillouin zones on a 2D triangular lattice, the number of plane-wave basis states scales as $O(N_q)$.\n\n2. **Matrix structure**: For each k-point, the Hamiltonian acts on:\n   - 2 layers (from the 2\u00d72 matrix structure)\n   - 2 valleys ($\\tau = \\pm$)\n   - $N_q$ plane-wave basis states\n\n3. **Total dimension**: The full Hilbert space dimension at each k-point is:\n   - 2 (layers) \u00d7 2 (valleys) \u00d7 $N_q$ (plane-wave states) = $4N_q$\n\n4. **Hamiltonian matrix size**: The Hamiltonian matrix at each k-point is $(4N_q) \\times (4N_q)$.\n\n5. **Spatial complexity**: Storing a $(4N_q) \\times (4N_q)$ matrix requires $(4N_q)^2 = 16N_q^2$ elements.\n\nTherefore, the spatial complexity is $O(N_q^2)$.\n\n$\\boxed{O(N_q^2)}$",
+            "solution": "$\\boxed{16N_q^2}$",
+            "parameter": "$N_q$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Claude 4.0 Opus",
+            "prompt_idx": 11,
+            "type": "DMRG",
+            "response": "I need to analyze the ground state degeneracy of this alternating Kitaev chain and determine the central charge.\n\nThis Hamiltonian describes an alternating chain where:\n- Odd-even pairs (2i-1, 2i) are coupled by \u03c3\u02e3\u03c3\u02e3 terms\n- Even-odd pairs (2i, 2i+1) are coupled by \u03c3\u02b8\u03c3\u02b8 terms\n\nLet me first understand the structure. For an open chain with N sites:\n- The \u03c3\u02e3\u03c3\u02e3 terms connect: (1,2), (3,4), ..., (N-1,N)\n- The \u03c3\u02b8\u03c3\u02b8 terms connect: (2,3), (4,5), ..., (N-2,N-1) for even N, or (2,3), (4,5), ..., (N-1,N) for odd N\n\nThis is a free fermion model that can be solved by Jordan-Wigner transformation. After the transformation, this becomes a quadratic fermion Hamiltonian.\n\nThe key insight is that this alternating pattern creates a specific structure. For an open chain:\n- When N = 4k (multiple of 4): The chain has a gap and ground state degeneracy = 1\n- When N = 4k + 2: The chain has zero modes at the ends, giving ground state degeneracy = 2\n\nThis pattern emerges because:\n- The alternating XX and YY couplings create a unit cell of size 2\n- For open boundaries, depending on N mod 4, we get different boundary conditions\n- When N = 2 mod 4, there are unpaired Majorana modes at the boundaries\n\nFor the central charge, this is a critical system described by a free fermion (Ising) CFT. The central charge for a single Ising CFT is c = 1/2.\n\nTherefore:\n- Ground state degeneracy = 2^(N/2 mod 2) = 2^((N mod 4)/2)\n- Central charge c = 1/2\n\n$\\boxed{2^{(N \\bmod 4)/2}; \\frac{1}{2}}$",
+            "solution": "$\\boxed{2^{N/2-1}; c=1/2}$",
+            "parameter": "$N$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "Claude 4.0 Opus",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "I need to analyze whether superconductivity is possible in a doped Hubbard chain away from half-filling.\n\nThe Hubbard model describes electrons hopping between sites with on-site Coulomb repulsion U. At half-filling (one electron per site), the system is a Mott insulator for large U. When doped with holes, the question is whether Cooper pairs can form.\n\nIn one dimension, there are several important considerations:\n\n1. **Luttinger liquid behavior**: One-dimensional interacting electron systems are described by Luttinger liquid theory, not Fermi liquid theory. This means there are no well-defined quasiparticles.\n\n2. **Enhanced fluctuations**: In 1D, quantum fluctuations are enhanced and destroy long-range order at finite temperature (Mermin-Wagner theorem).\n\n3. **Spin-charge separation**: In 1D, spin and charge degrees of freedom separate, which fundamentally changes the physics compared to higher dimensions.\n\n4. **Pairing correlations**: While true long-range superconducting order is impossible in 1D at finite temperature, the system can exhibit power-law decay of pairing correlations at T=0.\n\nFor the attractive Hubbard model (U<0), superconductivity is possible. However, the problem states U>0 (repulsive interactions).\n\nFor repulsive interactions (U>0) in 1D:\n- At half-filling, the system is insulating for any U>0\n- Upon doping, the system becomes metallic but not superconducting\n- The dominant correlations are typically antiferromagnetic, not superconducting\n- Cooper pairing requires attractive interactions in the pairing channel\n\nIn higher dimensions (2D, 3D), the doped repulsive Hubbard model can exhibit d-wave superconductivity through effective attraction from magnetic fluctuations. However, in 1D, this mechanism is absent due to the peculiar nature of 1D systems.\n\n$\\boxed{\\text{No. In 1D with repulsive interactions (U>0), the doped Hubbard chain cannot realize a superconducting state because: (1) quantum fluctuations destroy long-range order in 1D, (2) the system forms a Luttinger liquid with spin-charge separation rather than Cooper pairs, and (3) repulsive on-site interactions suppress s-wave pairing while the 1D geometry prevents the formation of higher angular momentum pairing channels that could benefit from repulsive interactions.}}$",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        }
+    ],
+    "DeepSeek v3": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "DeepSeek v3",
+            "prompt_idx": 2,
+            "type": "HF",
+            "response": "The coordinates of the six original Brillouin zone corners in the reduced Brillouin zone are:\n\n$\\boxed{\\left(0.00, \\frac{2\\pi}{3}\\right); \\left(\\frac{\\pi}{\\sqrt{3}}, \\frac{\\pi}{3}\\right); \\left(\\frac{\\pi}{\\sqrt{3}}, -\\frac{\\pi}{3}\\right); \\left(0.00, -\\frac{2\\pi}{3}\\right); \\left(-\\frac{\\pi}{\\sqrt{3}}, -\\frac{\\pi}{3}\\right); \\left(-\\frac{\\pi}{\\sqrt{3}}, \\frac{\\pi}{3}\\right)}$",
+            "solution": "$\\boxed{(2.09, 1.21); (0., 2.41); (-2.09, 1.21); (-2.09, -1.21); (0., -2.41); (2.09, -1.21)}$",
+            "parameter": "",
+            "function": "",
+            "error": "Failed to parse model response: Could not parse '\\\\left(0.00, \\\\frac{2\\\\pi}{3}\\\\right)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '\\\\left(\\\\frac{\\\\pi}{\\\\sqrt{3}}, \\\\frac{\\\\pi}{3}\\\\right)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '\\\\left(\\\\frac{\\\\pi}{\\\\sqrt{3}}, -\\\\frac{\\\\pi}{3}\\\\right)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '\\\\left(0.00, -\\\\frac{2\\\\pi}{3}\\\\right)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '\\\\left(-\\\\frac{\\\\pi}{\\\\sqrt{3}}, -\\\\frac{\\\\pi}{3}\\\\right)': unexpected character after line continuation character (<unknown>, line 1); Could not parse '\\\\left(-\\\\frac{\\\\pi}{\\\\sqrt{3}}, \\\\frac{\\\\pi}{3}\\\\right)': unexpected character after line continuation character (<unknown>, line 1)"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "DeepSeek v3",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "$\\boxed{\\text{Yes, it is possible to realize a superconducting state by doping the Hubbard chain away from half-filling. The introduction of holes reduces the electron density, leading to a competition between the kinetic energy (favoring delocalization) and the on-site Coulomb repulsion $U$. At certain doping levels, the system can form Cooper pairs mediated by spin fluctuations, resulting in a superconducting state. The pairing symmetry is typically $d$-wave in two-dimensional systems, but in one-dimensional chains, it may exhibit unconventional pairing mechanisms due to strong correlations.}}$",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "DeepSeek v3",
+            "prompt_idx": 27,
+            "type": "Other",
+            "response": "The expression for \\( O_n \\) in terms of the properties \\( E_n \\) for a one-dimensional lattice is:\n\n\\[\n\\boxed{O_n = \\sum_{k=1}^n (-1)^{k+1} \\binom{n}{k} E_k}\n\\]",
+            "solution": "$\\boxed{O_n=E_n-E_{n-1}}$",
+            "parameter": "$O_n;E_n;E_{n-1}$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        }
+    ],
+    "LLaMA Maverick": [
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "LLaMA Maverick",
+            "prompt_idx": 12,
+            "type": "DMRG",
+            "response": "$\\boxed{Yes}$",
+            "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
+            "parameter": "$U,t_ij,N$",
+            "function": "",
+            "error": "Failed to parse reference solution: Failed to evaluate expression: 'tuple' object has no attribute 'subs'"
+        },
+        {
+            "success": false,
+            "is_equivalent": null,
+            "model_name": "LLaMA Maverick",
+            "prompt_idx": 27,
+            "type": "Other",
+            "response": "## Step 1: Understand the given problem and the expansion for $O_n$\nThe problem provides an expansion for an extensive property $O_n$ of a lattice model in the thermodynamic limit, given by $O_n = \\sum_c M_c R_c$, where $M_c$ is the number of ways per site cluster $c$ can be embedded on the lattice, and $R_c = E_c - \\sum_s R_s$, with $E_c$ being the property calculated for cluster $c$ and the sum over all sub-clusters $s$ of $c$.\n\n## Step 2: Interpret the given equations for a one-dimensional lattice\nFor a one-dimensional lattice, $c$ represents the number of sites in a finite chain. Thus, $M_c$ is the number of ways to embed a chain of $c$ sites per site, which is 1 because there's only one way to embed a chain of $c$ sites on a one-dimensional lattice per site when considering translational invariance.\n\n## Step 3: Simplify $M_c$ for a one-dimensional lattice\n$M_c = 1$ because for any cluster of size $c$, there's exactly one way to embed it on the lattice per site when considering the lattice's translational symmetry.\n\n## Step 4: Understand $R_c$ and its relation to $E_c$ and sub-clusters\n$R_c = E_c - \\sum_{s=1}^{c-1} R_s$ for $c > 0$, and by definition, $R_0 = 0$ since there's no cluster of size 0 contributing to the property in a meaningful way that affects $O_n$. However, we need to adjust our understanding according to the given formula. For a cluster of size $c$, the sum is over all its sub-clusters.\n\n## Step 5: Derive an expression for $R_c$ in terms of $E_c$ and $R_s$\nTo simplify, let's directly analyze the given recursive relation for $R_c$. For a chain of $c$ sites, $R_c = E_c - \\sum_{s=1}^{c-1} \\binom{c-s}{s} R_s$ is not directly applicable due to the complexity of counting sub-clusters. Instead, we simplify the understanding: for a linear chain, the sub-clusters are simply smaller chains. The correct interpretation should directly apply the inclusion-exclusion principle.\n\n## Step 6: Apply the inclusion-exclusion principle correctly for $R_c$\nFor a linear chain of $n$ sites, the number of sub-chains of size $s$ is $n-s+1$. Thus, $R_n = E_n - \\sum_{s=1}^{n-1} R_s$ is not the correct representation due to overcounting. The correct formula considering the number of sub-clusters should be derived from the principle that $E_n = \\sum_{s=1}^{n} (n-s+1)R_s$, which can be rearranged to find $R_n$.\n\n## Step 7: Derive $R_n$ in terms of $E_n$\nStarting from $E_n = \\sum_{s=1}^{n} (n-s+1)R_s$, we can derive $R_n$ by considering the relation between successive $E_n$. $E_n = (n+1)R_1 + nR_2 + ... + 2R_{n-1} + R_n$ and $E_{n-1} = nR_1 + (n-1)R_2 + ... + 2R_{n-1}$, thus $E_n - E_{n-1} = R_1 + R_2 + ... + R_n$. This can help in finding a direct relation.\n\n## Step 8: Simplify the expression for $O_n$\n$O_n = \\sum_{c=1}^{n} R_c$ because $M_c = 1$. We need to express $O_n$ in terms of $E_n$.\n\n## Step 9: Establish the relation between $O_n$ and $E_n$\nSince $E_n = \\sum_{c=1}^{n} (n-c+1)R_c$, we notice that $O_n = \\sum_{c=1}^{n} R_c$. By manipulating the given equations and understanding that $R_c$ can be derived from $E_c$, we aim to find $O_n$ in terms of $E_n$.\n\n## Step 10: Directly relate $O_n$ to $E_n$\nNoting that $E_n - E_{n-1} = \\sum_{c=1}^{n} R_c$, we have $O_n = E_n - E_{n-1}$, but this step requires careful consideration of the initial conditions and the definition of $E_0$. For $n=1$, $O_1 = R_1 = E_1$.\n\n## Step 11: Finalize the expression for $O_n$\nTo find $O_n$ in terms of $E_n$, consider that $O_n = \\sum_{c=1}^{n} R_c$ and the relation between $E_n$ and $R_c$. Since $R_n = E_n - \\sum_{s=1}^{n-1} (n-s)R_s$, simplifying this into a direct formula for $O_n$ requires understanding that $O_n = E_n$ when considering the telescoping sum and initial conditions.\n\nThe final answer is: $\\boxed{\\frac{E_n}{n}}$",
+            "solution": "$\\boxed{O_n=E_n-E_{n-1}}$",
+            "parameter": "$O_n;E_n;E_{n-1}$",
+            "function": "",
+            "error": "Failed to parse model response: Unexpected error during evaluation: Cannot convert expression to float"
+        }
+    ]
+}

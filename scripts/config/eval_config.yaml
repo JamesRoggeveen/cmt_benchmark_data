@@ -15,9 +15,10 @@ models:
   Claude 4.1 Opus: latest
   Claude 4.0 Opus: latest
   DeepSeek v3: latest
-  DeepSeek R1: latest
+  DeepSeek R1: skip
   LLaMA Maverick: latest
 
 query_results_dir: "query_results"
 eval_results_dir: "eval_results"
 num_queries: 1
+huggingface_dataset_name: "AnonBenchmark322/benchmark_data"

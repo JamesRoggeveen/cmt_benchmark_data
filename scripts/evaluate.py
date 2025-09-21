@@ -53,7 +53,6 @@ def evaluate_response(response_data):
     model_name = response_data['model_name']
     prompt_idx = response_data['prompt_idx']
     type = response_data['type']
-
     try:
         if parameter_str=='' and function_str=='':
             numeric_parse_attempt = parse_numeric_solution(solution_str)
