@@ -1,0 +1,41 @@
+{
+    "SUPPORTED_MODELS_GEMINI":
+    {
+        "Gemini 2.5 Flash": "gemini-2.5-flash",
+        "Gemini 2.0 Flash": "gemini-2.0-flash",
+        "Gemini 2.5 Pro": "gemini-2.5-pro",
+        "Gemini 2.5 Flash Lite": "gemini-2.5-flash-lite"
+    },    
+    "SUPPORTED_MODELS_OPENAI":
+    {
+        "GPT-4o": "gpt-4o",
+        "GPT-4o-mini": "gpt-4o-mini",
+        "GPT-o3-mini": "o3-mini",
+        "GPT-o3": "o3",
+        "GPT-o4-mini": "o4-mini",
+        "GPT-4.1": "gpt-4.1",
+        "GPT-4.1-mini": "gpt-4.1-mini",
+        "GPT-5": "gpt-5",
+        "GPT-5-mini": "gpt-5-mini",
+        "GPT-5-nano": "gpt-5-nano"
+    },
+    "SUPPORTED_MODELS_ANTHROPIC":
+    {
+        "Claude 3.7 Sonnet": "claude-3-7-sonnet-20250219",
+        "Claude 4.1 Opus": "claude-opus-4-1",
+        "Claude 4.0 Opus": "claude-opus-4-0",
+        "Claude 4.1 Sonnet": "claude-sonnet-4-20250514",
+        "Claude 4.0 Sonnet": "claude-sonnet-4-0"
+    },
+    "SUPPORTED_MODELS_DEEPSEEK":
+    {
+        "DeepSeek R1": "deepseek-reasoner",
+        "DeepSeek v3": "deepseek-chat"
+    },
+    "SUPPORTED_MODELS_TOGETHER":{
+        "LLaMA Maverick": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+        "DeepSeek R1": "deepseek-ai/DeepSeek-R1",
+        "DeepSeek v3": "deepseek-ai/DeepSeek-V3"
+    },
+    "SYSTEM_INSTRUCTION": "Include any solutions within a single $\\boxed{}$ LaTeX environment. If there are multiple solutions, separate them with a semicolon within the same $\\boxed{}$ environment. A solution should consist of a single expression and you should not define any helper functions or variables. Do not include any other text besides the single solution in the $\\boxed{}$ environment, including information about the limits of variables or any Big O notation."
+}

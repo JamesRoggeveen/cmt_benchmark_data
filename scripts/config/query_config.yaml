@@ -1,7 +1,22 @@
 huggingface_dataset_name: "AnonBenchmark322/benchmark_data"
-num_queries: 1
+query_results_dir: "query_results"
 models:
-  GPT-4o: false
+  GPT-4o: True
+  GPT-4.1: True
+  GPT-5: True
+  GPT-5-mini: True
+  GPT-5-nano: True
+  GPT-o3: True
+  GPT-o4-mini: True
   Gemini 2.0 Flash: true
-  Gemini 2.5 Flash Thinking: false
-  Gemini 2.5 Pro: false
+  Gemini 2.5 Flash: True
+  Gemini 2.5 Pro: True
+  Claude 3.7 Sonnet: True
+  Claude 4.1 Sonnet: True
+  Claude 4.0 Sonnet: True
+  Claude 4.1 Opus: True
+  Claude 4.0 Opus: True
+  DeepSeek v3: True
+  DeepSeek R1: True
+  LLaMA Maverick: True
+  

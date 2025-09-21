@@ -43,14 +43,12 @@ def write_yaml_file(yaml_data, csv_name, config):
             'name': csv_name.replace('_',' ').title(),
             'date': datetime.now().strftime('%Y-%m-%d')
         },
-        'type': csv_name.lower(),
         'problems': yaml_data
     }
     
     # Reorder keys to put type before problems
     ordered_doc = {
         'meta': yaml_doc['meta'],
-        'type': yaml_doc['type'], 
         'problems': yaml_doc['problems'],
     }
     

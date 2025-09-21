@@ -1,11 +1,13 @@
 [project]
-name = "cmt-benchmark-data"
+name = "cmtbench"
 version = "0.1.0"
 description = "Dataset and evaluation code for CMT Benchmark ICLR submission"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
+    "anthropic>=0.68.0",
     "datasets==3.5.1",
+    "dotenv>=0.9.9",
     "google-genai==1.13.0",
     "huggingface-hub>=0.16.4",
     "numpy==2.2.5",
@@ -19,3 +21,6 @@ dependencies = [
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.setuptools.packages.find]
+where = ["src"]

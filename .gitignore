@@ -3,3 +3,8 @@
 data/*.jsonl
 
 raw_csv/*
+
+**/__pycache__/*
+.venv/*
+uv.lock
+**.egg-info/*
