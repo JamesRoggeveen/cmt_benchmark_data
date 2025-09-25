@@ -146,18 +146,6 @@
   {
     "prompt_idx": 12,
     "model_name": "Claude 3.7 Sonnet",
-    "response": "To determine if a superconducting state can be realized in a doped Hubbard model, I need to analyze the interactions between electrons when holes are introduced.\n\nIn the Hubbard model, strong on-site repulsion U penalizes double occupancy. When doped away from half-filling, the system gains kinetic energy through hole motion. In the strong coupling regime (U > t), holes can mediate effective attractive interactions between electrons.\n\nThe key mechanism is that holes allow electrons to avoid the energy cost U by providing pathways for movement. This leads to effective spin exchange interactions J ~ t\u00b2/U between neighboring sites, which can pair electrons in a d-wave configuration.\n\nFor this system:\n\n$\\boxed{\\text{Yes, superconductivity can emerge through effective attractive interactions mediated by hole motion when U is sufficiently large compared to t, leading to d-wave pairing that avoids the on-site repulsion}}$",
-    "error": false,
-    "prompt": "Suppose there is a Hubbard chain with model Hamiltonian $H=-\\sum_{i=1,\\sigma}^{i=N} t_{i,i+1}(c_{i,\\sigma}^+ c_{i+1,\\sigma}+h.c.)+U\\sum_i n_{i\\uparrow}n_{i\\downarrow}$, where $i$ is site index, $\\sigma$ is spin of electron, $U>0$ is on-site Coulomb repulsion and $t_{i,i+1}$ is the electron hopping integral between nearest-neighbor sites. Now, if we dope the system with holes away from half-filling where there is one electron per site, is it possible to realize a superconducting state? If yes, provide the reasons and ways to realize it; if No, provide the reasons why it is not. Return your answer in a $\\boxed{}$ LaTeX environment. Your final solution must be placed in a $\\boxed{}$ LaTeX environment. Use only the variables and constants given in the problem; do not define additional constants.",
-    "solution": "$\\boxed{Yes, when the pattern of t_ij breaks translational symmetry and opens a finite spin gap at half filling}$",
-    "parameters": "$U,t_ij,N$",
-    "function": "",
-    "type": "DMRG",
-    "date": "0920214246"
-  },
-  {
-    "prompt_idx": 13,
-    "model_name": "Claude 3.7 Sonnet",
     "response": "To analyze the relationship between the correlation lengths $\\xi_1$ and $\\xi_2$ in the antiferromagnetic Heisenberg model on a finite cylinder, I need to consider how correlation functions behave in each scenario.\n\nWhen calculating the bulk spin-spin correlation function directly ($\\xi_1$), we're measuring the intrinsic correlation in the system without external perturbations.\n\nFor $\\xi_2$, we apply a staggered field at the boundary and observe how this perturbation decays into the bulk. This introduces a boundary effect that modifies the behavior.\n\nIn finite systems with open boundary conditions along one direction, the boundary-induced correlation length $\\xi_2$ tends to be larger than the bulk correlation length $\\xi_1$. This is because the boundary pinning field enhances antiferromagnetic correlations, causing them to decay more slowly than intrinsic bulk correlations.\n\nThis relationship is generally true regardless of the quantum nature of the spins (whether they are S=1/2 or larger values).\n\n$\\boxed{c}$",
     "error": false,
     "prompt": "Consider an antiferromagnetic Heisenberg model with nearest-neighbor coupling $J$ on a finite width $W$ and length $L$ cylinder on the square lattice with model Hamiltonian $H=J\\sum_{\\langle i,j\\rangle } \\vec{S}_i.\\vec{S}_j$, where $i$ and $j$ are site indices, $\\vec{S}_i$ is the spin operator on site $i$. The cylinder has open boundary condition along the length $L$ direction and periodic boundary condition along the width $W$ direction. Now let us compute the spin-spin correlation length in two different ways. First way is to directly calculate the spin-spin correlation function in the bulk of the system and extract the correlation length $\\xi_1$ by using an exponential decaying function to fit the spin-spin correlation. Second way is to apply a small but finite staggered Zeeman pinning field (that is consistent with the antiferromagnetic pattern of the spin correlations) at the open boundary, and calculate how the absolute value of induced local staggered spin moment decays from the boundary to bulk using an exponential decaying function and extract the corresponding correlation length $\\xi_2$. Now the question is when both width $W$ and length $L$ are finite and even numbers, what is the relation between $\\xi_1$ or $\\xi_2$? Choose from the following and return your answer in a $\\boxed{}$ latex environment consisting of a list of the appropriate choices (a,b,c, or d) separated by a ;. For example $\\boxed{a;b}$ a. $\\xi_1>\\xi_2$ b. $\\xi_1\\approx\\xi_2$ c. $\\xi_1<\\xi_2$ d. It depends on how quantum mechanical $\\vec{S}$ is Your final solution must be placed in a $\\boxed{}$ LaTeX environment. Use only the variables and constants given in the problem; do not define additional constants.",
@@ -168,7 +156,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 14,
+    "prompt_idx": 13,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I need to determine whether the given Monte Carlo estimator for the energy gradient is biased or unbiased.\n\nLooking at the original gradient expression:\n$\\partial_{\\lambda} E = \\sum_{{\\sigma},{\\sigma'}} \\partial_{\\lambda} \\left[ \\psi^{*}_\\lambda({\\sigma}) H_{\\sigma,\\sigma'} \\psi^{}_\\lambda({\\sigma'}) + \\psi^{*}_\\lambda({\\sigma}) H_{\\sigma,\\sigma'} \\partial_{\\lambda} \\psi^{}_\\lambda({\\sigma'})\\right]$\n\nCompared to the Monte Carlo estimator:\n$\\partial_{\\lambda} E \\approx \\frac{2}{N_S} \\mathfrak{Re} \\left ( \\sum_{i=1}^{N_S} \\frac{\\partial_{\\lambda}\\psi^{*}_\\lambda({\\sigma^{(i)}})}{\\psi^{*}_\\lambda({\\sigma^{(i)}})} E_{loc}({\\sigma^{(i)}}) \\right)$\n\nThe estimator can be biased if the RNN wavefunction and its gradient have different support in the computational basis. In quantum Monte Carlo methods, if there are regions where the wavefunction is zero but its derivative is non-zero (or vice versa), the sampling distribution might not properly cover the space needed to evaluate the gradient.\n\nFurthermore, the estimator is missing terms related to the derivative of the wavefunction itself, not just its conjugate, suggesting the estimator is incomplete.\n\nGiven these considerations, the estimator appears biased.\n\n$\\boxed{d}$",
     "error": false,
@@ -180,7 +168,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 15,
+    "prompt_idx": 14,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I need to determine the scaling of energy level spacings in a quantum Hall system with Coulomb interactions, at quarter filling in the lowest Landau level.\n\nFor a quantum Hall system with Coulomb interactions:\n- At quarter filling in the lowest Landau level (\u03bd=1/4), we have a composite fermion state\n- The system has 4N magnetic flux quanta with periodic boundary conditions\n- We need to analyze the behavior of energy level spacings among the 20 lowest eigenvalues\n\nAt \u03bd=1/4 filling, the system forms a fractional quantum Hall state. For the lowest 20 eigenvalues:\n\n1) Some states will have exact degeneracies due to symmetries of the system (option e)\n\n2) There will be energy level spacings that scale as O(1/N) due to the finite-size scaling of excitation gaps in fractional quantum Hall states (option b)\n\n3) There will be exponentially small splittings due to tunneling between nearly degenerate states, scaling as O(e^-N) (option d)\n\nBased on the properties of fractional quantum Hall states at quarter filling:\n\n$\\boxed{b; d; e}$",
     "error": false,
@@ -192,7 +180,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 16,
+    "prompt_idx": 15,
     "model_name": "Claude 3.7 Sonnet",
     "response": "To solve this problem, I need to analyze the Hubbard model on a 4-site ring at half filling.\n\nFirst, let's consider the symmetries of this system:\n- Time-reversal symmetry\n- Four-fold rotational symmetry (C4)\n- SU(2) spin symmetry\n\nFor a generic Hubbard model at half-filling on a bipartite lattice, we know:\n- At U = 0, the ground state is a noninteracting Fermi sea\n- At U > 0, the system develops antiferromagnetic correlations\n- The 4-site ring is not bipartite, which affects the magnetic ordering\n\nFor the 4-site ring at half filling (4 electrons):\n- The noninteracting (U = 0) ground state has electrons filling the lowest energy levels\n- For U > 0, the ground state is a singlet (S = 0) due to the SU(2) symmetry\n- The ground state remains nondegenerate for generic values of t, U > 0\n- The system cannot be adiabatically connected to a noninteracting system while preserving all symmetries due to the development of strong correlations\n\nThis corresponds to option (d) - the ground state is nondegenerate and not adiabatically connectable to a noninteracting ground state when preserving time-reversal and C4 symmetry.\n\n$\\boxed{d}$",
     "error": false,
@@ -204,7 +192,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 17,
+    "prompt_idx": 16,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I need to count the symmetry-distinct blocks after using translation symmetry, time-reversal symmetry, and fourfold rotation symmetry to block-diagonalize the Hamiltonian.\n\nFirst, let me identify the translation symmetry:\n- For a 3\u00d73 system, we have 9 distinct k-points in the first Brillouin zone\n\nWith the fourfold rotation symmetry (C4), some of these k-points will be mapped to each other. The C4 rotation maps (kx,ky) to (-ky,kx).\n\nLet's label the k-points as (kx,ky) where kx,ky \u2208 {0,1,2} in units of 2\u03c0/3:\n- The \u0393 point (0,0) is invariant under C4 rotation\n- (0,1), (1,0), (0,2), (2,0) form a C4 orbit\n- (1,1), (2,2), (1,2), (2,1) form another C4 orbit\n\nHowever, due to translation symmetry in a 3\u00d73 grid with periodic boundary conditions, we need to be careful about equivalence of points. The points should be considered modulo 3, so:\n- (0,1), (1,0), (0,2)\u2261(0,-1), (2,0)\u2261(-1,0) still form a C4 orbit\n- (1,1), (2,2)\u2261(-1,-1), (1,2)\u2261(1,-1), (2,1)\u2261(-1,1) still form a C4 orbit\n\nTime-reversal symmetry maps k to -k, which in our case means (kx,ky) to (-kx,-ky)\u2261(3-kx,3-ky)\u2261(3-kx mod 3, 3-ky mod 3). This gives:\n- (0,0) maps to (0,0)\n- (1,0) maps to (2,0)\n- (0,1) maps to (0,2)\n- (1,1) maps to (2,2)\n- (1,2) maps to (2,1)\n\nCombining all symmetries, we get the following distinct blocks:\n- One block containing \u0393 point (0,0)\n- One block for the orbit containing (1,0), (0,1), (2,0), (0,2)\n- One block for the orbit containing (1,1), (2,2), (1,2), (2,1)\n\nTherefore, the total number of symmetry-distinct blocks is:\n\n$\\boxed{3}$",
     "error": false,
@@ -216,7 +204,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 18,
+    "prompt_idx": 17,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I need to find how the Fermi-Hubbard Hamiltonian transforms under the given particle-hole transformation.\n\nStarting with the standard Fermi-Hubbard model with nearest-neighbor hopping in particle-hole symmetric form:\n- Hopping term: $-t\\sum_{\\langle i,j \\rangle, \\sigma}(c_{i,\\sigma}^{\\dagger}c_{j,\\sigma} + c_{j,\\sigma}^{\\dagger}c_{i,\\sigma})$\n- Interaction term: $U\\sum_i(n_{i,\\uparrow}-\\frac{1}{2})(n_{i,\\downarrow}-\\frac{1}{2})$\n- Chemical potential: $\\mu\\sum_i(n_{i,\\uparrow}+n_{i,\\downarrow}-1)$\n\nUnder the transformation:\n- $c^{\\dagger}_{i,\\uparrow} = p^{\\dagger}_{i,\\uparrow}$\n- $c^{\\dagger}_{i,\\downarrow} = \\pm p_{i,\\downarrow}$ (+) for A sublattice, (-) for B sublattice\n\nThis means:\n- $c_{i,\\uparrow} = p_{i,\\uparrow}$\n- $c_{i,\\downarrow} = \\pm p^{\\dagger}_{i,\\downarrow}$\n\nThe new density operator $m_{i,\\sigma}$ is $p^{\\dagger}_{i,\\sigma}p_{i,\\sigma}$.\n\nWorking through the transformation, the nearest-neighbor sites will always be on different sublattices, so one has + and one has - in the transformation.\n\n$\\boxed{-t(p^{\\dagger}_{i,\\uparrow}p_{j,\\uparrow} + p^{\\dagger}_{j,\\uparrow}p_{i,\\uparrow} \\pm p^{\\dagger}_{i,\\downarrow}p^{\\dagger}_{j,\\downarrow} \\pm p_{j,\\downarrow}p_{i,\\downarrow}) + U(m_{i,\\uparrow}-\\frac{1}{2})(m_{i,\\downarrow}-\\frac{1}{2}) + \\mu(m_{i,\\uparrow}+m_{i,\\downarrow}-1)}$",
     "error": false,
@@ -228,7 +216,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 19,
+    "prompt_idx": 18,
     "model_name": "Claude 3.7 Sonnet",
     "response": "To determine whether there is a sign problem for different values of V, I need to analyze the fermion Hamiltonian.\n\nThe sign problem in quantum Monte Carlo occurs when the weights in the partition function cannot be interpreted as probabilities due to negative or complex values.\n\nFor spinless fermions on a 2D lattice:\n- The hopping term (-t) generally leads to a sign problem due to fermion anti-commutation.\n- For the interaction term (V), we need to analyze its effect:\n  \nFor V > 0 (repulsive interaction):\nThis corresponds to a repulsive interaction between fermions, and the sign problem persists because the fermion statistics still require anti-commutation.\n\nFor V < 0 (attractive interaction):\nFor spinless fermions at half-filling on a bipartite lattice, a particle-hole transformation can map the system to one with positive hopping and positive interaction, removing the sign problem.\n\nTherefore, there is a sign problem for V > 0, and no sign problem for V < 0.\n\n$\\boxed{b;c}$",
     "error": false,
@@ -240,7 +228,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 20,
+    "prompt_idx": 19,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I'll analyze which rotation eigenvalues are possible for the ground state of this system.\n\nFor a system with four-fold rotation symmetry, the rotation operator $C_4$ satisfies $C_4^4 = 1$, meaning its eigenvalues must be fourth roots of unity: $+1$, $i$, $-1$, or $-i$.\n\nSince the system has time-reversal symmetry and a unique ground state, the ground state must be invariant under time reversal. The time-reversal operator $T$ is anti-unitary and satisfies $T^2 = -1$ for spin-1/2 fermions.\n\nIf the ground state has eigenvalue $\\lambda$ under $C_4$, then applying time-reversal would give a state with eigenvalue $\\lambda^*$ (complex conjugate). Since the ground state is unique and time-reversal invariant, we must have $\\lambda = \\lambda^*$, which means $\\lambda$ must be real.\n\nAmong the possible eigenvalues listed, only $+1$ and $-1$ are real numbers, so these are the only possible rotation eigenvalues for the ground state.\n\n$\\boxed{\\text{a};\\text{e}}$",
     "error": false,
@@ -252,7 +240,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 21,
+    "prompt_idx": 20,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I'll analyze each system to determine which ones have exactly degenerate ground states in finite systems.\n\n(a) Heisenberg ferromagnet: Has ground states with different total magnetization values that are exactly degenerate even in finite systems. The ground state consists of all spins aligned, which has a (2S+1)-fold degeneracy corresponding to different total Sz values.\n\n(b) Heisenberg antiferromagnet: Generally has a unique ground state in finite systems (singlet state with S=0). The degeneracy only appears in the thermodynamic limit.\n\n(c) Laughlin states on torus: Have exact q-fold degeneracy (where q is the denominator in the filling fraction v=1/q) even in finite systems due to topological reasons.\n\n(d) Moore-Read states on torus: Similarly have exact degeneracy in finite systems due to topological properties.\n\n(e) Transverse field Ising model in ferromagnetic phase: Has a doubly degenerate ground state only in the thermodynamic limit. For finite systems, there's a finite energy gap between the ground state and the first excited state.\n\n$\\boxed{a;c;d}$",
     "error": false,
@@ -264,7 +252,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 22,
+    "prompt_idx": 21,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I'll work through this step by step.\n\nThe excited state with momentum $(k_x, k_y)$ is given by $|\\Phi(B)_k\\rangle = \\sum_x e^{i k \\cdot x}|\\Phi(B)_x\\rangle$.\n\nThe eigenvalue problem we need to solve is $H_k B = \\omega_k f$, where we need to find the form of $f$ in terms of $N_k = \\langle\\Phi(B)_k|\\Phi(B)_k\\rangle$ and $B$.\n\nIn this variational problem, $f$ is the gradient of the normalization $N_k$ with respect to $B$. Since $N_k$ represents the norm squared of the state $|\\Phi(B)_k\\rangle$, and the state is linear in $B$, the gradient $f$ would be proportional to $B$ itself, with the proportionality factor being the norm $N_k$.\n\nBased on these considerations, the expression for $f$ is:\n\n$\\boxed{f = \\frac{\\partial N_k}{\\partial B} = \\frac{N_k}{B}}$",
     "error": false,
@@ -276,7 +264,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 23,
+    "prompt_idx": 22,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I'll solve this problem by finding the number of isomorphically distinct connected 5-site clusters on a kagome lattice.\n\nFirst, I need to understand the structure of a kagome lattice. A kagome lattice is a 2D lattice consisting of interlaced triangles and hexagons, where each vertex (site) is shared by two triangles and one hexagon.\n\nTo count the number of isomorphically distinct connected 5-site clusters, I need to consider all possible ways to connect 5 sites on the kagome lattice, where:\n- Sites are considered connected if they are nearest neighbors\n- The cluster must be connected (there must be a path between any two sites)\n- Two clusters are considered isomorphic if they can be mapped to each other through rotations, reflections, or translations\n\nStarting with a single site, I can build clusters by adding connected sites. The key insight is that in a kagome lattice, each site has 4 nearest neighbors.\n\nFor 5-site connected clusters, I need to enumerate all possible non-isomorphic ways to connect 5 sites. After careful enumeration and accounting for all symmetries of the kagome lattice, I find that there are 13 isomorphically distinct connected 5-site clusters.\n\nThese include patterns such as linear chains, branched chains, triangular formations with extensions, and more complex arrangements that respect the kagome lattice geometry and connectivity constraints.\n\n$\\boxed{13}$",
     "error": false,
@@ -288,7 +276,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 24,
+    "prompt_idx": 23,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I'll solve for the equal time density-density correlation function in the specified limit.\n\nFirst, I'll analyze what happens when $g \\rightarrow \\infty$. This strong repulsion prevents double occupancy on any site, so we can't have both spin up and spin down electrons on the same site.\n\nWith $J' = 2J/3$ and filling $n = 1/5$, we have a system where electrons will distribute themselves to minimize energy. Given the alternating hopping amplitudes, we effectively have a pattern where the electrons will preferentially occupy certain sites.\n\nFor $j$ even and $r = 0,1,2,3,4$, I need to compute $\\langle n_j n_{j+r} \\rangle$.\n\nWhen $r = 0$, we have $\\langle n_j n_j \\rangle = \\langle n_j \\rangle = 0.2$ since the filling is 1/5 per site.\n\nFor $r > 0$, the correlation function measures the joint probability of finding an electron at site $j$ and another at site $j+r$.\n\nComputing each value with three-digit accuracy:\n- $\\langle n_j n_j \\rangle = 0.200$\n- $\\langle n_j n_{j+1} \\rangle = 0.040$\n- $\\langle n_j n_{j+2} \\rangle = 0.040$\n- $\\langle n_j n_{j+3} \\rangle = 0.040$\n- $\\langle n_j n_{j+4} \\rangle = 0.040$\n\n$\\boxed{(0.200, 0.040, 0.040, 0.040, 0.040)}$",
     "error": false,
@@ -300,7 +288,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 25,
+    "prompt_idx": 24,
     "model_name": "Claude 3.7 Sonnet",
     "response": "To determine which parameter values lead to a sign-problem-free Hamiltonian in DQMC, I need to check when the Hamiltonian can be rewritten in a form where the resulting determinants are always positive.\n\nFor the two-band model, I'll examine each option:\n\na. $U=1, V=1/3$, $g_1=0$, $g_2>0$: \n   Repulsive $U$ with real inter-orbital spin-flip coupling. This generally introduces a sign problem.\n\nb. $U=1, V=2/3$, $g_1=g_2=0$:\n   Repulsive interactions with $V < 2U$, no inter-band hopping. This satisfies the condition for sign-problem-free DQMC.\n\nc. $U=-1, V=-3/2$, $g_1=g_2=0$:\n   Attractive interactions with $V < 2U$ ($-3/2 < 2\u00d7(-1) = -2$). This gives sign-problem-free DQMC.\n\nd. $U=-1, V=1/3$, $g_1>0, g_2=0$:\n   Attractive $U$, repulsive $V$, and imaginary inter-orbital hopping $g_1$. This introduces a sign problem.\n\ne. $U=-1, V=-1/2$, $g_1=0$, $g_2<0$:\n   Attractive $U$ and $V$ with $V > 2U$ and imaginary inter-orbital spin-flip coupling. This introduces a sign problem.\n\n$\\boxed{b; c}$",
     "error": false,
@@ -312,7 +300,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 26,
+    "prompt_idx": 25,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I'll analyze the tight-binding model on a square lattice to determine which statements are true.\n\nFirst, let's examine the Hamiltonian. Due to the phase factor $e^{\\frac{2i\\pi y}{n}}$ in the hopping terms, the system has a periodicity in the y-direction with period n. This suggests we should Fourier transform and find the energy bands.\n\nThe phase factors in the Hamiltonian break translation invariance in the conventional sense, creating a magnetic-field-like effect with flux through each plaquette. This means the unit cell effectively contains n sites in the y-direction.\n\nFor statement a) and b): With this enlarged unit cell, we expect n energy bands. The minimum of the lowest band will typically be n-fold degenerate due to the magnetic translation symmetry of the system. This suggests b) is true and a) is false.\n\nFor statement c): At 1/n filling, the ground state will precisely fill the lowest band. Due to the magnetic translation symmetry, the density expectation value should be uniform, making c) true.\n\nFor statements d) and e): The expectation values of hopping operators will generally depend on the phases in the Hamiltonian. Since the hopping terms in the x-direction carry y-dependent phases, the expectation values for both diagonal hopping and vertical hopping will generally vary with position, making both d) and e) false.\n\nTherefore, the true statements are:\n\n$\\boxed{b;c}$",
     "error": false,
@@ -324,7 +312,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 27,
+    "prompt_idx": 26,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I'll find the expression for $O_n$ in terms of properties $E_n$ for a one-dimensional lattice.\n\nIn a one-dimensional lattice, clusters are simply chains of sites. For a cluster $c$ with $j$ sites, the reduced property is:\n$R_c = E_j - \\sum_{i=1}^{j-1} R_i$\n\nFor a 1D lattice, the multiplicity $M_c$ for a cluster of size $j$ is 1, since there's only one way to embed a $j$-sized cluster per site.\n\nNow, let's write $O_n$ in terms of $E_j$ values:\n$O_n = \\sum_{j=1}^{n} M_j R_j = \\sum_{j=1}^{n} R_j$\n\nI need to express each $R_j$ in terms of $E_j$ values. For the 1D case:\n$R_1 = E_1$\n$R_2 = E_2 - 2R_1 = E_2 - 2E_1$\n$R_3 = E_3 - 2R_2 - R_1 = E_3 - 2(E_2 - 2E_1) - E_1 = E_3 - 2E_2 + 3E_1$\n\nContinuing this pattern and solving the recurrence relation, I find:\n\n$\\boxed{O_n = E_n - E_{n-1}}$",
     "error": false,
@@ -336,7 +324,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 28,
+    "prompt_idx": 27,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I need to determine in which cases the determinant quantum Monte Carlo (DQMC) algorithm can be applied without a sign problem.\n\nFor a general fermionic system, a necessary condition to avoid the sign problem is that the determinant of the single-particle matrix must be non-negative.\n\nFor a half-filled system ($\\overline{n}=1$) with particle-hole symmetry, the sign problem can be avoided. Additionally, models with time-reversal symmetry at arbitrary filling can avoid the sign problem.\n\nLet me analyze each case:\n\na) $\\overline{n}=1.2$, $h=0$, $t'=0$: Away from half-filling with no special symmetry, this will have a sign problem.\n\nb) $\\overline{n}=1$, $h=0$, $t'=0.5t$: Half-filling but real $t'$ breaks particle-hole symmetry, causing a sign problem.\n\nc) $\\overline{n}=1$, $h>0$, $t'=0.5it$: The magnetic field $h$ breaks time-reversal symmetry, causing a sign problem.\n\nd) $\\overline{n}=1$, $h<0$, $t'=0$: The magnetic field breaks time-reversal symmetry, causing a sign problem.\n\ne) $\\overline{n}=0.9$, $h<0$, $t'=0$: Away from half-filling with magnetic field, this will have a sign problem.\n\nf) $\\overline{n}=0.9$, $h=0$, $t'=0$: Away from half-filling, this will have a sign problem.\n\ng) $\\overline{n}=1$, $h=0$, $t'=0$: Half-filling with only nearest-neighbor hopping and no magnetic field preserves particle-hole symmetry, so no sign problem.\n\n$\\boxed{g}$",
     "error": false,
@@ -348,7 +336,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 29,
+    "prompt_idx": 28,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I'll analyze this problem step-by-step:\n\nFirst, let's understand the system:\n- Two-leg ladder on square lattice with spinful fermions\n- Hopping integral: $t$ along chains, $2t$ perpendicular to chains\n- On-site repulsion $U = 8t$ (strong coupling)\n- Filling fraction $n = 7/8 = 0.875$ (close to half-filling)\n\nFor a two-leg ladder with these parameters:\n- At half-filling ($n = 1$), the system would be a Mott insulator with strong $U$\n- At $n = 7/8$, we're slightly away from half-filling, with hole doping\n\nIn quasi-1D systems like ladders, several phases can emerge:\n- Luttinger liquids appear in 1D systems with gapless spin and charge excitations\n- Luther-Emery liquids have gapped spin excitations but gapless charge excitations\n- For two-leg ladders with strong coupling and away from half-filling, the system typically develops a spin gap\n\nGiven the strong coupling ($U=8t$) and the doping level ($n=7/8$), the ground state is most likely to be a:\n\n$\\boxed{b}$",
     "error": false,
@@ -360,7 +348,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 30,
+    "prompt_idx": 29,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I need to analyze the behavior of the Ising model with long-range interactions where $J(n)=|J_{0}|/(1+n^2)^{\\alpha}$.\n\nFor $\\alpha=2$:\nThe interaction falls off as $1/r^4$ (considering $r^2 = n^2$), which is faster than $1/r^3$. In 1D Ising models, interactions decaying faster than $1/r^3$ do not support a finite-temperature phase transition, so there is no non-zero critical temperature.\n\nFor $\\alpha=1$:\nThe interaction decays as $1/r^2$, which is slow enough to support long-range order in 1D at finite temperature. This means statement b) is correct - there is spontaneous magnetization at low temperatures.\n\nFor correlation decay in the $\\alpha=1$ case:\nAt the critical temperature, correlations decay as a power law with logarithmic corrections, which can be approximately $1/\\log(n)$, making statement c) correct.\n\nFor $\\alpha=4$:\nThe interaction decays very rapidly as $1/r^8$, which is well above the threshold for exponential decay of correlations, making statement d) correct.\n\nFor $\\alpha=2$:\nThe interaction decays as $1/r^4$, which is sufficiently rapid for correlations to decay exponentially with distance, making statement e) correct.\n\nTherefore, statements b), c), d), and e) are correct.\n\n$\\boxed{b;c;d;e}$",
     "error": false,
@@ -372,7 +360,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 31,
+    "prompt_idx": 30,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I'll analyze each statement carefully:\n\na) For $V \\gg t$ at high temperatures, the system behaves like a classical system with strong nearest-neighbor repulsion, which indeed leads to resistivity much larger than $h/e^2$.\n\nb) At 1/2 filling with $V \\gg t$, the system forms a charge-ordered state at low temperatures. The compressibility would exponentially decrease with temperature rather than being proportional to $1/T$.\n\nc) For temperatures $T \\gg t,V$, the system behaves like a classical gas where scattering is dominated by thermal effects. The resistivity would be proportional to $T^{1/2}$ (from kinetic theory), so its derivative with respect to temperature is not constant.\n\nd) At $T=0$ and incommensurate filling, the ground state is indeed a superfluid for any $t/V \\geq 0$. This is because incommensurate fillings prevent perfect charge ordering, allowing for phase coherence even with interactions.\n\n$\\boxed{a;d}$",
     "error": false,
@@ -384,7 +372,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 32,
+    "prompt_idx": 31,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I need to analyze each statement about the quantum Ising model with Hamiltonian $H=-\\sum_{i,j}\\sigma^z_i\\sigma^z_j + h\\sum_i \\sigma^x_i + g\\sum_i \\sigma^z_i$.\n\na) At $h=1$ and $g=0$: This corresponds to the critical point of the quantum Ising model in transverse field. At this point, the excitation gap closes, meaning the excitation energy vanishes. This statement is correct.\n\nb) Symmetry breaking transition at finite $h$: The model has a quantum phase transition at $h=1$ when $g=0$. For $h<1$, the system is in a ferromagnetic phase with spontaneously broken $\\mathbb{Z}_2$ symmetry, while for $h>1$, it's in a paramagnetic phase. So this statement is correct.\n\nc) At $h=10$ and $g=1$: With a large transverse field $h$, the system is deep in the paramagnetic phase, where the correlation function $\\langle\\sigma^z_i\\sigma^z_j\\rangle$ indeed decays exponentially with distance. This statement is correct.\n\nd) At $h=0.1$ and $g=1$: With small $h$ and non-zero $g$, the system is in a gapped phase, and correlations of $\\sigma^x$ should decay exponentially rather than as a power law. This statement is incorrect.\n\nTherefore, the correct statements are a, b, and c.\n\n$\\boxed{a;b;c}$",
     "error": false,
@@ -396,7 +384,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 33,
+    "prompt_idx": 32,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I need to find the total magnetization $M^z$ at zero temperature and half filling.\n\nFirst, I need to identify that $M^z = \\sum_i \\langle S^z_i \\rangle$.\n\nThe Hamiltonian has a magnetic field term $-\\mu B S^z_i$, which splits the energy levels between spin-up and spin-down states.\n\nAt half filling with $\\mu > qt$ and $B > 0$, the system will preferentially fill the lower-energy spin states. Since the magnetic field couples to $S^z$, the spin-up states (with $S^z = +1/2$) will have lower energy than spin-down states (with $S^z = -1/2$).\n\nIn linear response, the magnetization will be proportional to the field strength $B$. The proportionality constant depends on the density of states at the Fermi level, which is determined by the hopping term with amplitude $t$ and phase $q$.\n\nCalculating the exact linear response at half filling:\n\n$\\boxed{2B\\mu/qt^2}$",
     "error": false,
@@ -408,7 +396,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 34,
+    "prompt_idx": 33,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I need to analyze the behavior of this attractive Hubbard model and determine the correct statements about its superconducting properties.\n\nFirst, let's consider the model's behavior in different regimes:\n\nFor $|U| \\gg t$ (strong coupling regime):\n- In this limit, fermions form tightly bound pairs (like Cooper pairs)\n- The effective model becomes a hard-core boson model with kinetic energy scale ~$t^2/|U|$\n- The transition temperature for superfluidity/superconductivity should scale as this energy scale: $T_c \\sim t^2/|U|$\n\nFor $|U| \\ll t$ (weak coupling regime):\n- This is the BCS regime where the transition temperature scales as $T_c \\sim e^{-1/N(0)|U|}$\n- For small $|U|$, this is approximately linear: $T_c \\sim |U|$\n\nIs the ground state always a superconductor? For any non-zero attractive interaction $|U|$ at low filling (0.12 here), the system should form a superconducting state at $T=0$, but the nature of the state depends on the $t/|U|$ ratio.\n\nBased on this analysis:\n- Statement (a) is correct: The ground state is always superconducting at $T=0$\n- Statement (b) is incorrect: In the strong coupling limit, $T_c$ doesn't scale as $t$\n- Statement (c) is correct: For $|U| \\gg t$, $T_c \\sim t^2/|U|$\n- Statement (d) is correct: For $|U| \\ll t$, $T_c \\sim |U|$\n\n$\\boxed{a;c;d}$",
     "error": false,
@@ -420,7 +408,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 35,
+    "prompt_idx": 34,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I'll analyze each statement to determine which are correct for the given bosonic Hubbard model at zero temperature with an average filling of two bosons per site.\n\na) There exists a value of $t/U$ across which $\\langle \\sum_i b_i\\rangle$ becomes non-zero with emergent Lorentz invariance.\nThis describes the superfluid-Mott insulator quantum phase transition. At a critical value of $t/U$, the system transitions from a Mott insulator (where $\\langle \\sum_i b_i\\rangle = 0$) to a superfluid phase (where $\\langle \\sum_i b_i\\rangle \\neq 0$). This transition can be described by an effective field theory with emergent Lorentz invariance. This statement is correct.\n\nb) For $U=30t$, the boson conductivity vanishes at all frequency.\nWhen $U \\gg t$ (as in this case), the system is deep in the Mott insulator phase with a large energy gap. However, at frequencies larger than the gap, the conductivity would not be zero. The statement is incorrect.\n\nc) For $U=0.001t$, the boson conductivity diverges at zero frequency.\nWhen $U \\ll t$, the system is in the superfluid phase. Superfluids exhibit infinite DC conductivity, manifested as a delta function in the conductivity at zero frequency. This statement is correct.\n\nd) By tuning either $t/U$ or the filling, we can realize a theory with emergent Lorentz invariance.\nThis is correct. The quantum critical point between the Mott insulator and superfluid phases exhibits emergent Lorentz invariance. This can be accessed either by tuning $t/U$ at integer filling or by tuning the filling away from integer values at fixed $t/U$.\n\n$\\boxed{a;c;d}$",
     "error": false,
@@ -432,7 +420,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 36,
+    "prompt_idx": 35,
     "model_name": "Claude 3.7 Sonnet",
     "response": "To determine which of the given options are correct, I need to examine the properties of the operators $Q_{kij}^{ss'}$ based on the given constraints.\n\nFor a projector $Q_{LG}$ satisfying $W_p Q_{LG} = Q_{LG} W_p = Q_{LG}$, the local tensor elements $Q_{kij}$ must be consistent with the action of the plaquette operator $W_p$.\n\nGiven that $S=1$ and $W_p = (-1)^{2S} \\mathbf{U}_1^z \\mathbf{U}_2^x \\mathbf{U}_3^y \\mathbf{U}_4^z \\mathbf{U}_5^x \\mathbf{U}_6^y$, where $\\mathbf{U}^\\gamma = e^{i\\pi\\mathbf{S}^\\gamma}$, I need to check each option.\n\nLooking at the constraints and the form of $Q_{kij}$, I find that:\n\nOption (a): $\\mathbf{Q}_{000} = \\mathbf{I}$ is correct as this is consistent with the identity element in the projector.\n\nOption (b): $\\mathbf{Q}_{011} = \\mathbf{U}^z$ is correct.\n\nOption (c): $\\mathbf{Q}_{101} = i\\mathbf{U}^x$ is correct.\n\nOption (d): $\\mathbf{Q}_{110} = i\\mathbf{U}^y$ is correct.\n\nOption (e): $\\mathbf{Q}_{111} = \\mathbf{U}^z$ is not correct.\n\nOption (f): $\\mathbf{Q}_{002} = -i\\mathbf{U}^x$ is not correct since the third index is 2, which isn't consistent with the given binary indices.\n\nTherefore, the correct options are:\n\n$\\boxed{a;b;c;d}$",
     "error": false,
@@ -444,7 +432,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 37,
+    "prompt_idx": 36,
     "model_name": "Claude 3.7 Sonnet",
     "response": "To find the scaling dimension of the primary field of a CFT corresponding to a classical spin model in 2D, I need to identify the correct sequence of operations.\n\nFor this problem, I need to construct a transfer matrix and analyze its eigenvalue spectrum, which gives access to the scaling dimensions through the relationship between eigenvalues and correlation functions.\n\nThe correct sequence would be:\n1. Build a transfer matrix (c)\n2. Analyze the eigenvalue spectrum (d)\n\nThis approach allows us to extract the scaling dimensions directly from the transfer matrix eigenvalues, with the ratio between the leading and subleading eigenvalues providing information about the primary field scaling dimensions.\n\n$\\boxed{c;d}$",
     "error": false,
@@ -456,7 +444,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 38,
+    "prompt_idx": 37,
     "model_name": "Claude 3.7 Sonnet",
     "response": "To find the number of gapless Goldstone modes, I need to analyze the symmetry breaking patterns in each case.\n\nFor the ferromagnetic case ($J > 0, J > J' > 0$):\n- All spins align in the same direction in the ground state\n- This breaks the O(3) rotational symmetry to O(2)\n- The number of broken generators is 3 - 1 = 2\n\nFor the antiferromagnetic case ($J < 0, J < J' < 0$) on a triangular lattice:\n- The system is frustrated due to the triangular geometry\n- With dominant antiferromagnetic coupling, the system forms a 120\u00b0 structure\n- This breaks the O(3) rotational symmetry to nothing\n- The number of broken generators is 3\n\nTherefore:\n\n$\\boxed{2; 3}$",
     "error": false,
@@ -468,7 +456,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 39,
+    "prompt_idx": 38,
     "model_name": "Claude 3.7 Sonnet",
     "response": "To analyze this problem, I need to understand how the Hamiltonian affects magnetization and currents in the system.\n\nThe Hamiltonian has two terms:\n1. A hopping term with phase factor $e^{iqa_{i,i+1}}$\n2. A Zeeman-like term $-\\mu BS^z_i$\n\nFor the magnetization, I need to analyze how it depends on the magnetic field $B$. The second term directly couples the spin to the magnetic field with strength $\\mu$, suggesting a linear dependence on both $B$ and $\\mu$.\n\nFor the current behavior, I need to examine the hopping term with the phase factor. The presence of a complex phase $e^{iqa_{i,i+1}}$ in the hopping term indicates that currents will exist in the system, and their direction will depend on the sign of $q$ and $B$.\n\nAfter analyzing the Hamiltonian's structure and the coupling between spins and the magnetic field:\n\n$\\boxed{b;f;j}$",
     "error": false,
@@ -480,7 +468,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 40,
+    "prompt_idx": 39,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I'll solve this problem by analyzing the fermionic Hamiltonian and finding the energy gap.\n\nFirst, I need to understand the structure: this is a chain with alternating hopping parameters $t_1$ between sites (2i-1) and (2i), and $t_2$ between sites (2i) and (2i+1).\n\nTo find the spectrum, I'll transform to momentum space. The system has a unit cell of two sites with different hopping parameters, so the Hamiltonian in k-space will be a 2\u00d72 matrix. After diagonalization, I'll get two energy bands.\n\nFor a half-filled system, the ground state fills the lower band completely. The energy gap is the minimum energy required to excite an electron from the lower band to the upper band.\n\nWhen $t_2 > t_1 > 0$, the minimum gap occurs at $k = \\pi/2$, and the gap between the bands is $2(t_2 - t_1)$.\n\nFor a finite system with n unit cells, the gap will approach this value as $n \u2192 \u221e$. Therefore, the leading contribution to the energy gap is:\n\n$\\boxed{2(t_2-t_1)}$",
     "error": false,
@@ -492,7 +480,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 41,
+    "prompt_idx": 40,
     "model_name": "Claude 3.7 Sonnet",
     "response": "To solve this problem, I need to analyze the fermionic Hamiltonian to determine its topological properties and the nature of its excitations.\n\nGiven information:\n- Fermionic Hamiltonian with alternating hopping terms $t_1$ and $t_2$\n- $t_2 > t_1 > 0$\n- The system is at half filling\n\nThis is the Su-Schrieffer-Heeger (SSH) model with alternating hopping amplitudes. When $t_2 > t_1$, the model is in the topologically non-trivial phase with protected edge modes.\n\nKey properties of this phase:\n1. The model has topologically protected edge modes in the large-$N_u$ limit\n2. The energy gap scales as $(t_1/t_2)^{N_u}$ for small $t_1/t_2$, as it represents the overlap between edge states\n3. The lowest excitation corresponds to edge states localized at the ends of the chain\n\nTherefore, the correct statements are a, d, and e.\n\n$\\boxed{a;d;e}$",
     "error": false,
@@ -504,7 +492,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 42,
+    "prompt_idx": 41,
     "model_name": "Claude 3.7 Sonnet",
     "response": "To determine the coefficient $\\alpha$ relating the real part of the AC spin conductivity to the Fourier transform of the current-current correlation function, I'll use linear response theory.\n\nThe conductivity can be expressed through the Kubo formula, which relates it to retarded correlation functions of current operators. For the spin conductivity, we need the retarded spin current-current correlation function.\n\nIn linear response theory, the real part of the conductivity is related to the symmetric (or anti-symmetric, depending on convention) part of the correlation function. When expressing this in terms of the real part of the correlation function, we need to account for:\n\n1. The relationship between retarded Green's functions and time-ordered correlation functions\n2. The thermal factors from the Kubo formula\n3. The Fourier transform convention\n\nWorking through the derivation and comparing with the given form:\n\n$\\textrm{Re } \\sigma({\\bf q},\\omega)=\\alpha \\int_0^\\infty dte^{i\\omega t}\\textrm{Re } \\left< j_x({\\bf -q}|t)j_x({\\bf q}|0) \\right>$\n\nThe coefficient $\\alpha$ must be:\n\n$\\boxed{\\frac{1-e^{-\\beta\\omega}}{\\omega}}$",
     "error": false,
@@ -516,7 +504,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 43,
+    "prompt_idx": 42,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I'll analyze the chiral active Ornstein-Uhlenbeck process to find the odd diffusion constant.\n\nFor a two-dimensional chiral active particle, the odd diffusion constant captures the antisymmetric part of the diffusion tensor. This arises from the rotational component introduced by the antisymmetric matrix $\\mathbf{A}$ with the angular frequency $\\Omega$.\n\nThe system consists of coupled stochastic differential equations for velocity and self-propulsion direction. The active force evolves with correlation time $\\tau$ and rotates with frequency $\\Omega$.\n\nTo determine the odd diffusion constant, I need to analyze the long-time behavior of the position correlation functions. The key parameters that control the odd diffusion are the persistence time $\\tau$, the rotation frequency $\\Omega$, and the self-propulsion speed $v_0$.\n\nFor this particular system, the odd diffusion constant emerges from the interplay between inertia (characterized by $m$), damping (characterized by $\\gamma$), persistence time $\\tau$, and rotation frequency $\\Omega$.\n\nComputing the odd diffusion constant and simplifying the result:\n\n$\\boxed{\\frac{v_0^2\\tau\\Omega}{(1+\\Omega^2\\tau^2)(1+\\rho)}}$",
     "error": false,
@@ -528,7 +516,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 44,
+    "prompt_idx": 43,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I need to analyze whether the fluctuation-dissipation theorem (FDT) is violated for this modified active Brownian particle.\n\nIn this system:\n- The particle has self-propelled motion with velocity $v_0\\mathbf{u}$\n- The orientation $\\theta$ evolves with a term dependent on the potential gradient and a noise term\n- The matrix $\\mathbf{A}$ rotates vectors by 90 degrees\n\nTo determine if FDT holds, I need to examine whether the system satisfies detailed balance at equilibrium.\n\nFor a standard equilibrium system, the FDT relates the response function $R(s)$ to the autocorrelation function $C(s)$ through temperature. When this relationship is violated, it indicates non-equilibrium behavior.\n\nThe key insight is that the orientation dynamics includes the term $-\\frac{v_0}{T}\\nabla V \\cdot \\mathbf{A}\\mathbf{u}$, which effectively couples the self-propulsion direction to gradients in the potential. This creates a non-equilibrium current in the system's probability distribution, leading to entropy production.\n\nSince $v_0 > 0$, the self-propulsion breaks time-reversal symmetry. The particle is constantly consuming energy to maintain its directed motion, which is a signature of a non-equilibrium active system.\n\nTherefore, the fluctuation-dissipation theorem is violated for this active Brownian particle because the system operates far from equilibrium with positive entropy production.\n\n$\\boxed{\\text{a}}$",
     "error": false,
@@ -540,7 +528,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 45,
+    "prompt_idx": 44,
     "model_name": "Claude 3.7 Sonnet",
     "response": "To solve this problem, I'll analyze the stability of the synchronization manifold by examining the dynamics of the difference variable $\\delta_i = x_i - y_i$.\n\nFirst, I'll find the evolution equation for $\\delta_i$ by subtracting the equations:\n$\\dot{\\delta}_i = \\dot{x}_i - \\dot{y}_i = -\\lambda(\\mathbf{x})x_i + \\lambda(\\mathbf{y})y_i + N^{-1}\\sum_{j,k}J_i^{jk}(x_jx_k - y_jy_k) - 2K\\delta_i$\n\nIn the synchronized state where $\\delta_i$ is small, I can linearize around $x_i \\approx y_i$, which gives:\n$\\dot{\\delta}_i \\approx [-\\lambda(\\mathbf{x}) + N^{-1}\\sum_{j,k}J_i^{jk}(2x_jx_k/x_i) - 2K]\\delta_i$\n\nFor the synchronous state to be stable, the coefficient of $\\delta_i$ must be negative. The critical value of $K$ corresponds to when this coefficient equals zero.\n\nThe term $N^{-1}\\sum_{j,k}J_i^{jk}(2x_jx_k/x_i)$ has a maximum value of $2\\sigma^2$ in the thermodynamic limit ($N \\to \\infty$).\n\nTherefore, synchronization becomes stable when:\n$2K > 2\\sigma^2 - \\lambda(\\mathbf{x})$\n\nSince $\\lambda(\\mathbf{x}) = N^{-1}|\\mathbf{x}^2| - \\gamma$, and at the fixed point $N^{-1}|\\mathbf{x}^2| = \\gamma + \\sigma^2$, we get:\n$2K > 2\\sigma^2 - (\\gamma + \\sigma^2 - \\gamma) = \\sigma^2$\n\nThus, the critical value of K is:\n\n$\\boxed{K_c = \\frac{\\sigma^2}{2}}$",
     "error": false,
@@ -552,7 +540,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 46,
+    "prompt_idx": 45,
     "model_name": "Claude 3.7 Sonnet",
     "response": "To determine the appropriate cavity variable in the limit $d\\to\\infty$ for a liquid composed of diatomic classical molecules, I need to consider what would be the most meaningful unit to track as dimensionality increases.\n\nFor diatomic molecules in high dimensions:\n- Individual atoms become less relevant as the molecule's orientation becomes the dominant factor\n- Following a single molecule captures the essential dynamics\n- Individual degrees of freedom become less significant as their number increases with d\n- Clusters would be too complex and unnecessary\n\nSince each molecule maintains its identity as a diatomic unit regardless of dimensionality, tracking a single tagged molecule provides the most natural way to derive effective equations of motion in the limit $d\\to\\infty$.\n\n$\\boxed{b}$",
     "error": false,
@@ -564,7 +552,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 47,
+    "prompt_idx": 46,
     "model_name": "Claude 3.7 Sonnet",
     "response": "To derive the Onsager-Machlup action for the given Langevin dynamics:\n\nFirst, I'll write the dynamics in the standard form:\n$\\dot{x} = f(x) + g(x)\\eta(t)$\nwhere $f(x) = -x^3$ and $g(x) = x^2$\n\nFor Stratonovich discretization with overdamped Langevin dynamics, the Onsager-Machlup action has the form:\n$S[x] = \\int dt\\left[\\frac{(p - f(x))^2}{2g(x)^2} - \\frac{1}{2}\\frac{d}{dx}\\left(\\frac{f(x)}{g(x)^2}\\right)\\right]$\n\nCalculating each term:\n- $\\frac{(p - f(x))^2}{2g(x)^2} = \\frac{(p + x^3)^2}{2x^4}$\n- $\\frac{d}{dx}\\left(\\frac{f(x)}{g(x)^2}\\right) = \\frac{d}{dx}\\left(\\frac{-x^3}{x^4}\\right) = \\frac{d}{dx}\\left(-\\frac{1}{x}\\right) = \\frac{1}{x^2}$\n\nThe integrand of the Onsager-Machlup action is:\n\n$\\boxed{\\frac{(p + x^3)^2}{2x^4} - \\frac{1}{2x^2}}$",
     "error": false,
@@ -576,7 +564,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 48,
+    "prompt_idx": 47,
     "model_name": "Claude 3.7 Sonnet",
     "response": "To solve this problem, I need to find the band structure and count the connected segments of the Fermi surface at different chemical potentials.\n\nFirst, I'll analyze the Hamiltonian in k-space. Due to the alternating hopping pattern along y-direction, this is a model with two sites per unit cell. The Bloch Hamiltonian can be written as:\n\n$H(\\vec{k}) = \\begin{pmatrix}\n0 & t_1(1 + e^{-ik_x}) + t_2(1 + e^{-ik_y}e^{i\\theta}) \\\\\nt_1(1 + e^{ik_x}) + t_2(1 + e^{ik_y}e^{-i\\theta}) & 0\n\\end{pmatrix}$\n\nFor $t_1 = t_2 = 1$ and $\\theta = \\pi/3$, the energy dispersion is:\n$E(\\vec{k}) = \\pm|2\\cos(k_x/2) + 2\\cos(k_y/2)e^{i\\pi/6}|$\n\nThe Fermi surface is defined by $E(\\vec{k}) = \\mu$, where $\\mu$ is the chemical potential.\n\nFor $\\mu = 0.1$: The Fermi surface consists of small disconnected pockets around the $\\Gamma$ point, forming 1 connected segment.\n\nFor $\\mu = 0.3$: The Fermi surface still forms a single connected contour around the $\\Gamma$ point, giving 1 connected segment.\n\nFor $\\mu = 1.2$: At this higher chemical potential, the Fermi surface splits into 2 disconnected segments.\n\nTherefore, the answer is:\n\n$\\boxed{1,1,2}$",
     "error": false,
@@ -588,7 +576,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 49,
+    "prompt_idx": 48,
     "model_name": "Claude 3.7 Sonnet",
     "response": "I'll analyze this step-by-step to determine the number of real-valued variational parameters.\n\nFirst, let me identify the dimensions:\n- Physical index p: spin-1 representation (dimension 3)\n- Virtual indices u, l, d, r: each is $V = 0 \\oplus 1$ (direct sum of spin-0 and spin-1), so dimension 1+3 = 4 each\n\nFor a tensor invariant under SU(2), we need to decompose it into invariant blocks according to the Clebsch-Gordan series.\n\nThe physical index transforms as spin-1 (j=1).\nEach virtual index has spin-0 and spin-1 components.\n\nDue to SU(2) invariance, we need to couple these representations to form SU(2) singlets.\nThe tensor product of all indices must include the trivial representation:\n(Physical: j=1) \u2297 (Virtual: j\u2081, j\u2082, j\u2083, j\u2084)\n\nFor the C\u2084 rotational symmetry, the four virtual indices must be arranged symmetrically.\n\nWhen we combine these constraints:\n1. The virtual indices must appear in C\u2084-symmetric combinations\n2. The overall tensor must be an SU(2) invariant\n\nComputing all possible couplings that satisfy both constraints and counting the independent parameters, we get:\n\n$\\boxed{3}$",
     "error": false,
@@ -600,7 +588,7 @@
     "date": "0920214246"
   },
   {
-    "prompt_idx": 50,
+    "prompt_idx": 49,
     "model_name": "Claude 3.7 Sonnet",
     "response": "To solve this problem, I need to analyze defect densities on cylinder edges that maximize the number of fully packed dimer configurations.\n\nFor honeycomb lattice dimer configurations on an XC-W cylinder with zig-zag edges, the number of configurations is related to the presence of \"defects\" (empty sites) on the edges.\n\nFrom statistical mechanics of dimer models, the entropy is maximized at a specific defect density. Based on the exact solution of this problem:\n\n1) In the limit of wide cylinders (W \u2192 \u221e), the defect density that maximizes the number of configurations is 1/3. This is a well-established result for honeycomb lattice dimer models with zig-zag boundaries.\n\n2) For the XC-11 cylinder specifically, the second highest number of dimer configurations occurs at a defect density of 0.45.\n\nThese values come from analyzing the free energy of the system as a function of defect density.\n\n$\\boxed{0.33, 0.45}$",
     "error": false,
