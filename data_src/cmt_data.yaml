@@ -335,7 +335,7 @@ problems:
     \ variables and constants given in the problem; do not define additional constants."
   parameters: $a;b;c;d$
   functions: ''
-  solution: $\boxed{c;e}$
+  solution: $\boxed{c}$
   type: DMRG
   index: 13
 - prompt: "Suppose you model a wavefunction of a quantum system with a recurrent neural\
